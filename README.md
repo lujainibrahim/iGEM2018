@@ -1,5 +1,5 @@
 # iGEM2018
-Everything related to the NYU Abu Dhabi iGEM 2018 Wiki.
+How to navigate the iGEM Wiki repository
 
 ## How to deal with github
 - Read: [Introduction to Git and the Command line](https://sklise.com/2012/09/22/introduction-to-git/).
