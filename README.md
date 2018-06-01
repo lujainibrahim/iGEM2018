@@ -24,4 +24,4 @@ git status
 ```
 git pull origin master
 ```
-* Credits to Miha Klasinc and Craig Protzel *
+*Credits to Miha Klasinc and Craig Protzel*
