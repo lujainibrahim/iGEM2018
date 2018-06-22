@@ -4,6 +4,27 @@
   font-family: 'IBM Plex Serif', serif;
 }
 
+
+body {
+    background-color: #FFEFBE;
+}
+
+p {font-family: 'IBM Plex Sans', sans-serif;}
+
+h1 {
+    text-align: center;
+    color: #772C7F;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+h2 {
+    color: #772C7F;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h3 {
+    color: #772C7F;
+    font-family: 'IBM Plex Sans', sans-serif;
+    
 #height {
     height: 550px;
     width: 60%;
