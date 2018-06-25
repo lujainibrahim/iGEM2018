@@ -2,445 +2,452 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<!-- Styling the NavBar -->
-<style>
-/* styling footer buttons */
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #7E5BD3;
-  color: white;
-}
-
-.fa-twitter {
-  background: #7E5BD3;
-  color: white;
-}
-
-.fa-google {
-  background: #7E5BD3;
-  color: white;
-}
 
 
-.fa-youtube {
-  background: #7E5BD3;
-  color: white;
-}
 
-.fa-instagram {
-  background: #7E5BD3;
-  color: white;
-}
+  <!-- Styling the NavBar -->
 
-/* end of styling buttons */
+  <style>
+  /* styling footer buttons */
 
-/* Importing the fonts */
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif');
+  .fa {
+    font-size: 30px;
+    padding:20px;
+    width: 67px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
 
-/* Background colour */
+  .fa:hover {
+      opacity: 0.7;
+  }
 
-body {
-background-color: #FCFCFC;
-}
+  .fa-facebook {
+    background: #7E5BD3;
+    color: white;
+  }
 
-/* Styling the NavBar */
+  .fa-twitter {
+    background: #7E5BD3;
+    color: white;
+  }
 
-/* .navbar {
-    background-color: #0085B6;
-    font-size: 1rem;
-}
+  .fa-google {
+    background: #7E5BD3;
+    color: white;
+  }
 
-.navbar-brand>img {
-    width: 120px;
-    height: 33px;
-    position: relative;
-}
 
-.navbar a:visited {
-    color: #000;
-} */
+  .fa-youtube {
+    background: #7E5BD3;
+    color: white;
+  }
 
-/* lets see what this gives us */
+  .fa-instagram {
+    background: #7E5BD3;
+    color: white;
+  }
 
-body {
-	margin: 0;
-	background: #222;
-	font-family: 'IBM Plex Sans', sans-serif;
-	font-weight: 800;
-}
+  /* end of styling buttons */
 
-.container {
-	width: 80%;
-	margin: 0 auto;
-}
+  /* Importing the fonts */
+  @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
+  @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif');
 
-header {
-  background: #55d6aa;
-}
+  /* Background colour */
 
-header::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.logo {
-  float: left;
-  padding: 10px 0;
-}
-
-nav {
-  float: right;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-
-}
-
-nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 10px;
-  text-align: center;
-  position: relative;
-}
-
-nav a {
-  color: #444;
-  text-decoration: none;
-  font-size: 12px;
-  text-align: center;
-  text-transform: lowercase;
-}
-
-nav a:hover {
-  color: #0085B6;
-
-}
-
-nav a::before {
-  content: '';
-  display: block;
-  height: 5px;
-  background-color: #0085B6;
-
-  position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before {
-  width: 100%;
-}
-/* Submenu wrapper */
-.igem_2018_team_menu .submenu{
+  body {
   background-color: #FCFCFC;
-  clear:both;
-  display:none;
-  float: left;
-  width:100%;
-}
+  }
 
-/* Styling the menu */
+  /* Styling the NavBar */
 
-/*this wraps the whole of the menu*/
-.igem_2018_team_menu {
-  background-color:#FCFCFC;
-  border-left: 1px solid #FCFCFC;
-  display:block;
-  float:right;
-  height:100vh;
-  max-width: 270px;
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding:0px;
-  position:fixed;
-  right:0%;
-  text-align:left;
-  width: 15%;
-}
+  /* .navbar {
+      background-color: #0085B6;
+      font-size: 1rem;
+  }
 
+  .navbar-brand>img {
+      width: 120px;
+      height: 33px;
+      position: relative;
+  }
 
-.igem_2018_team_menu.displaying_menu{
-  display:block;
-}
+  .navbar a:visited {
+      color: #000;
+  } */
 
-.igem_2018_team_menu  a {
-  color: #FCFCFC;
-  text-decoration:none;
-  text-align: center;
-}
+  /* lets see what this gives us */
 
-.igem_2018_team_menu img {
-  width:100%;
-}
+  body {
+  	margin: 0;
+  	background: #222;
+  	font-family: 'IBM Plex Sans', sans-serif;
+  	font-weight: 800;
+  }
 
+  .container {
+  	width: 80%;
+  	margin: 0 auto;
+  }
 
-.igem_2018_team_menu .menu_item {
-    background-color: #FCFCFC;
-    border-bottom: 1px solid #FCFCFC;
+  header {
+    background: #55d6aa;
+  }
+
+  header::after {
+    content: '';
+    display: table;
     clear: both;
-  color: #FCFCFC;
-    cursor: pointer;
-  float: left;
-    font-size: 120%;
-    font-weight: bold;
-    padding: 15px 0px 15px 5%;
-    width: 100%;
-}
+  }
 
-.igem_2018_team_menu .menu_item.direct_link {
-  color: #FCFCFC;
-  padding-left: 15%;
-}
-.igem_2018_team_menu .menu_item:hover {
-  background-color: #FCFCFC;
-}
-
-
-.igem_2018_team_menu .menu_item .submenu_control_icon {
-  color: #FCFCFC;
-  float: left;
-  width: 10%;
-}
-
-/* submenu icon "+"  "-"*/
-.igem_2018_team_menu .menu_item .submenu_control_icon::before {
-  content:"-";
-}
-
-/* submenu icon "+"  "-"*/
-.igem_2018_team_menu .menu_item .submenu_control_icon.open::before {
-  content:"+";
-}
-
-/* styling for a submenu item */
-.igem_2018_team_menu .submenu .submenu_item {
-  border-bottom: 1px solid #FCFCFC;
-    color: #FCFCFC;
-    height: 30px;
+  .logo {
     float: left;
-    font-size: 110%;
-  font-weight: bold;
-    padding: 12px 0px 0px 15%;
-    width: 100%;
-}
+    padding: 10px 0;
+  }
 
-.igem_2018_team_menu .submenu .submenu_item:hover {
-  background-color: #FCFCFC;
-}
+  nav {
+    float: right;
+  }
 
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
 
-.igem_2018_team_menu .submenu .submenu_item.current_page,
-.igem_2018_team_menu .menu_item.current_page,
-.igem_2018_team_menu .menu_item.direct_link.current_page {
-  background-color:#FCFCFC;
-}
+  }
 
-
-/* Styling the footer */
-
-.footer>.container-fluid {
-    padding: 10px 10px;
-}
-
-.footer>.container-fluid>.row {
-    display: flex;
-}
-
-.footer-section {
-    text-align: center !important;
-    padding: 0px 25px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-		font-family: 'IBM Plex Sans', sans-serif;
-}
-
-.footer-text {
-    text-align: center !important;
-		font-family: 'IBM Plex Sans', sans-serif;
-}
-
-.footer-logo {
-    width: 80%;
-padding-right: 10px;
+  nav li {
     display: inline-block;
-}
-.footer-logo2 {
-    width: 100%;
-padding-right: 15px;
-    display: inline-block;
-}
+    margin-left: 70px;
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+  }
 
-.footer {
+  nav a {
+    color: #444;
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+    text-transform: lowercase;
+  }
+
+  nav a:hover {
+    color: #0085B6;
+
+  }
+
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #0085B6;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+  }
+
+  nav a:hover::before {
+    width: 100%;
+  }
+  /* Submenu wrapper */
+  .igem_2018_team_menu .submenu{
     background-color: #FCFCFC;
-		font-family: 'IBM Plex Sans', sans-serif;
+    clear:both;
+    display:none;
+    float: left;
+    width:100%;
+  }
 
-}
-h1 { color:#274F96;
-	font-family: 'IBM Plex Sans', sans-serif;
-	 font-size: 40px ;
-	 text-align: center;
- }
+  /* Styling the menu */
 
- h2 {
-	 color:#B2627C;
-	 	font-family: 'IBM Plex Sans', serif;
-	 	 font-size: 20px ;
-	 	 text-align: center;
- }
-
-
- h4 {
-	font-family: 'IBM Plex Sans', serif;
-	color: black;
-	font-size: 15px;
-	margin-right: 150px;
-	margin-left: 80px;
-}
-
-h3 {
-	font-family: 'IBM Plex Sans', serif;
-	color: black;
-	font-size: 10px;
-	 text-align: center;}
-
-p {
-	font-family: 'IBM Plex Sans', serif;
-	color: black;
-	font-size: 15px;
-	 text-align: center;
-	 margin-right: 150px;
-		margin-left: 150px;}
+  /*this wraps the whole of the menu*/
+  .igem_2018_team_menu {
+    background-color:#FCFCFC;
+    border-left: 1px solid #FCFCFC;
+    display:block;
+    float:right;
+    height:100vh;
+    max-width: 270px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding:0px;
+    position:fixed;
+    right:0%;
+    text-align:left;
+    width: 15%;
+  }
 
 
-/* a {	font-family: 'IBM Plex Sans', sans-serif;
-	font-size: 12px;
-	 text-align: center;
-} */
+  .igem_2018_team_menu.displaying_menu{
+    display:block;
+  }
+
+  .igem_2018_team_menu  a {
+    color: #FCFCFC;
+    text-decoration:none;
+    text-align: center;
+  }
+
+  .igem_2018_team_menu img {
+    width:100%;
+  }
 
 
-</style>
+  .igem_2018_team_menu .menu_item {
+      background-color: #FCFCFC;
+      border-bottom: 1px solid #FCFCFC;
+      clear: both;
+    color: #FCFCFC;
+      cursor: pointer;
+    float: left;
+      font-size: 120%;
+      font-weight: bold;
+      padding: 15px 0px 15px 5%;
+      width: 100%;
+  }
 
-<!-- Bootstrap -->
-        <link rel="stylesheet" href="http://2018.igem.org/Template:NYU_Abu_Dhabi/BootstrapCSSV4?action=raw&amp;ctype=text/css" />
-        <script type="text/javascript" src="http://2018.igem.org/Template:NYU_Abu_Dhabi/BootstrapJSV4?action=raw&amp;ctype=text/javascript"></script>
-<!-- End of Bootstrap -->
-
-<!-- Navbar -->
-<nav style="padding-bottom:1px;" class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
- <a class="navbar-brand" href="http://2018.igem.org/Team:NYU_Abu_Dhabi">Navbar Logo</a>
- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-   <span class="navbar-toggler-icon"></span>
- </button>
-
- <div class="collapse navbar-collapse" id="navbarSupportedContent">
-   <ul class="navbar-nav mr-auto">
-
-     <li class="nav-item">
-       <a class="nav-link" href="http://2018.igem.org/Team:NYU_Abu_Dhabi">Home<span class="sr-only"></span></a>
-     </li>
-
-     <li class="nav-item dropdown">
-       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         People
-       </a>
-       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-         <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Team">Team</a>
-         <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Attributions">Attributions</a>
-         <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Sponsors">Sponsors</a>
-         <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/About_Us">About Us</a>
-       </div>
-     </li>
+  .igem_2018_team_menu .menu_item.direct_link {
+    color: #FCFCFC;
+    padding-left: 15%;
+  }
+  .igem_2018_team_menu .menu_item:hover {
+    background-color: #FCFCFC;
+  }
 
 
-     <li class="nav-item dropdown">
-       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         Project
-       </a>
-       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-         <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Description">Description</a>
-         <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Design">Design</a>
-         <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Demonstration">Demonstration</a>
-         <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Results">Results</a>
-         <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Parts">Parts</a>
-         <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Safety">Safety</a>
-         <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Modelling">Modelling</a>
-         <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Interlab">Interlab</a>
-       </div>
-     </li>
+  .igem_2018_team_menu .menu_item .submenu_control_icon {
+    color: #FCFCFC;
+    float: left;
+    width: 10%;
+  }
 
-<li class="nav-item dropdown">
-       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         Lab notebooks
-       </a>
-       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-         <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Biology">Biology</a>
-         <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Ideation">Ideation</a>
-         <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Ideation">Engineering</a>
+  /* submenu icon "+"  "-"*/
+  .igem_2018_team_menu .menu_item .submenu_control_icon::before {
+    content:"-";
+  }
 
-       </div>
-     </li>
+  /* submenu icon "+"  "-"*/
+  .igem_2018_team_menu .menu_item .submenu_control_icon.open::before {
+    content:"+";
+  }
 
-<li class="nav-item dropdown">
-       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         Human practices
-       </a>
-       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-         <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Expert_Counsel">Expert Counsel</a>
-         <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Engagement">Education and public engagement</a>
-         <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/HP/Gold_Integrated">Integrated human practices</a>
-         <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Social_Media">Social Media</a>
-       </div>
-     </li>
+  /* styling for a submenu item */
+  .igem_2018_team_menu .submenu .submenu_item {
+    border-bottom: 1px solid #FCFCFC;
+      color: #FCFCFC;
+      height: 30px;
+      float: left;
+      font-size: 110%;
+    font-weight: bold;
+      padding: 12px 0px 0px 15%;
+      width: 100%;
+  }
 
-     <li class="nav-item">
-       <a class="nav-link" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Entrepreurship">Entrepreneurship</a>
-     </li>
+  .igem_2018_team_menu .submenu .submenu_item:hover {
+    background-color: #FCFCFC;
+  }
 
-     <li class="nav-item dropdown">
-       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         Collaborations
-       </a>
-       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-         <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Science_Sketch">Science Sketch</a>
-         <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Virtual_Conference">Virtual Conference</a>
-         <div class="dropdown-divider"></div>
-         <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Other_Collaborations">Other Collaborations</a>
 
-       </div>
-     </li>
-   </ul>
+  .igem_2018_team_menu .submenu .submenu_item.current_page,
+  .igem_2018_team_menu .menu_item.current_page,
+  .igem_2018_team_menu .menu_item.direct_link.current_page {
+    background-color:#FCFCFC;
+  }
 
- </div>
-</nav>
 
-<!-- End of Navbar -->
+  /* Styling the footer */
+
+  .footer>.container-fluid {
+      padding: 10px 10px;
+  }
+
+  .footer>.container-fluid>.row {
+      display: flex;
+  }
+
+  .footer-section {
+      text-align: center !important;
+      padding: 0px 25px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+  		font-family: 'IBM Plex Sans', sans-serif;
+  }
+
+  .footer-text {
+      text-align: center !important;
+  		font-family: 'IBM Plex Sans', sans-serif;
+  }
+
+  .footer-logo {
+      width: 80%;
+  padding-right: 10px;
+      display: inline-block;
+  }
+  .footer-logo2 {
+      width: 100%;
+  padding-right: 15px;
+      display: inline-block;
+  }
+
+  .footer {
+      background-color: #FCFCFC;
+  		font-family: 'IBM Plex Sans', sans-serif;
+
+  }
+  h1 { color:#274F96;
+  	font-family: 'IBM Plex Sans', sans-serif;
+  	 font-size: 40px ;
+  	 text-align: center;
+   }
+
+   h2 {
+  	 color:#B2627C;
+  	 	font-family: 'IBM Plex Sans', serif;
+  	 	 font-size: 20px ;
+  	 	 text-align: center;
+   }
+
+
+   h4 {
+  	font-family: 'IBM Plex Sans', serif;
+  	color: black;
+  	font-size: 15px;
+  	margin-right: 150px;
+  	margin-left: 80px;
+  }
+
+  h3 {
+  	font-family: 'IBM Plex Sans', serif;
+  	color: black;
+  	font-size: 10px;
+  	 text-align: center;}
+
+  p {
+  	font-family: 'IBM Plex Sans', serif;
+  	color: black;
+  	font-size: 15px;
+  	 text-align: center;
+  	 margin-right: 150px;
+  		margin-left: 150px;}
+
+
+  /* a {	font-family: 'IBM Plex Sans', sans-serif;
+  	font-size: 12px;
+  	 text-align: center;
+  } */
+
+
+  </style>
+
+
+</head>
+<body>
+
+      <!-- Bootstrap -->
+              <link rel="stylesheet" href="http://2018.igem.org/Template:NYU_Abu_Dhabi/BootstrapCSSV4?action=raw&amp;ctype=text/css" />
+              <script type="text/javascript" src="http://2018.igem.org/Template:NYU_Abu_Dhabi/BootstrapJSV4?action=raw&amp;ctype=text/javascript"></script>
+      <!-- End of Bootstrap -->
+  <!-- Navbar -->
+  <nav style="padding-bottom:1px;" class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+   <a class="navbar-brand" href="http://2018.igem.org/Team:NYU_Abu_Dhabi">Navbar Logo</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav mr-auto">
+
+       <li class="nav-item">
+         <a class="nav-link" href="http://2018.igem.org/Team:NYU_Abu_Dhabi">Home<span class="sr-only"></span></a>
+       </li>
+
+       <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           People
+         </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Team">Team</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Attributions">Attributions</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Sponsors">Sponsors</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/About_Us">About Us</a>
+         </div>
+       </li>
+
+
+       <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Project
+         </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Description">Description</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Design">Design</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Demonstration">Demonstration</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Results">Results</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Parts">Parts</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Safety">Safety</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Modelling">Modelling</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Interlab">Interlab</a>
+         </div>
+       </li>
+
+  <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Lab notebooks
+         </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Biology">Biology</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Ideation">Ideation</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Ideation">Engineering</a>
+
+         </div>
+       </li>
+
+  <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Human practices
+         </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Expert_Counsel">Expert Counsel</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Engagement">Education and public engagement</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/HP/Gold_Integrated">Integrated human practices</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Social_Media">Social Media</a>
+         </div>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Entrepreurship">Entrepreneurship</a>
+       </li>
+
+       <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Collaborations
+         </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Science_Sketch">Science Sketch</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Virtual_Conference">Virtual Conference</a>
+           <div class="dropdown-divider"></div>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Other_Collaborations">Other Collaborations</a>
+
+         </div>
+       </li>
+     </ul>
+
+   </div>
+  </nav>
+
+  <!-- End of Navbar -->
+
 <!-- HERE YOU INSERT YOUR HTML -->
 
 
@@ -449,7 +456,7 @@ p {
 <!-- HERE YOUR HTML ENDS -->
 <!-- Footer Begins -->
 
-<div class="footer">
+<div style="margin-top:100px;" class="footer">
 		<div class="container-fluid">
 				<div class="row">
 						<div class="col-lg-4 footer-section">
@@ -475,4 +482,7 @@ p {
 </div>
 
 <!-- Footer Ends -->
+
+</body>
+
 </html>
