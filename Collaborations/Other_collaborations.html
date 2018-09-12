@@ -1,0 +1,1009 @@
+<html>
+
+
+<script>
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	$(document).ready(function() {
+
+		$("#HQ_page").attr('id','');
+
+		//mobile menu access
+		$(".igem_2018_team_mobile_bar").click(function(){
+			$(this).next().toggleClass("displaying_menu");
+		});
+
+	});
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+</script>
+
+<head>
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap -->
+        <link rel="stylesheet" href="http://2018.igem.org/Template:NYU_Abu_Dhabi/BootstrapCSSV4?action=raw&amp;ctype=text/css" />
+        <script type="text/javascript" src="http://2018.igem.org/Template:NYU_Abu_Dhabi/BootstrapJSV4?action=raw&amp;ctype=text/javascript"></script>
+
+
+
+
+
+<style>
+/**************************************************************************************************************************************************************************************************/
+
+
+
+/**************************************************************************************************************************************************************************************************/
+/* DEFAULT WIKI SETTINGS */
+/**************************************************************************************************************************************************************************************************/
+
+
+	#home_logo, #sideMenu { display:none; }
+	#sideMenu, #top_title, .patrollink  {display:none;}
+	#content { margin-left:0px; margin-top:-7px; padding:0px; width:100%;}
+	body {background-color:white;
+		    width: 80%;
+	      margin: auto;}
+	#bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 { margin-bottom: 0px; }
+
+	.judges-will-not-evaluate { border: 4px solid #e4dede; padding: 2% !important; width: 92%!important;}
+
+
+/**************************************************************************************************************************************************************************************************/
+/* MENU */
+/**************************************************************************************************************************************************************************************************/
+
+
+
+
+.igem_2018_team_menu .submenu{
+	background-color: white;
+	clear:both;
+	display:none;
+	float: left;
+	width:100%;
+}
+/* Styling the menu */
+/*this wraps the whole of the menu*/
+.igem_2018_team_menu {
+	background-color:white;
+	border-left: 1px solid white;
+	display:block;
+	float:right;
+	height:100vh;
+	max-width: 270px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding:0px;
+	position:fixed;
+	right:0%;
+	text-align:left;
+	width: 15%;
+}
+.igem_2018_team_menu.displaying_menu{
+	display:block;
+}
+.igem_2018_team_menu  a {
+	color: white;
+	text-decoration:none;
+	text-align: center;
+}
+.igem_2018_team_menu img {
+	width:100%;
+}
+.igem_2018_team_menu .menu_item {
+		background-color: white;
+		border-bottom: 1px solid white;
+		clear: both;
+	color: white;
+		cursor: pointer;
+	float: left;
+		font-size: 120%;
+		font-weight: bold;
+		padding: 15px 0px 15px 5%;
+		width: 100%;
+}
+.igem_2018_team_menu .menu_item.direct_link {
+	color: white;
+	padding-left: 15%;
+}
+.igem_2018_team_menu .menu_item:hover {
+	background-color: white;
+}
+.igem_2018_team_menu .menu_item .submenu_control_icon {
+	color: white;
+	float: left;
+	width: 10%;
+}
+/* submenu icon "+"  "-"*/
+.igem_2018_team_menu .menu_item .submenu_control_icon::before {
+	content:"-";
+}
+/* submenu icon "+"  "-"*/
+.igem_2018_team_menu .menu_item .submenu_control_icon.open::before {
+	content:"+";
+}
+/* styling for a submenu item */
+.igem_2018_team_menu .submenu .submenu_item {
+	border-bottom: 1px solid white;
+		color: white;
+		height: 30px;
+		float: left;
+		font-size: 110%;
+	font-weight: bold;
+		padding: 12px 0px 0px 15%;
+		width: 100%;
+}
+.igem_2018_team_menu .submenu .submenu_item:hover {
+	background-color: white;
+}
+.igem_2018_team_menu .submenu .submenu_item.current_page,
+.igem_2018_team_menu .menu_item.current_page,
+.igem_2018_team_menu .menu_item.direct_link.current_page {
+	background-color:white;
+}
+	/* NAVBAR STYLES */
+
+	.navbar {
+	    background-color: white;
+	    font-size: 1rem;
+	}
+
+	.navbar-brand>img {
+	    width: 120px;
+	    height: 33px;
+	    position: relative;
+	}
+
+	.navbar a:visited {
+	    color: #000;
+	}
+	/*Styling Buttons*/
+	  .fa {
+	    font-size: 20px;
+	    padding:17px;
+	    width: 54px;
+	    text-align: center;
+	    text-decoration: none;
+	    margin: 5px 2px;
+	    border-radius: 50%;
+	  }
+	  .fa:hover {
+	      opacity: 0.7;
+	  }
+	  .fa-facebook {
+	    background: #7E5BD3;
+	    color: white;
+	  }
+	  .fa-twitter {
+	    background: #7E5BD3;
+	    color: white;
+	  }
+	  .fa-google {
+	    background: #7E5BD3;
+	    color: white;
+	  }
+	  .fa-youtube {
+	    background: #7E5BD3;
+	    color: white;
+	  }
+	  .fa-instagram {
+	    background: #7E5BD3;
+	    color: white;
+	  }
+	  /* end of styling buttons */
+
+	/* Styling the footer */
+  .footer>.container-fluid {
+      padding: 10px 10px;
+  }
+  .footer>.container-fluid>.row {
+      display: flex;
+  }
+  .footer-section {
+      text-align: center !important;
+      padding: 0px 25px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+  		font-family: 'IBM Plex Sans', sans-serif;
+  }
+  .footer-text {
+      text-align: center !important;
+  		font-family: 'IBM Plex Sans', sans-serif;
+  }
+  .footer-logo {
+      width: 80%;
+  padding-right: 10px;
+      display: inline-block;
+  }
+  .footer-logo2 {
+      width: 100%;
+  padding-right: 15px;
+      display: inline-block;
+  }
+  .footer {
+      background-color: white;
+  		font-family: 'IBM Plex Sans', sans-serif;
+  }
+
+/*end of styling the footer */
+
+/*mobile menu bar styling*/
+/**************************************************************************************************************************************************************************************************/
+
+
+	.igem_2018_team_mobile_bar {
+		background-color:#e4dede;
+		border-bottom: 1px solid #c4baba;
+		cursor:pointer;
+		display:none;
+		float:left;
+		margin-top: 0;
+		padding: 5px 0;
+		position:fixed;
+		width:100%;
+	}
+
+	.igem_logo_mobile img {
+		width:70px;
+	}
+
+	.igem_logo_mobile {
+		float:left;
+		padding-left: 5%;
+		width: 30%;
+	}
+
+	.igem_menu_control_mobile img {
+		width:25px;
+	}
+
+	.igem_menu_control_mobile {
+		float:right;
+		padding-right:5%;
+		padding-top:5px;
+		text-align:right;
+		width: 30%;
+	}
+
+
+
+/**************************************************************************************************************************************************************************************************/
+/* CONTENT OF THE PAGE */
+/**************************************************************************************************************************************************************************************************/
+
+
+	/* general wrapper for the content */
+	.igem_2018_team_content {
+		background-color: white;
+		display:block;
+		width: 87%;
+	}
+
+	/* subwrapper to center content */
+	.igem_2018_team_content .igem_2018_team_column_wrapper {
+		margin:auto;
+		max-width: 1400px;
+		width:90%;
+	}
+
+
+
+/*general styling*/
+/**************************************************************************************************************************************************************************************************/
+
+	.igem_2018_team_content .igem_2018_team_column_wrapper h1 { font-size: 210%;}
+	.igem_2018_team_content .igem_2018_team_column_wrapper h2 { font-size: 190%;}
+	.igem_2018_team_content .igem_2018_team_column_wrapper h3 { font-size: 170%;}
+	.igem_2018_team_content .igem_2018_team_column_wrapper h4 { font-size: 150%;}
+	.igem_2018_team_content .igem_2018_team_column_wrapper h5 { font-size: 140%;}
+	.igem_2018_team_content .igem_2018_team_column_wrapper h6 { font-size: 130%;}
+
+
+	/* styling for the titles h1, h2*/
+	.igem_2018_team_content .igem_2018_team_column_wrapper h1, .igem_2018_team_content .igem_2018_team_column_wrapper h2 {
+		border-bottom:0px;
+		color: #2A4C44;
+		font-family: 'IBM Plex Sans', sans-serif;
+		padding: 10px 0px;
+	}
+
+	/* styling for the titles h3, h3, h5, h6 */
+	.igem_2018_team_content .igem_2018_team_column_wrapper h3,
+	.igem_2018_team_content .igem_2018_team_column_wrapper h4,
+	.igem_2018_team_content .igem_2018_team_column_wrapper h5,
+	.igem_2018_team_content .igem_2018_team_column_wrapper h6 {
+		border-bottom:0px;
+		color: #2A4C44;
+		font-family: 'IBM Plex Sans', sans-serif;
+		padding: 5px 0px;
+	}
+
+	/* text */
+	.igem_2018_team_content .igem_2018_team_column_wrapper p {
+		font-size: 130%;
+		font-family: 'IBM Plex Sans', sans-serif;
+		padding: 5px 0px;
+		text-align: left;
+		color: #2A4C44;
+	}
+
+	/* Links */
+	.igem_2018_team_content .igem_2018_team_column_wrapper a {
+		color: #2A4C44;
+		font-weight: bold;
+		text-decoration: underline;
+		text-decoration-color:#772C7F;
+		transition: all 0.4s ease;
+		-webkit-transition: all 0.4s ease;
+		-moz-transition: all 0.4s ease;
+		-ms-transition: all 0.4s ease;
+		-o-transition: all 0.4s ease;
+	}
+
+	/* hover for the links */
+	.igem_2018_team_content .igem_2018_team_column_wrapper a:hover {
+		color: #2A4C44;
+		text-decoration:none;
+	}
+
+
+	/* Table */
+	.igem_2018_team_content .igem_2018_team_column_wrapper table {
+		border: 1px solid #2A4C44;
+		border-collapse: collapse;
+		font-size: 130%;
+		width: 100%;
+	}
+
+	/* table cells */
+	.igem_2018_team_content .igem_2018_team_column_wrapper td {
+		border: 1px solid #2A4C44;
+		border-collapse: collapse;
+		font-size: 105%;
+		padding: 10px;
+		vertical-align: text-top;
+	}
+
+	/* table headers */
+	.igem_2018_team_content .igem_2018_team_column_wrapper th {
+		background-color:white;
+		border: 1px solid #2A4C44;
+		border-collapse: collapse;
+		font-size: 110%;
+		padding: 10px;
+		vertical-align: text-top;
+	}
+
+
+
+	/* non numbered lists */
+	.igem_2018_team_content .igem_2018_team_column_wrapper ul, .igem_2018_team_content .igem_2018_team_column_wrapper ol {
+		font-size: 130%;
+		font-family: 'IBM Plex Sans', sans-serif;
+		padding:0px 20px;
+	}
+
+
+	.igem_2018_team_content .igem_2018_team_column_wrapper ul ul li, .igem_2018_team_content .igem_2018_team_column_wrapper ul ul ul li,
+	.igem_2018_team_content .igem_2018_team_column_wrapper ul ol li, .igem_2018_team_content .igem_2018_team_column_wrapper ul ul ol li,
+	.igem_2018_team_content .igem_2018_team_column_wrapper ol ol li, .igem_2018_team_content .igem_2018_team_column_wrapper ul ol ul li,
+	.igem_2018_team_content .igem_2018_team_column_wrapper ol ul li, .igem_2018_team_content .igem_2018_team_column_wrapper ul ol ol li,
+	.igem_2018_team_content .igem_2018_team_column_wrapper ol ul ul li, .igem_2018_team_content .igem_2018_team_column_wrapper ol ol ul li,
+ 	.igem_2018_team_content .igem_2018_team_column_wrapper ol ol ol li, .igem_2018_team_content .igem_2018_team_column_wrapper ol ul ol li{ font-size: 76%; }
+
+
+
+/*layout classes*/
+/**************************************************************************************************************************************************************************************************/
+
+	/*main layout class */
+	.igem_2018_team_content .igem_2018_team_column_wrapper .column  {
+		float:left;
+		margin: 1% 2%;
+		padding: 0px;
+	}
+
+	/* 100% */
+	.igem_2018_team_content .igem_2018_team_column_wrapper .column.full_size { width:96%; }
+
+	/* 66% */
+	.igem_2018_team_content .igem_2018_team_column_wrapper .column.two_thirds_size { width: 62.6%; }
+
+	/* 33% */
+	.igem_2018_team_content .igem_2018_team_column_wrapper .column.third_size { width: 29.3%; }
+
+
+
+
+	/*styling for all images*/
+	.igem_2018_team_content .igem_2018_team_column_wrapper .column.full_size img,
+	.igem_2018_team_content .igem_2018_team_column_wrapper .column.two_thirds_size img,
+	.igem_2018_team_content .igem_2018_team_column_wrapper .column.third_size img {
+		margin-bottom: 15px;
+		width: 100%;
+	}
+
+
+	/* page break */
+	.igem_2018_team_content .igem_2018_team_column_wrapper .clear {
+		clear:both;
+	}
+	/*add extra space to page break with clear class*/
+	.igem_2018_team_content .igem_2018_team_column_wrapper .clear.extra_space {
+		height: 30px;
+	}
+
+	/* horizontal line to divide the page*/
+	.igem_2018_team_content .igem_2018_team_column_wrapper .line_divider {
+    	border-top: 1px solid #6FCCB5;
+	  	margin: auto;
+   	 	width: 98%;
+	}
+
+
+
+
+/*support classes*/
+/**************************************************************************************************************************************************************************************************/
+
+
+	/*Button  */
+	/************************************************/
+	.igem_2018_team_content .igem_2018_team_column_wrapper .button_link {
+		font-size: 130%;
+		margin: 30px auto;
+		text-align: center;
+	}
+
+	.igem_2018_team_content .igem_2018_team_column_wrapper .button_link a  {
+		background-color: white;
+		color: #6FCCB5 !important;
+		font-weight: bold;
+		margin: auto;
+		text-decoration: none !important;
+		padding: 10px 15px;
+	}
+
+	.igem_2018_team_content .igem_2018_team_column_wrapper .button_link a:hover {
+		background-color: white !important;
+	}
+
+
+
+	.igem_2018_team_content .igem_2018_team_column_wrapper .highlight {
+		padding: 15px 20px;
+	}
+
+	.igem_2018_team_content .igem_2018_team_column_wrapper .highlight p,
+	.igem_2018_team_content .igem_2018_team_column_wrapper .highlight h1,
+	.igem_2018_team_content .igem_2018_team_column_wrapper .highlight h2,
+	.igem_2018_team_content .igem_2018_team_column_wrapper .highlight h3,
+	.igem_2018_team_content .igem_2018_team_column_wrapper .highlight h4,
+	.igem_2018_team_content .igem_2018_team_column_wrapper .highlight h5,
+	.igem_2018_team_content .igem_2018_team_column_wrapper .highlight h6 {
+		padding: 5px 15px;
+	}
+
+	.igem_2018_team_content .igem_2018_team_column_wrapper .highlight.decoration_background {
+		background-color: #F6A4FF;
+	}
+
+	.igem_2018_team_content .igem_2018_team_column_wrapper .highlight.decoration_A_top {
+    	border-top: 4px solid #F6A4FF;
+	}
+
+
+	.igem_2018_team_content .igem_2018_team_column_wrapper .highlight.decoration_A_full {
+    	border: 4px solid #F6A4FF;
+	}
+
+	.igem_2018_team_content .igem_2018_team_column_wrapper .highlight.decoration_B_top {
+    	border-top: 4px solid #F6A4FF
+	}
+
+
+	.igem_2018_team_content .igem_2018_team_column_wrapper .highlight.decoration_B_full {
+    	border: 4px solid #f8b732;
+	}
+
+
+
+
+/*mobile*/
+/**************************************************************************************************************************************************************************************************/
+
+
+	/* 1800px  */
+	/************************************************/
+	@media only screen and (max-width: 1800px) {
+		.igem_2018_team_content { width: 85%;}
+		.igem_2018_team_menu {display:block;}
+}
+
+	/* 1400px  */
+	/************************************************/
+	@media only screen and (max-width: 1400px) {
+		.igem_2018_team_menu .menu_item { font-size:100%;}
+		.igem_2018_team_menu .submenu .submenu_item { font-size:90%;}
+				.igem_2018_team_menu {display:block;}
+	}
+
+	@media only screen and (max-width: 1001px) {
+		.igem_2018_team_menu {display:block;}
+	}
+
+	/* 1000px  */
+	/************************************************/
+	@media only screen and (max-width: 1000px) {
+		.igem_2018_team_content {width:100%; margin-left:0px;}
+		.igem_2018_team_menu {display:none; margin-top: 45px; min-width:50%; width:50%;}
+		.igem_2018_team_mobile_bar {display:block;}
+		.igem_2018_team_content .igem_2018_team_column_wrapper .column.full_size, .igem_2018_team_content .igem_2018_team_column_wrapper .column.two_thirds_size,.igem_2018_team_content .igem_2018_team_column_wrapper .column.third_size {width:96%; }
+
+	}
+
+
+	@media only screen and (max-width: 500px) {
+		.igem_2018_team_menu {min-width:100%; width:100%; }
+	}
+
+
+/**************************************************************************************************************************************************************************************************/
+
+
+
+
+
+</style>
+</head>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--- THIS IS WHERE THE HTML BEGINS --->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<head>
+
+	<!-- This tells the browser that your page is responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<!-- ADDING PRELIMINARY DESCRIPTION -->
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* USE THIS FOR PAGE HEADINGS */
+h1 {
+	font-family: 'IBM Plex Sans', serif;
+	color: #0BB4C1;
+  font-size: 25px;
+  text-align: center;
+}
+/* USE THIS FOR PARAGRAPH TEXT */
+h2 {
+	font-family: 'IBM Plex Sans', serif;
+	color: black;
+	font-size: 15px;
+	text-align: left;
+	margin-right: 100px;
+	margin-left: 100px;
+}
+
+/* USE THIS FOR ANYTHING UNDER SUBHEADING TO BE IN A DIFFERENT COLOUR*/
+h3 {
+	font-family: 'IBM Plex Sans', serif;
+	color: #101F40;
+  font-size: 19px;
+  text-align: left;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+/* USE THIS FOR SUBHEADINGS */
+h4 {
+  font-family: 'IBM Plex Sans', serif;
+	color: #274F96;
+  font-size: 15px;
+  text-align: left;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+h5 {
+  font-family: 'IBM Plex Sans', serif;
+	color: #0085B6;
+  font-size: 15px;
+  text-align: left;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.tablinks {
+	margin-top: 15px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	min-width: 80px;
+	padding: 10px 15px 10px 15px;
+	border: 2px solid black;
+	border-radius: 20px;
+	transition: background-color 0.1s linear, color 0.1s linear;
+	text-transform: uppercase;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 0.7rem;
+	letter-spacing: 2px;
+	font-weight: 800;
+
+
+}
+
+.tablinks2 {
+	margin-top: 15px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	min-width: 80px;
+	padding: 10px 15px 10px 15px;
+	border: 2px solid black;
+	border-radius: 20px;
+	transition: background-color 0.1s linear, color 0.1s linear;
+	text-transform: uppercase;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 0.7rem;
+	letter-spacing: 2px;
+	font-weight: 800;
+
+}
+.tablinks3 {
+	margin-top: 15px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	min-width: 80px;
+	padding: 10px 15px 10px 15px;
+	border: 2px solid black;
+	border-radius: 20px;
+	transition: background-color 0.1s linear, color 0.1s linear;
+	text-transform: uppercase;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 0.7rem;
+	letter-spacing: 2px;
+	font-weight: 800;
+
+}
+
+.tablinks4 {
+	margin-top: 15px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	min-width: 80px;
+	padding: 10px 15px 10px 15px;
+	border: 2px solid black;
+	border-radius: 20px;
+	transition: background-color 0.1s linear, color 0.1s linear;
+	text-transform: uppercase;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 0.7rem;
+	letter-spacing: 2px;
+	font-weight: 800;
+
+}
+
+.tablinks5 {
+	margin-top: 15px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	min-width: 80px;
+	padding: 10px 15px 10px 15px;
+	border: 2px solid black;
+	border-radius: 20px;
+	transition: background-color 0.1s linear, color 0.1s linear;
+	text-transform: uppercase;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 0.7rem;
+	letter-spacing: 2px;
+	font-weight: 800;
+
+}
+	.tablinks:hover {
+		background-color: #7E5BD3;
+		color: white; }
+
+	.tablinks2:hover {
+			background-color: #0BB4C1;
+			color: white; }
+
+	.tablinks3:hover {
+			background-color: #0085B6;
+			color: white; }
+
+	.tablinks4:hover {
+			background-color: #274F96;
+			color: white; }
+
+	.tablinks5:hover {
+	     background-color: #101F40;
+			 color: white; }
+
+button:focus {outline:0;}
+</style>
+
+<br> <br><br>
+<h1>Other Collaborations</h1>
+<hr style="width:25%">
+<br><br>
+
+<div class="section-block">
+
+<center>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Key Achievments')" id="defaultOpen">Dairy</button>
+        <button class="tablinks2" onclick="openTab(event, 'biology')">Language Translations</button>
+        <button class="tablinks3" onclick="openTab(event, 'engineering')">Wiki Workshop</button>
+
+    </div>
+</center>
+
+<br>
+    <div id="Key Achievments" class="tabcontent">
+        <article>
+            <p class="section-content">
+
+<center>
+<h2> Here will go the diary </h2>
+</center>
+
+            </p>
+        </article>
+    </div>
+
+    <div id="biology" class="tabcontent">
+        <article>
+<center>
+  <h2> Here will go langauge translation</h2>
+</center>
+        </article>
+    </div>
+
+    <div id="engineering" class="tabcontent">
+        <article>
+<center>
+<h2> Here will go Wiki Workshop</h2>
+</center>
+        </article>
+    </div>
+
+</div>
+
+
+
+<script>
+        function openTab(evt, header) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(header).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+    document.getElementById("defaultOpen").click();
+    </script>
+
+
+
+</body>
+
+
+
+
+<!-- END -->
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--- Menu --->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<head>
+    <script>
+        window.onload = () => {
+            var activated;
+            var svg = document.getElementById("hero-image").getSVGDocument();
+
+            var links = [
+                ["bio", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Description"],
+                ["engineering", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Description"],
+                ["demo", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Demonstrate"],
+                ["integrated", "http://2018.igem.org/Team:NYU_Abu_Dhabi/HP/Gold_Integrated"],
+                ["hpsilver", "http://2018.igem.org/Team:NYU_Abu_Dhabi/HP/Silver"],
+                ["englab", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Engineering"],
+                ["design", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Applied_Design"],
+                ["app", "http://2018.igem.org/Team:NYU_Abu_Dhabi/HP/Silver"],
+                ["attributions", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Attributions"],
+                ["team", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Team"],
+                ["parts", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Parts"],
+                ["results", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Results"],
+                ["protocols", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Protocols"],
+                ["biolab", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Biology"]
+            ]
+
+            links.forEach(function (link) {
+                $(svg.getElementById(link[0])).hover(function () {
+                    $(this).css('cursor', 'pointer');
+                }, function () {
+                    $(this).css('cursor', 'auto');
+                }).click(function () {
+                    window.location.href = link[1];
+                });
+            });
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="app">
+  <!-- Navbar -->
+  <nav style="padding-bottom:1px;" class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+   <a class="navbar-brand" href="http://2018.igem.org/Team:NYU_Abu_Dhabi"><img src="igem-nyuad-logo.png" alt="logo" height="45" ></a>
+
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+
+   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav mr-auto">
+
+       <li class="nav-item" >
+         <a  class="nav-link"  href="http://2018.igem.org/Team:NYU_Abu_Dhabi">Home<span class="sr-only"></span></a>
+       </li>
+
+       <li  class="nav-item dropdown">
+         <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           People
+         </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Team">Team</a>
+           <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Attributions">Attributions</a>
+           <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Sponsors">Sponsors</a>
+           <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/About_Us">About Us</a>
+         </div>
+       </li>
+
+
+       <li class="nav-item dropdown">
+         <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Project
+         </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Description">Description</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Design">Design</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Demonstration">Demonstration</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Results">Results</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Parts">Parts</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Safety">Safety</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Modelling">Modelling</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Interlab">Interlab</a>
+         </div>
+       </li>
+
+  <li class="nav-item dropdown">
+         <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Lab notebooks
+         </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Biology">Biology</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Ideation">Ideation</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Ideation">Engineering</a>
+
+         </div>
+       </li>
+
+  <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Human practices
+         </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Engagement">Education and public engagement</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/HP/Gold_Integrated">Integrated human practices</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Social_Media">Home Country Outreach</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Social_Media">Social Media</a>
+         </div>
+       </li>
+
+       <li class="nav-item">
+         <a  class="nav-link" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Entrepreurship">Entrepreneurship</a>
+       </li>
+
+       <li class="nav-item dropdown">
+         <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Collaborations
+         </a>
+         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Science_Sketch">Science Sketch</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Virtual_Conference">Virtual Conference</a>
+           <div class="dropdown-divider"></div>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Other_Collaborations">Other Collaborations</a>
+
+         </div>
+       </li>
+     </ul>
+
+   </div>
+  </nav>
+
+<!-- Footer Begins -->
+
+<!-- <footer class="footer">
+<div style="margin-top:100px;" class="footer">
+				<div class="row">
+						<div class="col-lg-8 col-sm-5 col-xm-5 col-md-6 footer-section">
+								<h3 class="footer-text">
+                  <a href="https://worldwide.promega.com/" target="_blank"><img src="sponsors/Promega.png" alt="sponsor" height="90" width="120"></a>
+                  <a href="https://www.mathworks.com/"target="_blank" ><img src="sponsors/Appslink_Consulting.png" alt="sponsor" height="50" width="180"></a>
+                  <a href="https://eu.idtdna.com/pages"target="_blank"><img src="sponsors/IDT.png" alt="sponsor" height="40" width="200"></a>
+                  <a href="https://www.w3schools.com"target="_blank"><img src="sponsors/Mathworks.jpg" alt="sponsor" height="50" width="200"></a>
+                  <a href="https://nyuad.nyu.edu/en/"target="_blank"><img src="sponsors/primary-logo-black.png" alt="sponsor" height="60" width="180"></a>
+	            	</h3>
+						  </div>
+
+              <div class="col-lg-4 col-sm-5 col-xm-5 col-md-6 footer-section">
+  							  <h3 class="footer-text">
+                  <a href="mailto:nyuad.igem@nyu.edu" target="_blank"><span class="fa fa-google"></span></a>
+                  <a href="https://www.facebook.com/iGEMNYUAD/" target="_blank"><span class="fa fa-facebook"></span></a>
+                  <a href="https://www.twitter.com/igemnyuad/" target="_blank"><span class="fa fa-twitter"></span></a>
+                  <a href="https://www.youtube.com/channel/UCQnySAKw67slX8T6r9bAcYw" target="_blank"><span class="fa fa-youtube"></span></a>
+                  <a href="https://www.instagram.com/igem_nyuad/" target="_blank"><span class="fa fa-instagram"></span></a>
+                </h3>
+  						</div>
+
+          </div>
+						<div class="col-lg-4 footer-section"> -->
+								<!-- <img class="footer-logo" src="http://2017.igem.org/wiki/images/c/c8/NYUAD_Logo_Black.png" /> -->
+						<!-- </div>
+
+
+</div>
+</footer> -->
+
+<!-- Footer Ends -->
+</body>
+
+
+<div class="igem_2018_team_content">
+	<div class="igem_2018_team_column_wrapper">
+		<div class="clear extra_space"></div>
+		<div class="clear extra_space"></div>
