@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif');
+        @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600');
+
+        p {
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        h1 {
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        h2 {
+            font-family: 'IBM Plex Sans', sans-serif;
+        }
+
+        .sec {
+            font-family: 'IBM Plex Sans', sans-serif;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .img-container {
+            float: left;
+            width: 500px;
+            padding: 5px;
+        }
+
+        .text-container {
+            float: left;
+            width: 700px;
+            height: 300px;
+            padding: 5px;
+        }
+
+        .clearfix {
+            content: "";
+            clear: both;
+            display: table;
+            margin: 30px;
+        }
+
+        /* Make the container relative */
+        .swap-on-hover {
+            position: relative;
+            margin: 0 auto;
+            max-width: 300px;
+        }
+
+            /* Select the image and make it absolute to the container */
+            .swap-on-hover img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                overflow: hidden;
+                /* Sets the width and height for the images*/
+                width: 300px;
+                height: 300px;
+            }
+
+            /* 
+	We set z-index to be higher than the back image, so it's alwyas on the front.
+We give it an opacity leaner to .25s, that way when we hover we will get a nice fading effect. 
+*/
+            .swap-on-hover .swap-on-hover__front-image {
+                z-index: 9999;
+                transition: opacity .5s linear;
+                cursor: pointer;
+            }
+
+            /* When we hover the figure element, the block with .swap-on-hover, we want to use > so the front-image is going to have opacity of 0, which means it will be hidden, to the back image will show */
+            .swap-on-hover:hover > .swap-on-hover__front-image {
+                opacity: 0;
+            }
+
+        hr {
+            display: block;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left: 10em;
+            margin-right: 10em;
+            border-style: inset;
+            border-width: 2px;
+        }
+
+        .instructorimage {
+            float: left;
+            width: 500px;
+            padding-left: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <center><h1>Our Team</h1></center>
+    <img src="worldmap.png" alt="Workplace" usemap="#worldmap" width="1200" position="relative" />
+
+    <map name="worldmap">
+        <area shape="rect" coords="34,44,270,350" alt="Kai-Wen" href="#Kai-Wen">
+        <area shape="rect" coords="290,172,333,250" alt="Munib" href="#Munib">
+        <area shape="circle" coords="337,300,44" alt="Laura" href="#Laura">
+    </map>
+
+    <div class="sec"><font size="6">THE STUDENTS </font></div>
+
+    <hr>
+
+    <div id="Doo" class="clearfix">
+        <div class="img-container">
+            <div class="swap-on-hover">
+                <img class="swap-on-hover__front-image" src="Doo_1.jpg" />
+                <img class="swap-on-hover__back-image" src="Doo_2.jpg" />
+            </div>
+        </div>
+        <div class="text-container">
+            <h1>Doovaraha Maheswarasarma</h1>
+            <h2>Sri Lanka</h2>
+            <p> TBD </p>
+        </div>
+    </div>
+
+    <div id="Laura" class="clearfix">
+        <div class="img-container">
+            <div class="swap-on-hover">
+                <img class="swap-on-hover__front-image" src="Laura_1.jpg" />
+                <img class="swap-on-hover__back-image" src="Laura_2.jpg" />
+            </div>
+        </div>
+        <div class="text-container">
+            <h1>Laura Karpauskaite</h1>
+            <h2>Lithuania</h2>
+            <p> TBD </p>
+        </div>
+    </div>
+
+    <div id="Adnan" class="clearfix">
+        <div class="img-container">
+            <div class="swap-on-hover">
+                <img class="swap-on-hover__front-image" src="Adnan_1.jpg" />
+                <img class="swap-on-hover__back-image" src="Adnan_2.jpg" />
+            </div>
+        </div>
+        <div class="text-container">
+            <h1>Adnan Ali-Hassan</h1>
+            <h2>Lebanon</h2>
+            <p> TBD </p>
+        </div>
+    </div>
+
+    <div id="Biswas" class="clearfix">
+        <div class="img-container">
+            <div class="swap-on-hover">
+                <img class="swap-on-hover__front-image" src="Biswas_1.jpg" />
+                <img class="swap-on-hover__back-image" src="Biswas_2.jpg" />
+            </div>
+        </div>
+        <div class="text-container">
+            <h1>Biswas Shrestha</h1>
+            <h2>Nepal</h2>
+            <p> TBD </p>
+        </div>
+    </div>
+
+    <div id="Cristian" class="clearfix">
+        <div class="img-container">
+            <div class="swap-on-hover">
+                <img class="swap-on-hover__front-image" src="Cristian_1.jpg" />
+                <img class="swap-on-hover__back-image" src="Cristian_2.jpg" />
+            </div>
+        </div>
+        <div class="text-container">
+            <h1>Cristian Garcia Zamora</h1>
+            <h2>Mexico</h2>
+            <p> TBD </p>
+        </div>
+    </div>
+
+    <div id="Daniel" class="clearfix">
+        <div class="img-container">
+            <div class="swap-on-hover">
+                <img class="swap-on-hover__front-image" src="Daniel_1.jpg" />
+                <img class="swap-on-hover__back-image" src="Daniel_2.jpg" />
+            </div>
+        </div>
+        <div class="text-container">
+            <h1>Daniel Obaji</h1>
+            <h2>Nigeria</h2>
+            <p> TBD </p>
+        </div>
+    </div>
+
+    <div id="Imtiyaz" class="clearfix">
+        <div class="img-container">
+            <div class="swap-on-hover">
+                <img class="swap-on-hover__front-image" src="Imtiyaz_1.jpg" />
+                <img class="swap-on-hover__back-image" src="Imtiyaz_2.jpg" />
+            </div>
+        </div>
+        <div class="text-container">
+            <h1>Imtiyaz Hariyani</h1>
+            <h2>India</h2>
+            <p> TBD </p>
+        </div>
+    </div>
+
+    <div id="Kai-Wen" class="clearfix">
+        <div class="img-container">
+            <div class="swap-on-hover">
+                <img class="swap-on-hover__front-image" src="Kai-Wen_1.jpg" />
+                <img class="swap-on-hover__back-image" src="Kai-Wen_2.jpg" />
+            </div>
+        </div>
+        <div class="text-container">
+            <h1>Kai-Wen Yang</h1>
+            <h2>Taiwan</h2>
+            <p> Ladies and gentlemen please fasten your seat belts as we zoom across to East Asia! Kai-wen is a Junior electrical engineering major from Taiwan 🇹🇼. Apart from being physically flexible, she's also incredibly mentally flexible, helping out with collaborations, web development and engineering on the team, not to mention her major contributions to our science sketches! She loves the feeling of everyone on the team working hard towards our goal. Project hint time: kai-wen got food poisoning from eating seafood at her favourite Italian restaurant and suffered from a fever and diarrhea 😷 what could our project be??? </p>
+        </div>
+    </div>
+
+    <div id="Lujain" class="clearfix">
+        <div class="img-container">
+            <div class="swap-on-hover">
+                <img class="swap-on-hover__front-image" src="Lujain_1.jpg" />
+                <img class="swap-on-hover__back-image" src="Lujain_2.jpg" />
+            </div>
+        </div>
+        <div class="text-container">
+            <h1>Lujain Ibrahim</h1>
+            <h2>Palestine</h2>
+            <p> TBD </p>
+        </div>
+    </div>
+
+    <div id="Mariam" class="clearfix">
+        <div class="img-container">
+            <div class="swap-on-hover">
+                <img class="swap-on-hover__front-image" src="Mariam_1.jpg" />
+                <img class="swap-on-hover__back-image" src="Mariam_2.jpg" />
+            </div>
+        </div>
+        <div class="text-container">
+            <h1>Mariam Anwar</h1>
+            <h2>Egypt</h2>
+            <p> TBD </p>
+        </div>
+    </div>
+
+    <div id="Munib" class="clearfix">
+        <div class="img-container">
+            <div class="swap-on-hover">
+                <img class="swap-on-hover__front-image" src="Munib_1.jpg" />
+                <img class="swap-on-hover__back-image" src="Munib_2.jpg" />
+            </div>
+        </div>
+        <div class="text-container">
+            <h1>Munib Mesinovic</h1>
+            <h2>Bosnia</h2>
+            <p> TBD </p>
+        </div>
+    </div>
+
+    <div id="Sion" class="clearfix">
+        <div class="img-container">
+            <div class="swap-on-hover">
+                <img class="swap-on-hover__front-image" src="Sion_1.jpg" />
+                <img class="swap-on-hover__back-image" src="Sion_2.jpg" />
+            </div>
+        </div>
+        <div class="text-container">
+            <h1>Sion Hau</h1>
+            <h2>Australia</h2>
+            <p> TBD </p>
+        </div>
+    </div>
+
+    <div id="Tom" class="clearfix">
+        <div class="img-container">
+            <div class="swap-on-hover">
+                <img class="swap-on-hover__front-image" src="Tom_1.jpg" />
+                <img class="swap-on-hover__back-image" src="Tom_2.jpg" />
+            </div>
+        </div>
+        <div class="text-container">
+            <h1>Tom Abi Samra</h1>
+            <h2>Lebanon</h2>
+            <p> TBD </p>
+        </div>
+    </div>
+
+    <div id="Yejie" class="clearfix">
+        <div class="img-container">
+            <div class="swap-on-hover">
+                <img class="swap-on-hover__front-image" src="Yejie_1.jpg" />
+                <img class="swap-on-hover__back-image" src="Yejie_2.jpg" />
+            </div>
+        </div>
+        <div class="text-container">
+            <h1>Yejie Yun</h1>
+            <h2>South Korea</h2>
+            <p> TBD </p>
+        </div>
+    </div>
+
+    <div class="sec"><font size="6">THE INSTRUCTORS </font></div>
+    <hr>
+
+    <div class="clearfix">
+        <div class="instructorimage">
+            <img src="Song.jpg" width="300" margin-left="300" />
+        </div>
+        <div class="text-container">
+            <h1>Yong-Ak (Rafael) Song</h1>
+            <h2>South Korea</h2>
+            <p> Rafael Song received his Ph.D. in Biomedical Engineering from RWTH Aachen University (Aachen, Germany) and has worked at the Korea Institute of Science and Technology as a Senior Research Scientist. His lab is focused on applying microfluidics and nanofluidics to a broad range of bioscience challenges, targeting the interface between biology, physics and engineering. He is currently an Assistant Professor of Mechanical and Biomedical Engineering and as the Principal Investigator of the Micro- and Nanoscale Bioengineering Lab at NYUAD. </p>
+        </div>
+    </div>
+
+    <div class="clearfix">
+        <div class="instructorimage">
+            <img src="TBD.jpg" width="300" margin-left="300" />
+        </div>
+        <div class="text-container">
+            <h1>Mazin Magzoub</h1>
+            <h2>Sudan</h2>
+            <p> Mazin Magzoub received his Ph.D. in Biophysics from Stockholm University (Stockholm, Sweden) studying the biophysical properties of cell-penetrating peptides. His lab focuses on drug delivery strategies, amyloid diseases, and cancer therapeutics. He currently serves as an Assistant Professor of Practice in Biology and as the Principal Investigator of the Biophysics Lab at NYUAD. </p>
+        </div>
+    </div>
+
+    <div class="clearfix">
+        <div class="instructorimage">
+                <img src="Andras.jpg" width="300" margin-left="300"/>
+        </div>
+        <div class="text-container">
+            <h1>Andras Gyorgy</h1>
+            <h2>Hungary</h2>
+            <p> Andras Gyorgy received his Ph.D. in Electrical Engineering from Massachusetts Institute of Technology, studying modularity in cellular systems blending theory with experiments. His lab focuses on networked dynamical systems, including but not limited to rational forward-engineering of synthetic biology systems and design and analysis of multi-scale systems prevalent in biology. He currently serves as an Assistant Professor of Electrical Engineering and as the Principal Investigator of the NetBio group Lab at NYUAD. </p>
+        </div>
+    </div>
+  
+    <div class="clearfix">
+        <div class="instructorimage">
+            <img src="TBD.jpg" width="300" margin-left="300" />
+        </div>
+        <div class="text-container">
+            <h1>Ibrahim Chehade</h1>
+            <h2>Canada</h2>
+            <p> Ibrahim Chehade received his M.Sc. in Integrative Biology at Wilfrid Laurier University (Waterloo, Ontario, Canada) in the field of Environmental Toxicology and Endocrinology. He currently serves as an Associate Instructor of Biology at NYUAD. </p>
+        </div>
+    </div>
+
+    <div class="clearfix">
+        <div class="instructorimage">
+            <img src="Ashley.jpg" width="300" margin-left="300" />
+        </div>
+        <div class="text-container">
+            <h1>Ashley Isaac</h1>
+            <h2>South Africa</h2>
+            <p> Ashley Isaac received his M.Sc. in Microbiology from the University of KwaZulu-Natal (Durban, South Africa) and has served as the LIMS Administrator at the HIV Prevention Research Unit. He currently serves as an Associate Instructor of Biology at NYUAD. </p>
+        </div>
+    </div>
+
+    <div class="clearfix">
+        <div class="instructorimage">
+            <img src="TBD.jpg" width="300" margin-left="300" />
+        </div>
+        <div class="text-container">
+            <h1>Esteban Salvemini</h1>
+            <h2>Spain</h2>
+            <p> TBD </p>
+        </div>
+    </div>
+
+</body>
+</html>
