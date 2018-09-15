@@ -659,6 +659,7 @@ ol.b {
     list-style-type: upper-roman;
 }
 
+
 .tablinks {
 	margin-top: 15px;
 	margin-left: 50%;
@@ -676,8 +677,49 @@ ol.b {
 
 
 }
-	.tablinks:hover {
-		background-color: black;
+
+.tablinks2 {
+	margin-top: 15px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	min-width: 80px;
+	padding: 10px 15px 10px 15px;
+	border: 2px solid black;
+	border-radius: 20px;
+	transition: background-color 0.1s linear, color 0.1s linear;
+	text-transform: uppercase;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 0.7rem;
+	letter-spacing: 2px;
+	font-weight: 800;
+
+}
+.tablinks3 {
+	margin-top: 15px;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	min-width: 80px;
+	padding: 10px 15px 10px 15px;
+	border: 2px solid black;
+	border-radius: 20px;
+	transition: background-color 0.1s linear, color 0.1s linear;
+	text-transform: uppercase;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 0.7rem;
+	letter-spacing: 2px;
+	font-weight: 800;
+
+}
+.tablinks:hover {
+	background-color: #7E5BD3;
+	color: white; }
+
+.tablinks2:hover {
+		background-color: #0BB4C1;
+		color: white; }
+
+.tablinks3:hover {
+		background-color: #0085B6;
 		color: white; }
 
 button:focus {outline:0;}
@@ -698,8 +740,8 @@ button:focus {outline:0;}
 <center>
     <div class="tab">
         <button class="tablinks" onclick="openTab(event, 'iGEM')" id="defaultOpen">iGEM</button>
-        <button class="tablinks" onclick="openTab(event, 'RPA')">RPA</button>
-        <button class="tablinks" onclick="openTab(event, 'LAMP')">LAMP</button>
+        <button class="tablinks2" onclick="openTab(event, 'RPA')">RPA</button>
+        <button class="tablinks3" onclick="openTab(event, 'LAMP')">LAMP</button>
 
     </div>
 </center>
