@@ -1,4 +1,4 @@
-<html>
+white<html>
 
 
 <script>
@@ -46,7 +46,9 @@
 	#home_logo, #sideMenu { display:none; }
 	#sideMenu, #top_title, .patrollink  {display:none;}
 	#content { margin-left:0px; margin-top:-7px; padding:0px; width:100%;}
-	body {background-color:#FCFCFC; }
+	body {background-color:white;
+		width: 80%;
+		margin: auto;}
 	#bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 { margin-bottom: 0px; }
 
 	.judges-will-not-evaluate { border: 4px solid #e4dede; padding: 2% !important; width: 92%!important;}
@@ -58,9 +60,8 @@
 
 
 
-
 .igem_2018_team_menu .submenu{
-	background-color: #FCFCFC;
+	background-color: white;
 	clear:both;
 	display:none;
 	float: left;
@@ -69,8 +70,8 @@
 /* Styling the menu */
 /*this wraps the whole of the menu*/
 .igem_2018_team_menu {
-	background-color:#FCFCFC;
-	border-left: 1px solid #FCFCFC;
+	background-color:white;
+	border-left: 1px solid white;
 	display:block;
 	float:right;
 	height:100vh;
@@ -87,7 +88,7 @@
 	display:block;
 }
 .igem_2018_team_menu  a {
-	color: #FCFCFC;
+	color: white;
 	text-decoration:none;
 	text-align: center;
 }
@@ -95,10 +96,10 @@
 	width:100%;
 }
 .igem_2018_team_menu .menu_item {
-		background-color: #FCFCFC;
-		border-bottom: 1px solid #FCFCFC;
+		background-color: white;
+		border-bottom: 1px solid white;
 		clear: both;
-	color: #FCFCFC;
+	color: white;
 		cursor: pointer;
 	float: left;
 		font-size: 120%;
@@ -107,14 +108,14 @@
 		width: 100%;
 }
 .igem_2018_team_menu .menu_item.direct_link {
-	color: #FCFCFC;
+	color: white;
 	padding-left: 15%;
 }
 .igem_2018_team_menu .menu_item:hover {
-	background-color: #FCFCFC;
+	background-color: white;
 }
 .igem_2018_team_menu .menu_item .submenu_control_icon {
-	color: #FCFCFC;
+	color: white;
 	float: left;
 	width: 10%;
 }
@@ -128,8 +129,8 @@
 }
 /* styling for a submenu item */
 .igem_2018_team_menu .submenu .submenu_item {
-	border-bottom: 1px solid #FCFCFC;
-		color: #FCFCFC;
+	border-bottom: 1px solid white;
+		color: white;
 		height: 30px;
 		float: left;
 		font-size: 110%;
@@ -138,17 +139,17 @@
 		width: 100%;
 }
 .igem_2018_team_menu .submenu .submenu_item:hover {
-	background-color: #FCFCFC;
+	background-color: white;
 }
 .igem_2018_team_menu .submenu .submenu_item.current_page,
 .igem_2018_team_menu .menu_item.current_page,
 .igem_2018_team_menu .menu_item.direct_link.current_page {
-	background-color:#FCFCFC;
+	background-color:white;
 }
 	/* NAVBAR STYLES */
 
 	.navbar {
-	    background-color: #FCFCFC;
+	    background-color: white;
 	    font-size: 1rem;
 	}
 
@@ -228,7 +229,7 @@
       display: inline-block;
   }
   .footer {
-      background-color: #FCFCFC;
+      background-color: white;
   		font-family: 'IBM Plex Sans', sans-serif;
   }
 
@@ -239,8 +240,8 @@
 
 
 	.igem_2018_team_mobile_bar {
-		background-color:#e4dede;
-		border-bottom: 1px solid #c4baba;
+		background-color:white;
+		border-bottom: 1px solid white;
 		cursor:pointer;
 		display:none;
 		float:left;
@@ -281,7 +282,7 @@
 
 	/* general wrapper for the content */
 	.igem_2018_team_content {
-		background-color: #F0F0F0;
+		background-color: white;
 		display:block;
 		width: 87%;
 	}
@@ -373,7 +374,7 @@
 
 	/* table headers */
 	.igem_2018_team_content .igem_2018_team_column_wrapper th {
-		background-color:#F0F0F0;
+		background-color:white;
 		border: 1px solid #2A4C44;
 		border-collapse: collapse;
 		font-size: 110%;
@@ -463,7 +464,7 @@
 	}
 
 	.igem_2018_team_content .igem_2018_team_column_wrapper .button_link a  {
-		background-color: #F0F0F0;
+		background-color: white;
 		color: #6FCCB5 !important;
 		font-weight: bold;
 		margin: auto;
@@ -472,7 +473,7 @@
 	}
 
 	.igem_2018_team_content .igem_2018_team_column_wrapper .button_link a:hover {
-		background-color: #F0F0F0 !important;
+		background-color: white !important;
 	}
 
 
@@ -554,12 +555,23 @@
 		.igem_2018_team_menu {min-width:100%; width:100%; }
 	}
 
+  * {
+      box-sizing: border-box;
+  }
 
-/**************************************************************************************************************************************************************************************************/
+  /* Create two equal columns that floats next to each other */
+  .column {
+      float: left;
+      width: 50%;
+      padding: 10px;
+  }
 
-
-
-
+  /* Clear floats after the columns */
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
 
 </style>
 </head>
@@ -624,9 +636,9 @@ h5 {
 }
 
 body {
-    background-image: url("T--NYU Abu Dhabi--web_background_navy-01.png");
+    background-image: url("http://2018.igem.org/wiki/images/3/34/T--NYU_Abu_Dhabi--backgroundshort.png");
     background-size: contain;
-		background-repeat: no-repeat;
+		background-repeat: repeat;
 }
 .center {
     display: block;
@@ -636,9 +648,8 @@ body {
 }
 
 </style>
-<br> <br><br>
+<br> <br>
 <h1> Measuring Fluorescence of GFP of transformed Escherichia Coli DH5 𝞪 Cells </h1>
-<hr style="width:25%">
 
 <br>
 <h3><ins>Objective</ins></h3>
@@ -664,7 +675,7 @@ body {
 <h4><ins> C) Transformation Day 1: </ins></h4>
 <h2>The competent E.coli K-12 DH5-alpha cells prepared were then transformed using the provided Test Devices 1 to 6. On day 1 of the cell measurement component of the experiment, May 29th, 8 tubes 100  µl containing the previously prepared competent cells were taken out of the -20℃ refrigerator and left on ice for 15 minutes to thaw. 10 µl of competent cells were then pipetted into 8 separate 2 ml centrifuge tubes that were pre-chilled by being kept on ice. 1 µl of DNA from the corresponding well on kit plate 7 was then pipetted into each of the 8 tubes. Two of the tubes acted as the controls, while the remaining six contained different plasmids. The labels on the 8 tubes along with the location of the DNA added to each on the plate kit are shown below in Table 1. </h2>
 <br>
-<img src="table1.png" width="500" class="center">
+<img src="http://2018.igem.org/wiki/images/8/8b/T--NYU_Abu_Dhabi--interlab-table1.png" width="500" class="center">
 <br>
 <h2> The tubes were then mixed gently by flicking the, while keeping them on ice. They were then closed and incubated on ice for 30 minutes. After that, the tubes were placed in a 42 ℃ water bath for 1 minutes to expose the cells to a heat shock, after which they were placed on ice for 5 minutes. 500  µl of LB broth were then pipetted into each of the 8 tubes, and all of the tubes were incubated for 1 hour at 37 ℃  in a shaker. After the tubes were removed from the incubator, the now transformed cells were plated on agar plates. 50 µl of each tube was pipetted onto an agar plate, then spread using a sterilized spreader. After that, each tube was centrifuged for 1 minute at 1300 rpm, and 350 µl of supernatant were discarded before resuspending the pellet in the remaining 100 µl of solution. 50 µl from each tube were then used to plate another set of agar plates after the solution had been concentrated. The 16 plates, two from each of the 8 samples, were then placed upside down in an incubator set at 37℃ and left for 18 hours.
 </h2>
@@ -694,43 +705,45 @@ body {
 The absorbance measurements for the blanks were 0.049 and 0.051. Therefore, 0.05 was subtracted from each measurement.
 </h2>
 <br>
-<img src="table2.png" width="500" class="center">
+<img src="http://2018.igem.org/wiki/images/f/f9/T--NYU_Abu_Dhabi--interlab-table2.png" width="500" class="center">
 <br>
 <h2>The amounts of cultures and LB+Cam used to dilute each culture to a concentration of 0.1 OD600 is as follows:</h2>
 <br>
-<img src="table3.png" width="500" class="center">
+<img src="http://2018.igem.org/wiki/images/b/b4/T--NYU_Abu_Dhabi--interlab-table3.png" width="500" class="center">
 <br>
 <h2>After triplicate dilutions of each of the four colonies were prepared, the absorbance was once again measured to ensure that they were 0.1 OD600. The measurements after subtracting the 0.05 for the blank measurement were as follows:</h2>
 <br>
-<img src="table4.png" width="500" class="center">
+<img src="http://2018.igem.org/wiki/images/a/af/T--NYU_Abu_Dhabi--interlab-table4.png" width="500" class="center">
 <br>
 <h2>The number of colonies for each of the 36 plates are shown below in table 5. </h2>
 <br>
-<img src="table5.png" width="500" class="center">
+<img src="http://2018.igem.org/wiki/images/e/e3/T--NYU_Abu_Dhabi--interlab-table5.png" width="500" class="center">
 <br>
-<img src="table6.png" width="500" class="center">
+<img src="http://2018.igem.org/wiki/images/3/37/T--NYU_Abu_Dhabi--interlab-table6.png" width="500" class="center">
 <br>
 <h4><ins> B) Calibration 1: OD600 Reference Point: </ins></h4>
 <h2>The cultures were initially diluted by a factor of 8 so that they would be within the range of measurements detected by the plate reader which is 0.05 to 0.5 OD600. Therefore, when doing the calculations how much of the culture was needed to obtain the desired final concentration of 0.1 OD 600, the absorbance measured for the diluted cultures was multiplied by 8 after accounting for the blank measurements by subtracting 0.05. The absorbance of the triplicate dilutions then obtained of each colony was then measured again to ensure that they were 0.1 OD600. As shown in table 4, they were all 0.1 when rounded to one significant figure, which confirmed the fact that the desired final absorbance of the starting samples was obtained. </h2>
 <br>
-<img src="table7.png" width="500" class="center">
+<img src="http://2018.igem.org/wiki/images/8/8e/T--NYU_Abu_Dhabi--interlab-table7.png" width="500" class="center">
 <br>
-<img src="table8.png" width="500" class="center">
+<img src="http://2018.igem.org/wiki/images/3/31/T--NYU_Abu_Dhabi--interlab-table8.png" width="500" class="center">
 <br>
 <h4><ins> C) Calibration 2: Particle Standard Curve: </ins></h4>
 <br>
-<img src="Figure1.png" width="500" class="center">
+<img src="http://2018.igem.org/wiki/images/3/3c/T--NYU_Abu_Dhabi--interlab-figure1.png" width="500" class="center">
 <h2>Figure 1. The absorbance at 600 nm (y-axis) versus the particle count per 100  µl (x-axis)</h2>
 <br>
-<img src="Figure2.png" width="500" class="center">
+<img src="http://2018.igem.org/wiki/images/7/7c/T--NYU_Abu_Dhabi--interlab-figure2.png" width="500" class="center">
 <h2>Figure 2. The absorbance at 600 nm (y-axis) versus the particle count per 100  µl (x-axis) on a log scale</h2>
 <br>
 <h4><ins> D) Calibration 3: Fluorescence Standard Curve: </ins> </h4>
 <br>
-<img src="Figure3.png" width="500" class="center">
+<img src="http://2018.igem.org/wiki/images/7/72/T--NYU_Abu_Dhabi--interlab-figure3.png" width="500" class="center">
+<br>
 <h2>Figure 3. The fluorescence (y-axis) versus the concentration of Fluorescein in µM (x-axis)</h2>
 <br>
-<img src="Figure4.png" width="500" class="center">
+<img src="http://2018.igem.org/wiki/images/2/20/T--NYU_Abu_Dhabi--interlab-figure4.png" width="500" class="center">
+<br>
 <h2>Figure 4. The fluorescence (y-axis) versus the concentration of Fluorescein in µM (x-axis) on a log scale</h2>
 <br>
 
@@ -785,7 +798,7 @@ The absorbance measurements for the blanks were 0.049 and 0.051. Therefore, 0.05
     <div id="app">
   <!-- Navbar -->
   <nav style="padding-bottom:1px;" class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-   <a class="navbar-brand" href="http://2018.igem.org/Team:NYU_Abu_Dhabi"><img src="igem-nyuad-logo.png" alt="logo" height="45" ></a>
+   <a class="navbar-brand" href="http://2018.igem.org/Team:NYU_Abu_Dhabi"><img src="http://2018.igem.org/wiki/images/5/51/T--NYU_Abu_Dhabi--teamlogo.png" alt="logo" height="45" ></a>
 
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
      <span class="navbar-toggler-icon"></span>
