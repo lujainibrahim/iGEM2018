@@ -676,11 +676,11 @@
     margin-left: 100px;
   }
 
-  body {
-      background-image: url("http://2018.igem.org/wiki/images/d/d8/T--NYU_Abu_Dhabi--backgroundlong.png");
-      background-size: contain;
-  		background-repeat: repeat;
-  }
+	body {
+	    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("http://2018.igem.org/wiki/images/d/d8/T--NYU_Abu_Dhabi--backgroundlong.png");
+	    background-size: contain;
+			background-repeat: no-repeat;
+	}
 
   .center {
       display: block;

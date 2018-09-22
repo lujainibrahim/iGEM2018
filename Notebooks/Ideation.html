@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 
@@ -643,9 +644,9 @@ h5 {
 }
 
 body {
-    background-image: url("http://2018.igem.org/wiki/images/3/34/T--NYU_Abu_Dhabi--backgroundshort.png");
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("http://2018.igem.org/wiki/images/d/d8/T--NYU_Abu_Dhabi--backgroundlong.png");
     background-size: contain;
-		background-repeat: repeat;
+		background-repeat: no-repeat;
 }
 
 .center {
@@ -763,7 +764,7 @@ body {
 		 	    display: none;
 		 	    padding: 6px 12px;
 		 	}
-
+  button:focus {outline:0;}
 </style>
 <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////// HTML GOES HERE ////////////////////////////////////////////
@@ -772,11 +773,117 @@ body {
 <!-- INSTER TITLE HERE: -->
 <h6>Ideation</h6>
 <br>
-<h2> Before we began working on any aspect of the project from engineering to biology to design, we went through an extensive ideation phase which involved researching current market solutions, patented products, target groups, and more.
-</h2>
+<h2> Before we began working on any aspect of the project from engineering to biology to design, we went through an extensive ideation phase which involved utilizing ideation methods like mind maps, sketching, SCAMPER, and alternatives words.</h2>
 <br>
 <img src="http://2018.igem.org/wiki/images/3/34/T--NYU_Abu_Dhabi--ideationgraphic.png" width="600" class="center">
-<!-- INSERT CONTENT HERE: -->
+<br>
+<h2> We also went through an extensive analysis and research phase that is summarized below: </h2>
+<br>
+<div class="section-block">
+
+<center>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Key Achievments')" id="defaultOpen">Target Groups</button>
+        <button class="tablinks2" onclick="openTab(event, 'biology')">Patents</button>
+        <button class="tablinks3" onclick="openTab(event, 'engineering')">Current Market Solutions</button>
+				<button class="tablinks4" onclick="openTab(event, 'Proof of Concept')">Other Detection Devices</button>
+    </div>
+</center>
+
+<div id="Key Achievments" class="tabcontent">
+		<article>
+
+<center>
+<h4>here will go target groups </h4>
+</center>
+
+		</article>
+</div>
+
+<div id="biology" class="tabcontent">
+		<article>
+<center>
+<h4><u>Research Scope:</h4></u><h2>We tried to cast a wide net when searching for patents for which we research in three different databases: United States Patent and Trademark Office, European Patent Office, World Intellectual Property Organization.</h2>
+<br>
+<h4><u>Sample Collection Patent Insight:</u></h4>
+<h2>-Most patents for pathogen detection don’t specify a collection method of device</h2>
+<h2>-Most patents for biological sample collection are guided toward field use and long term storage for later lab use.</h2>
+<h2>-Biggest concern the devices take in mind:</h2>
+<h2><i>---Ease of Use</i></h2>
+<h2><i>---Avoiding Cross Contamination</i><h2>
+<h2><i>---Stable Preservation of Samples</i></h2>
+<h2><i>---Detailed record of several specific patents</i></h2>
+<h2><i>---Detailed record of several specific patents</i></h2>
+<br>
+<h4><u>Conclusion and Recommendations:</u></h4>
+<h2>-There is a lack of collection methods for field use or non-PCR diagnostics</h2>
+<h2>-Collection methods is one of the largest areas of opportunity for innovation</h2>
+<h2>-Specific Primer sequences targeting specific genes of specific pathogens can be patented up to a 90% homology</h2>
+<h2>-Most of the patents that turn into products were patented by companies</h2>
+<h2>-Investing, established supply chain and brand name may be factors</h2>
+<h2>-Most of the patents that don't turn into products were patented in universities of by small startups that were unsuccessful.
+</h2>
+</center>
+		</article>
+</div>
+
+<div id="engineering" class="tabcontent">
+		<article>
+<center>
+	<h4><u>Observation on design:</u></h4>
+<h2>-Usually big and bulky</h2>
+<h2>-Digital screen or connect to other digital device</h2>
+<h2>-Big machines fully automated (x pipetting, from sample tube to result)</h2>
+<h2>-Other design include paper sticks (positive negative), magnetic racks
+</h2>
+<br>
+	<h4><u>Detection Technology:</u></h4>
+	<h2>-Most PCR</h2>
+<h2>-rRNA detection</h2>
+<h2>-Magnetic nanoparticles linked to antibodies</h2>
+<h2>-Liquid Crystal Technology
+</h2>
+	<br>
+	<h4><u>Labs for food pathogen testing in the UAE:</u></h4>
+<h2>-Al Hoty Stanger labs, GHP group, Wimpey labs, National Reference Lab,Qualitas Material, Intertek, Specifico co.</h2>
+<h2>-Prices range from 220 to 250 dirhams (per 1 sample with 3 basic parameters)</h2>
+<h2>-Takes 3-5 days for results
+</h2>
+</center>
+		</article>
+</div>
+
+</div>
+
+<div id="Proof of Concept" class="tabcontent">
+<article>
+
+<center>
+<h4><u>here goes other detection devices</u></h4>
+
+</center>
+
+
+</article>
+</div>
+<script>
+        function openTab(evt, header) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(header).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+    document.getElementById("defaultOpen").click();
+    </script>
+
 
 <!-- END -->
 
@@ -957,3 +1064,5 @@ body {
 	<div class="igem_2018_team_column_wrapper">
 		<div class="clear extra_space"></div>
 		<div class="clear extra_space"></div>
+
+</html>
