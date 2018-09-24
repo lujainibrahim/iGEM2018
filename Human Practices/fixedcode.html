@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-
-<script>
+<html><head><script>
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	$(document).ready(function() {
 		$("#HQ_page").attr('id','');
@@ -14,13 +10,13 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 </script>
 
-<head>
+
 	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Bootstrap -->
-        <link rel="stylesheet" href="http://2018.igem.org/Template:NYU_Abu_Dhabi/BootstrapCSSV4?action=raw&amp;ctype=text/css" />
+        <link rel="stylesheet" href="http://2018.igem.org/Template:NYU_Abu_Dhabi/BootstrapCSSV4?action=raw&amp;ctype=text/css">
         <script type="text/javascript" src="http://2018.igem.org/Template:NYU_Abu_Dhabi/BootstrapJSV4?action=raw&amp;ctype=text/javascript"></script>
 <style>
 /**************************************************************************************************************************************************************************************************/
@@ -31,8 +27,7 @@
 	#sideMenu, #top_title, .patrollink  {display:none;}
 	#content { margin-left:0px; margin-top:-7px; padding:0px; width:100%;}
 	body {background-color:white;
-				width: 960px;
-		    /* width: 80%; */
+		    width: 960px;
 	      margin: auto;}
 	#bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 { margin-bottom: 0px; }
 	.judges-will-not-evaluate { border: 4px solid #e4dede; padding: 2% !important; width: 92%!important;}
@@ -181,9 +176,8 @@
   }
   .footer-section {
       text-align: center !important;
-      /* padding: 0px 25px; */
+      padding: 0px 25px;
       display: flex;
-			flex-wrap: wrap;
       flex-direction: row;
       align-items: center;
       align-content: center;
@@ -205,9 +199,8 @@
       display: inline-block;
   }
   .footer {
-      background-color: grey;
+      background-color: white;
   		font-family: 'IBM Plex Sans', sans-serif;
-			width:100%;
   }
 /*end of styling the footer */
 /*mobile menu bar styling*/
@@ -455,21 +448,7 @@
 	}
 /**************************************************************************************************************************************************************************************************/
 </style>
-</head>
-
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-<!--- THIS IS WHERE THE HTML BEGINS --->
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-
-<head>
-
-	<!-- This tells the browser that your page is responsive -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-</head>
-
-<!-- ADDING PRELIMINARY DESCRIPTION -->
-<style>
+<meta name="viewport" content="width=device-width, initial-scale=1"><style>
 * {
     box-sizing: border-box;
 }
@@ -489,7 +468,7 @@
 h6 {
 	font-family: 'IBM Plex Sans', serif;
 	color: #0BB4C1;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
 }
 /* USE THIS FOR PARAGRAPH TEXT */
@@ -498,8 +477,8 @@ h2 {
 	color: black;
 	font-size: 15px;
 	text-align: justify;
-	margin-right: 90px;
-	margin-left: 90px;
+	margin-right: 170px;
+	margin-left: 170px;
 }
 /* USE THIS FOR ANYTHING UNDER SUBHEADING TO BE IN A DIFFERENT COLOUR*/
 h3 {
@@ -507,8 +486,8 @@ h3 {
 	color: #101F40;
   font-size: 19px;
   text-align: left;
-  margin-right: 90px;
-  margin-left: 90px;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 /* USE THIS FOR SUBHEADINGS */
 h4 {
@@ -516,24 +495,24 @@ h4 {
 	color: #274F96;
   font-size: 15px;
   text-align: left;
-  margin-right: 90px;
-  margin-left: 90px;
+  margin-right: 170px;
+  margin-left: 170px;
 }
 h5 {
   font-family: 'IBM Plex Sans', serif;
 	color: #0085B6;
   font-size: 15px;
   text-align: left;
-  margin-right: 90px;
-  margin-left: 90px;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 body {
-    background-image: url("http://2018.igem.org/wiki/images/d/d8/T--NYU_Abu_Dhabi--backgroundlong.png");
-    background-size: cover;
-		background-repeat: repeat;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url("http://2018.igem.org/wiki/images/d/d8/T--NYU_Abu_Dhabi--backgroundlong.png");
+    background-size: contain;
+		background-repeat: no-repeat;
 }
 div{
-			/* width: 1000px; */
+			width: 1000px;
 	    margin: auto;
 	    border: none;
 }
@@ -545,8 +524,8 @@ div{
 }
 .tablinks {
 	margin-top: 15px;
-	/* margin-left: 50%;
-	transform: translateX(-50%); */
+	/* margin-left: 50%; */
+	/* transform: translateX(-50%); */
 	min-width: 80px;
 	padding: 10px 15px 10px 15px;
 	border: 2px solid black;
@@ -560,8 +539,8 @@ div{
 }
 .tablinks2 {
 	margin-top: 15px;
-	/* margin-left: 50%;
-	transform: translateX(-50%); */
+	/* margin-left: 50%; */
+	/* transform: translateX(-50%); */
 	min-width: 80px;
 	padding: 10px 15px 10px 15px;
 	border: 2px solid black;
@@ -636,150 +615,80 @@ div{
 
    .tabcontent {
 		 		display: none;
- 				padding: 3px 9px;
+ 				padding: 6px 12px;
 		 			 	}
 button:focus {outline:0;}
 
-</style>
+</style></head>
 
-<br> <br>
-<h6>Home Country Outreach</h6>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--- THIS IS WHERE THE HTML BEGINS --->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+	<!-- This tells the browser that your page is responsive -->
+
+
+
+
+<!-- ADDING PRELIMINARY DESCRIPTION -->
+
+
+<body><br> <br>
+<h6>Education and Public Engagement</h6>
 <!-- <hr style="width:25%"> -->
-
+<br>
 
 <div class="section-block">
 
 <center>
     <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Key Achievments')" id="defaultOpen">Mexico</button>
-        <button class="tablinks2" onclick="openTab(event, 'biology')">India</button>
-        <button class="tablinks3" onclick="openTab(event, 'engineering')">Egypt</button>
-				<button class="tablinks4" onclick="openTab(event, 'Proof of Concept')">Hong Kong</button>
-				<button class="tablinks5" onclick="openTab(event, 'Cost Analysis')">Lebanon</button>
-				<button class="tablinks6" onclick="openTab(event, 'Australia')">Australia</button>
-
+        <button class="tablinks" onclick="openTab(event, 'Key Achievments')" id="defaultOpen">High School Workshops</button>
+        <button class="tablinks2 active active active active active active active" onclick="openTab(event, 'biology')">Youth Debates</button>
+				<button class="tablinks4 active active active" onclick="openTab(event, 'STEM')">STEM Out Of The Box</button>
 
     </div>
 </center>
 
 <br>
-    <div id="Key Achievments" class="tabcontent">
+    <div id="Key Achievments" class="tabcontent" style="display: none;">
         <article>
-
 <center>
-	<h4><u>Presenter:</h4></u><h2><i>Cristian Garcia </i></h2>
-	<h4><u>City, Country:</h4></u><h2><i>Tampico, Mexico</i></h2>
-	<h4><u>Date:</h4></u><h2><i>Monday, August 27th</i></h2>
-	<h4><u>School/Organisation:</h4></u><h2><i>The American School of Tampico</i></h2>
-	<h4><u>Age group targeted:</h4></u><h2><i>Grade 11 - 12 (age 17-19)</i></h2>
-	<br>
-	<h4><u>Brief Description:</u></h4></u>
-	<h2>After the American School of Tampico (ATS) administration showed concern over the student body’s falling interest on STEM courses and majors, NYUAD iGEM offered to help. A recurring misception among mexican students is that STEM opportunities in Mexico are subpar and extremely limited. Thus, NYUAD iGEM perform several rounds of a short presentations showcasing opportunities in STEM majors, most prominent among them were iGEM projects. Cristian Garcia shared his experience working in the iGEM project as an ATS alumni and showcased NYUAD iGEM project and the work done by Mexican iGEM projects. Over 80 highschool students attended the presentation throughout its four different timings.
-	</h2>
-	<h2> ** HERE GO PHOTOS ** </h2>
+<h2> Here will go the workshops </h2>
 </center>
 
         </article>
     </div>
 
-    <div id="biology" class="tabcontent">
+    <div id="biology" class="tabcontent" style="display: none;">
         <article>
 <center>
-	<h4><u>Presenter:</h4></u><h2><i>Doovaraha Maheswarasarma</i></h2>
-	<h4><u>City, Country:</h4></u><h2><i>Tiruchirapalli, India</i></h2>
-	<h4><u>Date:</h4></u><h2><i>Thursday, 31st of August, 2018</i></h2>
-	<h4><u>School/Organisation:</h4></u><h2><i>Orchard School, Trichy</i></h2>
-	<h4><u>Age group targeted:</h4></u><h2><i>14-18 years old</i></h2>
-	<br>
-	<h4><u>Brief Description:</u></h4></u>
-	<h2>During the two hour long meeting with the students, topics such as studying abroad numerous ways to get involved outside of academics were discussed. Since Trichy is a small city, not many students were aware of opportunities to study abroad or about the different fields of education they could pursue. Students tended to limit themselves to a selected few majors like Law, Engineering, Medicine or Accountancy. While there were a few interested in sciences, that interest is also limited to the mainstream science courses like physics, biology and chemistry. Hence in this session, the iGEM member spoke to the students about different university options in and outside of India and also about different academic paths they could choose. Ranging from game design, cyber security to forensic science and chartered accountancy, numerous fields were discussed. The focus was mainly on STEM fields and different combinations of the core fields. This discussion led to the introduction of synthetic biology as a field that students interested in biology and engineering could pursue. The team member presented about iGEM NYUAD’s project and explained the unique aspects that were added due to the combination of two distinct fields
-	</h2>
-	<h2> ** HERE GO PHOTOS ** </h2>
-</center>
-        </article>
-    </div>
-
-    <div id="engineering" class="tabcontent">
-        <article>
-					<h4><u>Presenter:</h4></u><h2><i>Mariam Anwar</i></h2>
-					<h4><u>City, Country:</h4></u><h2><i>Cairo,Egypt</i></h2>
-					<h4><u>Date:</h4></u><h2><i>Wednesday, August 8th</i></h2>
-					<h4><u>School/Organisation:</h4></u><h2><i>Bashaer International School </i></h2>
-					<h4><u>Age group targeted:</h4></u><h2><i>11th and 12th grade biology students</i></h2>
-					<br>
-					<h4><u>Brief Description:</u></h4></u>
-					<h2>The students were introduced to the IGEM competition in general and informed about the different tracks as well as the different aspects of the competition such as the engineering, biology and outreach aspects. They were then briefly told about our NYU Abu Dhabi and introduced to the team members. After that, the general idea behind our project was presented and the problem our team is trying to solve, namely the issue to food safety. More focus was placed on the biology aspect of the competition as this was biology class, and the biology mechanisms used in our projects, such as bacteria transformations and different amplification methods such as PCR, LAMP and RPA,  were explained in more detail. Next, the students were given an idea of what the experience of being part of such as team is like and some of the outreach activities the competition entail. Finally, the students were given the chance to ask questions about the competition and about university life and the application process in general.
-					</h2>
-					<h2> ** HERE GO PHOTOS ** </h2>
-</center>
-        </article>
-    </div>
-
-</div>
-
-<div id="Proof of Concept" class="tabcontent">
-		<article>
-
-<center>
-	<h4><u>Presenter:</h4></u><h2><i>Kai-Wen Yang</i></h2>
-	<h4><u>City, Country:</h4></u><h2><i>Kowloon, Hong Kong</i></h2>
-	<h4><u>Date:</h4></u><h2><i>July 3rd to August</i></h2>
-	<h4><u>School/Organisation:</h4></u><h2><i>King George V School, Summerbridge Hong Kong</i></h2>
-	<h4><u>Age group targeted:</h4></u><h2><i>Grade 7-9 (age 13-15)</i></h2>
-	<br>
-	<h4><u>Brief Description:</u></h4>
-	<h2>In relation to our project about food pathogen detection, one of our members taught a class about food sciences when she worked as a student teacher at Summerbridge Hong Kong (a non-profit organization, which aims to improve the educational trajectories of underprivileged students by providing them with tuition-free quality English language education and life skills development opportunities), in which she designed and taught daily for 5 weeks. With the aim of fostering the students’ passion in science and highlighting how science can be applied in our everyday lives, students learned about various science concepts through interesting hands-on experiments with materials that can be found in the kitchen. For instance, they learned about melting point depression through “Making Ice Cream” experiment, the characteristic of fat through “Color-changing Milk”, neutralization through “Building a Volcano”, vibration through “Singing Glasses”, and more. They also learned about the scientific method and applied it to their final project: the students came up with questions they were curious about from their everyday lives and the demonstrations they have done in class. The students then followed the scientific method to discover the answers to the questions, and created a little booklet to share their findings with the general public.
-	</h2>
-	<h2> ** HERE GO PHOTOS ** </h2>
-
-</center>
-
-
-		</article>
-</div>
-
-<div id="Cost Analysis" class="tabcontent">
-		<article>
-
-<center>
-	<h4><u>Presenter:</u></h4><h2><i>Adnan Ali-Hassan</i></h2>
-	<h4><u>City, Country:</u></h4><h2><i>Chebanieh and Beirut, Lebanon</i></h2>
-	<h4><u>Date:</h4></u><h2><i>Thursday August 23rd, Saturday August 25th</i></h2>
-	<h4><u>School/Organisation:</h4></u><h2><i>Lebanese Scouts Association</i></h2>
-	<h4><u>Age group targeted:</h4></u></u><h2><i>15-20 years old</i></h2>
-	<br>
-	<h4><u>Brief Description:</u></h4>
-	<h2>On Thursday August 23rd, during the weekly meeting that the Beirut 1 scouts group in the Lebanese Scouts Association holds on the International College campus in Ain El Mraysseh (Beirut, Lebanon), an NYUAD iGEM representative presented the topic of going into the STEM field to students aged from 5 to 20 years old. A discussion was then held with the leaders and it was agreed that the group to focus on was Rovers due to their age range, 15-20 years old, at a time when they’re choosing what study and work fields to go into.</h2>
-	<br>
-	<h2>The following Saturday, August 25th, a meeting was held with the Rovers, about 15 students, in an eco-cafe in the town of Chebanieh. There, many of the students spoke about what their understanding of the STEM field is, including future job opportunities. A presentation was then given from the iGEM member about the array of possible STEM majors and universities to pursue, putting attention on NYUAD as a good example that not  many of the students knew about. The topic followed with what opportunities are available in the STEM field both after graduation and during university.The focus then shifted to iGEM where the presenter spoke about their team’s project and experience, as well as what iGEM is as a whole and what projects other universities have worked on in the past. The idea of starting an iGEM project the following year in new universities, such as the American University of Beirut, was also discussed. The event consisted of short presentations followed by longer conversations and took about 3 hours.
-	</h2>
-
-	<h2> ** HERE GO PHOTOS ** </h2>
-</center>
-
-
-		</article>
-</div>
-
-<div id="Australia" class="tabcontent">
-		<article>
-
-<center>
-<h4><u>Presenter:</h4></u><h2><i>Sion Hau</i></h2>
-<h4><u>City, Country:</h4></u><h2><i>Melbourne, Victoria, Australia</i></h2>
-<h4><u>Date:</h4></u><h2><i>Wednesday, August 15th</i></h2>
-<h4><u>School/Organisation:</h4></u><h2><i>Camberwell Primary School, Robogals</i></h2>
-<h4><u>Age group targeted:</h4></u><h2><i>Grade 5s (age 10-11) </i></h2>
+<h2>As a part of our outreach program for this year, we hosted a youth debate, in collaboration with the Emirates Youth Council, under the Minister of Youth, relating to synthetic biology. The Youth Debate is an initiative launched by the Ministry of Youth that brings together experts and young minds to discuss issues  of extreme importance to the nation, region, and the world. During 45 minute segments, two teams formally debate a thoughtfully crafted argument, that  is followed with a vote by a panel of judges and the audience to decide on a winning team.</h2>
 <br>
-<h4><u>Brief Description:</u></h4>
-<h2>In collaboration with Robogals Melbourne, NYUAD IGEM was able to integrate synthetic biology and bioengineering related topics into a hands-on engineering and robotics workshop at a local public primary school in Melbourne. Approximately 50 Grade 5 students at Camberwell Primary School had the opportunity to participate in the unique Robogals LEGO EV3 robotics workshop run by Robogals Melbourne. Robogals is a not for profit organisation founded in Melbourne that aims to encourage girls to pursue a career in engineering and other STEM related fields, seeing as their goals aligned congruently with many of NYUAD IGEM’s own outreach objectives, we integrated an informative presentation about iGEM and other opportunities in bioengineering and synthetic biology for the students to consider once they enter high school and beyond. It was a 90 minute workshop that introduced a wide range of engineering disciplines, highlighting the iGEM competition and what biosynthetic engineering is and the roles it plays in society, followed by a robotics workshop whereby students learnt to program their own Lego EV3 robot with a light and ultrasonic sensor. The students not only learnt about the wide scope of engineering and its applicability in everyday life but also had the opportunity to learn a new skill in an interactive and fun way! Special thanks to Robogals Melbourne for this wonderful collaboration.
+<h2>The Youth Debate held by the NYUAD iGEM team was on the topic : “ Is synthetic biology the solution to world hunger?”. THis event was the first ever Youth Debate  in English and was also the first to involve a scientific topic.  The event was held on the 10th of September at the NYUAD Campus. Her Excellency Mariam Al Mehairi, Minister of State for Food Security, Professor Rashid Ali, Research Assistant Professor, Khalifa Centre for Genetic Engineering and Biotechnology and Professor Alexis Gambis, Professor of Biology and Film and New Media, New York University Abu Dhabi served in the panel of judges. The affirmative team proposed that investing in synthetic biology was the solution to world hunger along with many other problems. The competitive team proposed that food policy programs and food management programs would be the quicker and practical solution to world hunger. Both teams consisted of a member of the iGEM team, a non-science major student from NYUAD and a student from American University of Sharjah. This diversity in the teams made sure that the debate not only addressed the scientific perspective of things but also put it in context within the bigger picture. The ethics behind food policy programs, short term and long term benefits of artificial food production, the effects of both options in the local economy and the possible change in power dynamics between nations after introduction of synthetic food production were few topics addressed in the debate.
 </h2>
-<h2> ** HERE GO PHOTOS ** </h2>
+ <br>
+<h2>The debate served as a great introduction to the real life applications of synthetic biology and put into perspective what its influence will be in the UAE and around the world. H.E. Mariam also addressed the gathering and gave a short introduction to the current food programs she is working on.
+</h2>
 
 </center>
+        </article>
+    </div>
 
+</div>
+<div id="STEM" class="tabcontent" style="display: block;">
+		<article>
+<center>
+<h2>STEM out of the box was a workshop by an NYU Abu Dhabi student interest called weSTEM.   Members of the iGEM team collaborated with the organisers of the workshop by helping in the planning and execution of the workshop. The workshop focused on design thinking and designing for the best user experience, with numerous restrictions and conditions. The high school students were divided into groups and asked to create a house, limited by 240 square feet, catered to a particular group of people and their constraints. The students were then asked to create powerpoint presentations to present their work and to receive constructive criticism from their peers. </h2>
+
+</center>
 		</article>
 </div>
+
+
+<!--script for slideshow -->
+
 
 <!--script for buttons -->
 <script>
@@ -801,7 +710,7 @@ button:focus {outline:0;}
 
 
 
-</body>
+
 
 
 
@@ -812,7 +721,7 @@ button:focus {outline:0;}
 <!--- Menu --->
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-<head>
+
     <script>
         window.onload = () => {
             var activated;
@@ -844,16 +753,13 @@ button:focus {outline:0;}
             });
         }
     </script>
-</head>
 
-<body>
+
+
     <div id="app">
   <!-- Navbar -->
   <nav style="padding-bottom:1px;" class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-   <a class="navbar-brand" href="http://2018.igem.org/Team:NYU_Abu_Dhabi"><img src="http://2018.igem.org/wiki/images/5/51/T--NYU_Abu_Dhabi--teamlogo.png" alt="logo" height="45"
-    style="padding-top: 5px;
-    object-fit: contain";
- ></a>
+   <a class="navbar-brand" href="http://2018.igem.org/Team:NYU_Abu_Dhabi"><img src="http://2018.igem.org/wiki/images/5/51/T--NYU_Abu_Dhabi--teamlogo.png" alt="logo" height="45"></a>
 
    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
      <span class="navbar-toggler-icon"></span>
@@ -862,25 +768,25 @@ button:focus {outline:0;}
    <div class="collapse navbar-collapse" id="navbarSupportedContent">
      <ul class="navbar-nav mr-auto">
 
-       <li class="nav-item" >
-         <a  class="nav-link"  href="http://2018.igem.org/Team:NYU_Abu_Dhabi">Home<span class="sr-only"></span></a>
+       <li class="nav-item">
+         <a class="nav-link" href="http://2018.igem.org/Team:NYU_Abu_Dhabi">Home<span class="sr-only"></span></a>
        </li>
 
-       <li  class="nav-item dropdown">
-         <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
            People
          </a>
          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-           <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Team">Team</a>
-           <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Attributions">Attributions</a>
-           <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Sponsors">Sponsors</a>
-           <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/About_Us">About Us</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Team">Team</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Attributions">Attributions</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Sponsors">Sponsors</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/About_Us">About Us</a>
          </div>
        </li>
 
 
        <li class="nav-item dropdown">
-         <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
            Project
          </a>
          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -895,7 +801,7 @@ button:focus {outline:0;}
        </li>
 
   <li class="nav-item dropdown">
-         <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
            Lab notebooks
          </a>
          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -919,11 +825,11 @@ button:focus {outline:0;}
        </li>
 
        <li class="nav-item">
-         <a  class="nav-link" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Entrepreurship">Entrepreneurship</a>
+         <a class="nav-link" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Entrepreurship">Entrepreneurship</a>
        </li>
 
        <li class="nav-item dropdown">
-         <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
            Collaborations
          </a>
          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -940,46 +846,44 @@ button:focus {outline:0;}
   </nav>
 
 	<!-- Footer Begins -->
+
 	<footer class="footer">
-		<div style="margin-top:100px;" class="footer">
-						<div class="row">
-								<div class="col-lg-8 col-sm-5 col-xm-5 col-md-6 footer-section" style="
-	    min-width: 200px;
-	">
-										<h3 class="footer-text">
-		                  <a href="https://worldwide.promega.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/f/ff/T--NYU_Abu_Dhabi--Promega.png" alt="sponsor" height="90" width="120"></a>
-		                  <a href="http://www.appslink-me.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/5/5a/T--NYU_Abu_Dhabi--Appslink.png" alt="sponsor" height="50" width="180"></a>
-		                  <a href="https://eu.idtdna.com/pages" target="_blank"><img src="http://2018.igem.org/wiki/images/1/17/T--NYU_Abu_Dhabi--IDT.png" alt="sponsor" height="40" width="200"></a>
-		                  <a href="https://www.mathworks.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/6/65/T--NYU_Abu_Dhabi--Mathworks.jpeg" alt="sponsor" height="50" width="200"></a>
-											<a href="http://www.snapgene.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/5/59/T--NYU_Abu_Dhabi--snapgene.png" alt="sponsor" height="60" width="180"></a>
-											<a href="https://www.geneious.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/0/06/T--NYU_Abu_Dhabi--Geneious.png" alt="sponsor" height="60" width="180"></a>
-										  <a href="https://nyuad.nyu.edu/en/" target="_blank"><img src="http://2018.igem.org/wiki/images/7/7b/T--NYU_Abu_Dhabi--NYUADlogo.png" alt="sponsor" height="60" width="180"></a>
-			            	</h3>
-								  </div>
+	<div style="margin-top:100px;" class="footer">
+					<div class="row">
+							<div class="col-lg-8 col-sm-5 col-xm-5 col-md-6 footer-section">
+									<h3 class="footer-text">
+	                  <a href="https://worldwide.promega.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/f/ff/T--NYU_Abu_Dhabi--Promega.png" alt="sponsor" height="90" width="120"></a>
+	                  <a href="http://www.appslink-me.com/"target="_blank" ><img src="http://2018.igem.org/wiki/images/5/5a/T--NYU_Abu_Dhabi--Appslink.png" alt="sponsor" height="50" width="180"></a>
+	                  <a href="https://eu.idtdna.com/pages"target="_blank"><img src="http://2018.igem.org/wiki/images/1/17/T--NYU_Abu_Dhabi--IDT.png" alt="sponsor" height="40" width="200"></a>
+	                  <a href="https://www.mathworks.com/"target="_blank"><img src="http://2018.igem.org/wiki/images/6/65/T--NYU_Abu_Dhabi--Mathworks.jpegg" alt="sponsor" height="50" width="200"></a>
+										<a href="http://www.snapgene.com/"target="_blank"><img src="http://2018.igem.org/wiki/images/5/59/T--NYU_Abu_Dhabi--snapgene.png" alt="sponsor" height="60" width="180"></a>
+										<a href="https://www.geneious.com/"target="_blank"><img src="http://2018.igem.org/wiki/images/0/06/T--NYU_Abu_Dhabi--Geneious.png" alt="sponsor" height="60" width="180"></a>
+									  <a href="https://nyuad.nyu.edu/en/"target="_blank"><img src="http://2018.igem.org/wiki/images/7/7b/T--NYU_Abu_Dhabi--NYUADlogo.png" alt="sponsor" height="60" width="180"></a>
+		            	</h3>
+							  </div>
 
-		              <div class="col-lg-4 col-sm-5 col-xm-5 col-md-6 footer-section" style="
-	    display: block;
-	    min-width: 200px;">
-		  							  <h3 class="footer-text">
-		                  <a href="mailto:nyuad.igem@nyu.edu" target="_blank"><span class="fa fa-google"></span></a>
-		                  <a href="https://www.facebook.com/iGEMNYUAD/" target="_blank"><span class="fa fa-facebook"></span></a>
-		                  <a href="https://www.twitter.com/igemnyuad/" target="_blank"><span class="fa fa-twitter"></span></a>
-		                  <a href="https://www.youtube.com/channel/UCQnySAKw67slX8T6r9bAcYw" target="_blank"><span class="fa fa-youtube"></span></a>
-		                  <a href="https://www.instagram.com/igem_nyuad/" target="_blank"><span class="fa fa-instagram"></span></a>
-		                </h3>
-		  						</div>
+	              <div class="col-lg-4 col-sm-5 col-xm-5 col-md-6 footer-section">
+	  							  <h3 class="footer-text">
+	                  <a href="mailto:nyuad.igem@nyu.edu" target="_blank"><span class="fa fa-google"></span></a>
+	                  <a href="https://www.facebook.com/iGEMNYUAD/" target="_blank"><span class="fa fa-facebook"></span></a>
+	                  <a href="https://www.twitter.com/igemnyuad/" target="_blank"><span class="fa fa-twitter"></span></a>
+	                  <a href="https://www.youtube.com/channel/UCQnySAKw67slX8T6r9bAcYw" target="_blank"><span class="fa fa-youtube"></span></a>
+	                  <a href="https://www.instagram.com/igem_nyuad/" target="_blank"><span class="fa fa-instagram"></span></a>
+	                </h3>
+	  						</div>
 
-		          </div>
+	          </div>
+							<div class="col-lg-4 footer-section"> -->
+									<!-- <img class="footer-logo" src="http://2017.igem.org/wiki/images/c/c8/NYUAD_Logo_Black.png" />
+							</div>
+
+
 	</div>
 	</footer>
 
 	<!-- Footer Ends -->
-</body>
 
 
-<!-- <div class="igem_2018_team_content">
-	<div class="igem_2018_team_column_wrapper">
-		<div class="clear extra_space"></div>
-		<div class="clear extra_space"></div> -->
 
-</html>
+<div class="igem_2018_team_content">
+	</div></div></body></html>
