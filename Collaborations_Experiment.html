@@ -489,17 +489,17 @@
 h6 {
 	font-family: 'IBM Plex Sans', serif;
 	color: #0BB4C1;
-  font-size: 30px;
-  text-align: center;
+  font-size: 50px;
+  text-align: left;
 }
 /* USE THIS FOR PARAGRAPH TEXT */
 h2 {
 	font-family: 'IBM Plex Sans', serif;
 	color: black;
 	font-size: 15px;
-	text-align: justify;
+	text-align: left;
 	margin-right: 90px;
-	margin-left: 90px;
+	margin-left: 0px;
 }
 /* USE THIS FOR ANYTHING UNDER SUBHEADING TO BE IN A DIFFERENT COLOUR*/
 h3 {
@@ -507,8 +507,8 @@ h3 {
 	color: #101F40;
   font-size: 19px;
   text-align: left;
-  margin-right: 90px;
-  margin-left: 90px;
+  /* margin-right: 90px;
+  margin-left: 90px; */
 }
 /* USE THIS FOR SUBHEADINGS */
 h4 {
@@ -541,7 +541,7 @@ div{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 80%;
 }
 .tablinks {
 	margin-top: 15px;
@@ -640,12 +640,214 @@ div{
 		 			 	}
 button:focus {outline:0;}
 
+/* Slideshow stylesheet */
+* {box-sizing: border-box}
+/* body {font-family: 'IBM Plex Sans', sans-serif; margin:0} */
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+hr {
+    background-color: dimgrey !important;
+    color: dimgrey !important;
+    border: solid 2px dimgrey !important;
+    height: 5px !important;
+    width: 1000px !important;
+}
+/*END */
+
 </style>
+<head>
+<!-- ADDING PRELIMINARY DESCRIPTION -->
 
-<br><br>
-<h6><b>Demonstration</b></h6>
-
+<br> <br><br>
+<h6><b>Other Collaborations</b></h6>
+<hr>
 <!-- <hr style="width:25%"> -->
+
+<!-- <div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+</div> -->
+
+<div class="section-block">
+
+<center>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Key Achievments')" id="defaultOpen">Dairy</button>
+        <button class="tablinks2" onclick="openTab(event, 'biology')">Language Translations</button>
+        <button class="tablinks3" onclick="openTab(event, 'engineering')">Wiki Workshop</button>
+
+    </div>
+</center>
+<br>
+    <div id="Key Achievments" class="tabcontent">
+        <article>
+					<!-- <div class="slideshow-container">
+
+					<div class="mySlides fade">
+						<div class="numbertext">1 / 2</div>
+						<img src="http://2018.igem.org/wiki/images/1/18/T--NYU_Abu_Dhabi--deardiary2.png
+					" style="width:100%">
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">2 / 2</div>
+						<img src="http://2018.igem.org/wiki/images/7/7c/T--NYU_Abu_Dhabi--deardiary1.png
+					" style="width:100%">
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					</div> -->
+
+<center>
+	<br><br>
+<h2>We collaborated with iGEM Team Linkoping Sweden in their Dear Diary initiative. We recorded interesting and fun things happened inside and outside the lab. We then sent it to Team Linkoping Sweden, who collected the diaries from each team and compiled them into a book/document. Through this initiative, we were able to showcase our excitement and interesting work for iGEM with the wider public.
+  </h2>
+
+</center>
+
+        </article>
+    </div>
+
+    <div id="biology" class="tabcontent">
+        <article>
+<center>
+  <h2>We collaborated with iGEM Team IlT-Madras in their Language Project Initiative, aiding them in creating several synthetic biology educational videos in various languages. We received the English script of the video from IlT-Madras, translated in into different languages, as well as recording the audio of the script. Due to the diversity of our team, we were able to help them with 6 different language versions of the videos, namely, “Introduction to Synthetic Biology” in Mandarin, Bosnian, Lithuanian, Korean, and “DNA and RNA” in Arabic and Spanish. </h2>
+	<br>
+<h4>You can click on the language below to watch the translated video!</h4>
+<br>
+<a  href="https://www.youtube.com/watch?v=s0yeNxiT3wg&list=PLIq5f_-wcTEX0dmUNOtifFF61GtxxboiH ">// Mandarin //</a>
+<a  href="https://www.youtube.com/watch?v=A-VlRtFJmIU&list=PLIq5f_-wcTEX0dmUNOtifFF61GtxxboiH&index=14  ">// Lithuanian  //    </a>
+<a  href="https://www.youtube.com/watch?v=A-VlRtFJmIU&list=PLIq5f_-wcTEX0dmUNOtifFF61GtxxboiH&index=14  ">// Korean //     </a>
+<a  href="https://www.youtube.com/watch?v=A-VlRtFJmIU&list=PLIq5f_-wcTEX0dmUNOtifFF61GtxxboiH&index=14  ">// Arabic //    </a>
+<a  href="https://www.youtube.com/watch?v=A-VlRtFJmIU&list=PLIq5f_-wcTEX0dmUNOtifFF61GtxxboiH&index=14  ">// Spanish //    </a>
+<a  href="https://www.youtube.com/watch?v=A-VlRtFJmIU&list=PLIq5f_-wcTEX0dmUNOtifFF61GtxxboiH&index=14  ">// Bosnian  //   </a>
+
+
+</center>
+        </article>
+    </div>
+
+    <div id="engineering" class="tabcontent">
+        <article>
+<center>
+	<img src="	http://2018.igem.org/wiki/images/3/34/T--NYU_Abu_Dhabi--wikiworkshop1.png
+"style= "padding-left: 120px; padding-right: 140px;
+	  width: 800px;" position= "relative">
+<br><br>
+<h2> We held a Wiki Workshop for our iGEM team that covers the basics of web development from HTML and CSS to Javascript. We also covered the basics of a good design, a good website, and a good visual identity. In addition to that, we went over the iGEM Wiki rules and resources. </h2>
+
+<h2>All of our iGEM team were in attendance of this workshops in addition to a few members from iGEM VIT both over skype and in real life.
+Here are the contents of the workshop, that we want to make available to all iGEM teams in the future to make use of when creating their Wiki’s:
+<br><br>
+<embed src="http://2018.igem.org/wiki/images/d/d1/T--NYU_Abu_Dhabi--wiki-workshoop-slides.pdf
+" width="800" height="350" type='application/pdf' class="center">
+<br>
+</center>
+        </article>
+    </div>
+
+</div>
+
+
+
+
+</body>
+
 
 
 
@@ -654,8 +856,35 @@ button:focus {outline:0;}
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!--- Menu --->
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- script for slideshow-->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
 <!--script for buttons -->
 <script>
         function openTab(evt, header) {
@@ -786,9 +1015,9 @@ button:focus {outline:0;}
            Human practices
          </a>
          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Engagement">Education and Public Engagement</a>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/HP/Gold_Integrated">Integrated Human Practices</a>
-					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Home_Outreach">Home Country Outreach</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Engagement">Education and public engagement</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/HP/Gold_Integrated">Integrated human practices</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Social_Media">Home Country Outreach</a>
 					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Social_Media">Social Media</a>
          </div>
        </li>

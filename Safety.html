@@ -642,37 +642,29 @@ button:focus {outline:0;}
 
 </style>
 
-<br><br>
-<h6><b>Demonstration</b></h6>
-
+<br> <br>
+<h6><b>Safety</b></h6>
 <!-- <hr style="width:25%"> -->
 
 
 
-<!-- END -->
-
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-<!--- Menu --->
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-
-
 <!--script for buttons -->
 <script>
-        function openTab(evt, header) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(header).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    document.getElementById("defaultOpen").click();
-    </script>
+				function openTab(evt, header) {
+						var i, tabcontent, tablinks;
+						tabcontent = document.getElementsByClassName("tabcontent");
+						for (i = 0; i < tabcontent.length; i++) {
+								tabcontent[i].style.display = "none";
+						}
+						tablinks = document.getElementsByClassName("tablinks");
+						for (i = 0; i < tablinks.length; i++) {
+								tablinks[i].className = tablinks[i].className.replace(" active", "");
+						}
+						document.getElementById(header).style.display = "block";
+						evt.currentTarget.className += " active";
+				}
+		document.getElementById("defaultOpen").click();
+		</script>
 
 
 
@@ -688,131 +680,131 @@ button:focus {outline:0;}
 <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 <head>
-    <script>
-        window.onload = () => {
-            var activated;
-            var svg = document.getElementById("hero-image").getSVGDocument();
-            var links = [
-                ["bio", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Description"],
-                ["engineering", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Description"],
-                ["demo", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Demonstrate"],
-                ["integrated", "http://2018.igem.org/Team:NYU_Abu_Dhabi/HP/Gold_Integrated"],
-                ["hpsilver", "http://2018.igem.org/Team:NYU_Abu_Dhabi/HP/Silver"],
-                ["englab", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Engineering"],
-                ["design", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Applied_Design"],
-                ["app", "http://2018.igem.org/Team:NYU_Abu_Dhabi/HP/Silver"],
-                ["attributions", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Attributions"],
-                ["team", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Team"],
-                ["parts", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Parts"],
-                ["results", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Results"],
-                ["protocols", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Protocols"],
-                ["biolab", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Biology"]
-            ]
-            links.forEach(function (link) {
-                $(svg.getElementById(link[0])).hover(function () {
-                    $(this).css('cursor', 'pointer');
-                }, function () {
-                    $(this).css('cursor', 'auto');
-                }).click(function () {
-                    window.location.href = link[1];
-                });
-            });
-        }
-    </script>
+		<script>
+				window.onload = () => {
+						var activated;
+						var svg = document.getElementById("hero-image").getSVGDocument();
+						var links = [
+								["bio", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Description"],
+								["engineering", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Description"],
+								["demo", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Demonstrate"],
+								["integrated", "http://2018.igem.org/Team:NYU_Abu_Dhabi/HP/Gold_Integrated"],
+								["hpsilver", "http://2018.igem.org/Team:NYU_Abu_Dhabi/HP/Silver"],
+								["englab", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Engineering"],
+								["design", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Applied_Design"],
+								["app", "http://2018.igem.org/Team:NYU_Abu_Dhabi/HP/Silver"],
+								["attributions", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Attributions"],
+								["team", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Team"],
+								["parts", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Parts"],
+								["results", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Results"],
+								["protocols", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Protocols"],
+								["biolab", "http://2018.igem.org/Team:NYU_Abu_Dhabi/Biology"]
+						]
+						links.forEach(function (link) {
+								$(svg.getElementById(link[0])).hover(function () {
+										$(this).css('cursor', 'pointer');
+								}, function () {
+										$(this).css('cursor', 'auto');
+								}).click(function () {
+										window.location.href = link[1];
+								});
+						});
+				}
+		</script>
 </head>
 
 <body>
-    <div id="app">
-  <!-- Navbar -->
-  <nav style="padding-bottom:1px;" class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-   <a class="navbar-brand" href="http://2018.igem.org/Team:NYU_Abu_Dhabi"><img src="http://2018.igem.org/wiki/images/5/51/T--NYU_Abu_Dhabi--teamlogo.png" alt="logo" height="45"
-    style="padding-top: 5px;
-    object-fit: contain";
+		<div id="app">
+	<!-- Navbar -->
+	<nav style="padding-bottom:1px;" class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+	 <a class="navbar-brand" href="http://2018.igem.org/Team:NYU_Abu_Dhabi"><img src="http://2018.igem.org/wiki/images/5/51/T--NYU_Abu_Dhabi--teamlogo.png" alt="logo" height="45"
+		style="padding-top: 5px;
+		object-fit: contain";
  ></a>
 
-   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-     <span class="navbar-toggler-icon"></span>
-   </button>
+	 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		 <span class="navbar-toggler-icon"></span>
+	 </button>
 
-   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-     <ul class="navbar-nav mr-auto">
+	 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		 <ul class="navbar-nav mr-auto">
 
-       <li class="nav-item" >
-         <a  class="nav-link"  href="http://2018.igem.org/Team:NYU_Abu_Dhabi">Home<span class="sr-only"></span></a>
-       </li>
+			 <li class="nav-item" >
+				 <a  class="nav-link"  href="http://2018.igem.org/Team:NYU_Abu_Dhabi">Home<span class="sr-only"></span></a>
+			 </li>
 
-       <li  class="nav-item dropdown">
-         <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           People
-         </a>
-         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-           <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Team">Team</a>
-           <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Attributions">Attributions</a>
-           <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Sponsors">Sponsors</a>
-           <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/About_Us">About Us</a>
-         </div>
-       </li>
+			 <li  class="nav-item dropdown">
+				 <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					 People
+				 </a>
+				 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					 <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Team">Team</a>
+					 <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Attributions">Attributions</a>
+					 <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Sponsors">Sponsors</a>
+					 <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/About_Us">About Us</a>
+				 </div>
+			 </li>
 
 
-       <li class="nav-item dropdown">
-         <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           Project
-         </a>
-         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Description">Description</a>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Design">Design</a>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Demonstration">Demonstration</a>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Results">Results</a>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Parts">Parts</a>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Safety">Safety</a>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Interlab">Interlab</a>
-         </div>
-       </li>
+			 <li class="nav-item dropdown">
+				 <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					 Project
+				 </a>
+				 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Description">Description</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Design">Design</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Demonstration">Demonstration</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Results">Results</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Parts">Parts</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Safety">Safety</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Interlab">Interlab</a>
+				 </div>
+			 </li>
 
-  <li class="nav-item dropdown">
-         <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           Lab notebooks
-         </a>
-         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Biology">Biology</a>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Ideation">Ideation</a>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Engineering">Engineering</a>
+	<li class="nav-item dropdown">
+				 <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					 Lab notebooks
+				 </a>
+				 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Biology">Biology</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Ideation">Ideation</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Engineering">Engineering</a>
 
-         </div>
-       </li>
+				 </div>
+			 </li>
 
-  <li class="nav-item dropdown">
-         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           Human practices
-         </a>
-         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+	<li class="nav-item dropdown">
+				 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					 Human practices
+				 </a>
+				 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Engagement">Education and Public Engagement</a>
            <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/HP/Gold_Integrated">Integrated Human Practices</a>
 					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Home_Outreach">Home Country Outreach</a>
 					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Social_Media">Social Media</a>
-         </div>
-       </li>
+				 </div>
+			 </li>
 
-       <li class="nav-item">
-         <a  class="nav-link" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Entrepreurship">Entrepreneurship</a>
-       </li>
+			 <li class="nav-item">
+				 <a  class="nav-link" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Entrepreurship">Entrepreneurship</a>
+			 </li>
 
-       <li class="nav-item dropdown">
-         <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           Collaborations
-         </a>
-         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Science_Sketch">Science Sketch</a>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Virtual_Conference">Virtual Conference</a>
-           <div class="dropdown-divider"></div>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Other_Collaborations">Other Collaborations</a>
+			 <li class="nav-item dropdown">
+				 <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					 Collaborations
+				 </a>
+				 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Science_Sketch">Science Sketch</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Virtual_Conference">Virtual Conference</a>
+					 <div class="dropdown-divider"></div>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Other_Collaborations">Other Collaborations</a>
 
-         </div>
-       </li>
-     </ul>
+				 </div>
+			 </li>
+		 </ul>
 
-   </div>
-  </nav>
+	 </div>
+	</nav>
 
 	<!-- Footer Begins -->
 	<footer class="footer">
