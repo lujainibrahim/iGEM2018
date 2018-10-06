@@ -139,6 +139,7 @@
 	    color: #000;
 	}
 	/*Styling Buttons*/
+	/*Styling Buttons*/
 	  .fa {
 	    font-size: 20px;
 	    padding:17px;
@@ -506,8 +507,8 @@ h3 {
 	color: #101F40;
   font-size: 19px;
   text-align: left;
-  /* margin-right: 90px;
-  margin-left: 90px; */
+  margin-right: 90px;
+  margin-left: 90px;
 }
 /* USE THIS FOR SUBHEADINGS */
 h4 {
@@ -529,7 +530,7 @@ h5 {
 body {
     /* background-image: url("http://2018.igem.org/wiki/images/d/d8/T--NYU_Abu_Dhabi--backgroundlong.png"); */
     background-size: cover;
-		background-repeat: no-repeat;
+		background-repeat: repeat;
 }
 div{
 			/* width: 1000px; */
@@ -540,7 +541,7 @@ div{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 50%;
 }
 .tablinks {
 	margin-top: 15px;
@@ -618,13 +619,13 @@ div{
 	font-weight: 800;
 }
 	.tablinks:hover {
-		background-color: #7E5BD3;
+		background-color: #b35900;
 		color: white; }
 	.tablinks2:hover {
-			background-color: #0BB4C1;
-			color: white; }
+			background-color: #C0C0C0;
+			color: black; }
 	.tablinks3:hover {
-			background-color: #0085B6;
+			background-color: #DAA520;
 			color: white; }
 	.tablinks4:hover {
 			background-color: #274F96;
@@ -638,232 +639,152 @@ div{
  				padding: 3px 9px;
 		 			 	}
 button:focus {outline:0;}
+table {
+  	font-family: 'IBM Plex Sans', sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+	   font-size: 15px;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #F5F5F5;
+}
 
 </style>
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////// HTML GOES HERE ////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <br> <br>
-<!-- INSTER TITLE HERE: -->
-<h6><b>Ideation & Analysis</b></h6>
-
-<h2> Before we began working on any aspect of the project from engineering to biology to design, we went through an extensive ideation phase which involved utilizing ideation methods like mind maps, sketching, SCAMPER, and alternatives words.</h2>
-<br>
-<img src="http://2018.igem.org/wiki/images/3/34/T--NYU_Abu_Dhabi--ideationgraphic.png" width="1500" class="center">
-<br>
-<div class="section-block">
-<h2> Here are some of the ideation methods and research analysis we conducted:</h2>
-
-<center>
-    <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Mind mapping')" id="defaultOpen">Mind Mapping</button>
-        <button class="tablinks2" onclick="openTab(event, 'SCAMPER')">SCAMPER</button>
-        <button class="tablinks3" onclick="openTab(event, 'Alternate words')">Alternate Words</button>
-
-    </div>
-</center>
-
-<div id="Mind mapping" class="tabcontent">
-		<article>
-<br>
-<center>
-<h2>The image above represents the mind mapping process we went through surrounding the concept of pathogen detection</h2>
-<br>
-<h4><u>What is a mind map?</u></h4>
-<h2>-“…a diagram used to represent words, ideas, tasks, or other items linked to and arranged around a central key word or idea. Mind maps are used to generate, visualize, structure, and classify ideas, and as an aid in study, organization, problem solving, decision making, and writing.”
-</h2>
-<h2>-Gives you the ability to build directly and tangentially off a given thought</h2>
-<h2>-Good mind mapping softwares: Xmind (I’ve used this one before), Freemind, Mindomo</h2>
-<br>
-<h4><u>How to create a clear and useful mind map?</u></h4>
-<h2>-Place the topic title in the center of the map</h2>
-<h2>-Connect main topics related to the topic title with lines</h2>
-<h2>-Write subtopics that branch from the main topic</h2>
-<h2>-Continue to add more ideas in a similar manner</h2>
-<h2>-Organise and connect related ideas together</h2>
-<br>
-<h4><u>Format of a clear and useful mind map:</u></h4>
-<h2>-Each idea is represented by one word</h2>
-<h2>-Have visual elements like colours, images, and codes</h2>
-<h2>-Draw clear links between different ideas</h2>
-<br>
-
-</center>
-		</article>
-</div>
-
-
-<div id="SCAMPER" class="tabcontent">
-		<article>
-<br>
-<center>
-<h2>A structured brainstorming technique for spicing up an already existing product or design. This acronym makes it easier to approach brainstorming and also increases the yield of quality ideas by concentrating brainstorming efforts to specific areas.</h2>
-</center>
-<h4><u>Substitute:</u></h4>
-<h2>Substitute materials? Substitute techniques? Substitute target audience?
-</h2>
-<h4><u>Combine:</u></h4>
-<h2>Combine existing concepts? Combine materials? Combine techniques?
-</h2>
-<h4><u>Adapt:</u></h4>
-<h2>Adapt the product to different audiences? Environments? Needs?
-</h2>
-<h4><u>Modify:</u></h4>
-<h2>Improve on current product, quality? Accuracy?
-</h2>
-<h4><u>Put to another use:</u></h4>
-<h2>Can the product be used for something else? For another purpose? For another audience? For another setting?
-</h2>
-<h4><u>Eliminate:</u></h4>
-<h2>Remove redundant features and useless elements or ideas
-</h2>
-<h4><u>Reverse</u></h4>
-<h2>Reorganise ideas, flip the problem, reverse product process
-</h2>
-		</article>
-</div>
-
-<br>
-<div id="Alternate words" class="tabcontent">
-		<article>
-<center>
-<h2>During ideation, especially when a lot of in-depth research has already been done about the relevant industry and related fields and topics a schema can develop where your ideas become aligned and unable to be detached from the norm of that niche community. By expressing the problem, solution and related processes in multiple different ways, unique ideas may be born. Re-expression can be done simply with finding alternate words that could replace existing ones such as bugs for pathogens, then from there, either an engineering or biology concept can be reframed and a new idea can be developed. However, linguistic re-expression is not the only kind of re-expression that can be undergone. The product itself and related ideas could be re-expressed visually, aurally or physically, by building, acting out scenarios etc. Re-expression from different perspectives is also useful in that you can consider all parties involved or that could be interested in the product or service. By putting yourself into the shoes of a toddler, a professional, a student, people with disabilities or someone with a low socio-economic  background, many aspects of the product or service can be modified to suit a wider audience or narrow down the target audience whilst also leaving room for new ideas to solve novel problems.
-</h2>
-</center>
-		</article>
-</div>
+<h6><b>Medal Requirements</b></h6>
+<!-- <hr style="width:25%"> -->
 
 
 <div class="section-block">
 
 <center>
     <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Key Achievments')" id="defaultOpen" >Target Groups</button>
-        <button class="tablinks2" onclick="openTab(event, 'biology')">Patents</button>
-        <button class="tablinks3" onclick="openTab(event, 'engineering')">Current Market Solutions</button>
-				<button class="tablinks4" onclick="openTab(event, 'Proof of Concept')">Other Detection Devices</button>
+        <button class="tablinks" onclick="openTab(event, 'Key Achievments')" id="defaultOpen">Bronze</button>
+        <button class="tablinks2" onclick="openTab(event, 'biology')">Silver</button>
+        <button class="tablinks3" onclick="openTab(event, 'engineering')">Gold</button>
+
     </div>
 </center>
 
-<div id="Key Achievments" class="tabcontent">
-		<article>
+<br>
+    <div id="Key Achievments" class="tabcontent">
+        <article>
 
 <center>
-<br>
-<h2>As part of the important aspect of iGEM enshrining scientific and engineering projects in a human-centred approach, we conducted interviews and target group research about the possible need and impact of our Pathogene device. Throughout the process we have successfully gathered data and useful feedback on all the nuances the device can encompass as it is integrated into human practices. The main target groups we considered and researched on are food vendors, pregnant women, travelers, and even our on-campus food provider agency ADNH.
-</h2>
-<br>
-<h2>Travelers have been a recurring user audience idea as we considered tailoring our device for as wide a usage as possible. Travelers are one of the most vulnerable groups to food and water poisoning and have major potential to benefit from our project. The feedback we got back made us change our priorities and orient to make the device a more comfortable, and efficient, tool to use. An interesting thing we learned is the potential our project has to educate people about the possible dangers of food pathogens, which often led to people becoming more conscious about food safety. In most cases that we have seen, patients of food pathogen infections have not received serious medical consultation on the topic. Therefore, besides increasing the health safety of travelers, and users in general, our project leads to a heightened awareness of dangers surrounding improper food maintenance and consumption.
-</h2>
-<br>
-<h2>The most enthusiasm was focused on using the device for checking water safety conditions, having a widespread impact on many waterborne diseases. Travelers have also stressed that the price of the device overall would need to be under 100$, and would prefer a reusable part. Furthermore, the reaction time should preferably be around 15 minutes due to the usual ordering and eating time allocated to by the average traveller. Advice similar to the feedback on price and reusability were key to making our device affordable and flexible for the avid globetrotter. For detailed interview records, whose distribution all interviewees were informed of, please check the following <a href="http://2018.igem.org/wiki/images/2/28/T--NYU_Abu_Dhabi--Interview_Travelers.pdf" target="_blank">link.</a>
-</h2>
-<br>
-<h2>Another important target group we considered, and that was pointed to by many of our interviewees, are pregnant women. During pregnancy, the female body is under extra stress and the immune system can be compromised. In addition, the fetus can be harmed by chemicals located in everyday food, such as mercury or potassium. For both reasons, having a careful diet and a heightened sense of food safety is vital for the safety of both the woman and the child.
-</h2>
-<br>
-<h2>What we have discovered during our global outreach to pregnant women from Bosnia and Herzegovina, Abu Dhabi, to Taiwan is that the device can help alleviate worries and simplify many everyday activities. We have noticed the general knowledge among the women of dangers in food such as contraction of Listeria and its threat to the child. They have expressed strong interest in using the device for help in making sure the threat of the food they consume both at home and in restaurants is as low as possible. The desired price fluctuated between 25 and 100$ and 5$ for the repeatable and replaceable part of the device. A possible point of concern for some was the awkwardness of using a device to check food publicly in restaurants which is something the culture dictates. We foresee that as the device and food safety become more popular, the public usage of the device will become more acceptable and normal. For detailed interview records of pregnant women, please consult the following
-	<a href="http://2018.igem.org/wiki/images/9/96/T--NYU_Abu_Dhabi--Interview_Pregnant_Women.pdf" target="_blank">link.</a></h2>
-<br>
-<h2>As far as the business aspect of our device is concerned, there has been positive reception from both ADNH (large food provider) and individual businesses such as restaurants and cafes. ADNH, similar to other catering companies, has to, under UAE law, undertake internal food testing every 3 months, for which they employ the services of a microbiological laboratory. Since the expenses are considerate for each test (150 $), our device’s humble financial requirements have been enthusiastically accepted. We anticipate that such accessibility of microbiological control of food that our device would provide will have multiple positive outcomes. Firstly, it will make it easier to undertake such tests and provide safer food services. And second, it will create incentive within customers and providers of requiring better food safety precautions in the future. Either aspect leads to an increase in food health across many parts of the food service link.
-</h2>
-<br>
-<h2>The inspection provided by the government is regular in the region of Abu Dhabi, but we have seen that the applicability of our device is both to the inspection officers as well as the food providers. Smaller businesses see it as an opportunity to advertise the food safety conditions and thereby attract customers, while also streamlining the inspection process. We have seen that there is demand among those businesses to maintain microbiological testing regular, but the high prices and time for results were seen as major drawbacks. For more details about the interviews conducted with <a href="http://2018.igem.org/wiki/images/c/c4/T--NYU_Abu_Dhabi--ADNH.pdf" target="_blank">ADNH</a> and <a href="http://2018.igem.org/wiki/images/d/d0/T--NYU_Abu_Dhabi--Food_Vendors.pdf" target="_blank">food vendors,</a> please click the respective link.
-</h2>
-<br>
-<h2>On the inspection side, we have successfully discussed our project and its contribution with the Abu Dhabi Food Authority and they were very receptive to using the device. They see it as a major substitute for bulky and tedious food-checking and collection that makes the overall process harder. With Pathogene, the inspection officers will be able to collect and test the sample at the site in under 20 minutes, instead of sending the samples to distant laboratories, and waiting several days for the results. During the length of the process, people could get negatively exposed to the product. The inspectors also see the device as being an improvement on the design and flexibility of current sample collection which is uncomfortable to handle. The conclusion was that Pathogene can provide Food Authority with a smoother, more streamlined, and faster, process of performing their duties, and therefore make the Abu Dhabi region have an even higher food safety standard.
-</h2>
-<br>
-<h2>In the end, Pathogene has a very wide contribution network that will help lift up not only global health standards surrounding food, but also regional and individual. It will provide people with the opportunity to check what they eat and consume, thereby making sure they have the liberty and knowledge of safe food culture.
-</h2>
+  <table align="center">
+    <tr>
+      <td><b>Registration and Giant Jamboree Attendance</b></td>
+      <td>Registered for iGEM, had a great iGEM season, and will be attending the Giant Jamboree.</td>
+    </tr>
+    <tr>
+      <td><b>Competition Deliverables</b></td>
+      <td>Completed the following Competition Deliverables: <a href="http://2018.igem.org/Team:NYU_Abu_Dhabi/" target="_blank">iGEM NYUAD Wiki</a>, NYU Abu Dhabi Wiki, Poster, Presentation, Judging Form</td>
+    </tr>
+    <tr>
+      <td><b>Attributions</b></td>
+      <td>Documented our attributions page, where we described how other individuals and departments helped our project (<a href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Attributions"target="_blank">Read more</a>)</td>
+    </tr>
+    <tr>
+      <td><b>Characterization / Contribution</b></td>
+      <td>Successfully completed the InterLab Measurement Study. We have met all requirements of the study, including acceptance of data (<a href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Interlab"target="_blank">Read more</a>)</td>
+    </tr>
+
+  </table>
 </center>
 
-		</article>
-</div>
+        </article>
+    </div>
 
-<div id="biology" class="tabcontent">
-		<article>
+    <div id="biology" class="tabcontent">
+        <article>
 <center>
-	<br>
-<h4><u>Research Scope:</h4></u><h2>We tried to cast a wide net when searching for patents for which we research in three different databases: United States Patent and Trademark Office, European Patent Office, World Intellectual Property Organization.</h2>
-<br>
-<h4><u>Sample Collection Patent Insight:</u></h4>
-<h2>-Most patents for pathogen detection don’t specify a collection method of device</h2>
-<h2>-Most patents for biological sample collection are guided toward field use and long term storage for later lab use.</h2>
-<h2>-Biggest concern the devices take in mind:</h2>
-<h2><i>---Ease of Use</i></h2>
-<h2><i>---Avoiding Cross Contamination</i></h2>
-<h2><i>---Stable Preservation of Samples</i></h2>
-<h2><i>---Detailed record of several specific patents</i></h2>
-<h2><i>---Detailed record of several specific patents</i></h2>
-<br>
-<h4><u>Conclusion and Recommendations:</u></h4>
-<h2>-There is a lack of collection methods for field use or non-PCR diagnostics</h2>
-<h2>-Collection methods is one of the largest areas of opportunity for innovation</h2>
-<h2>-Specific Primer sequences targeting specific genes of specific pathogens can be patented up to a 90% homology</h2>
-<h2>-Most of the patents that turn into products were patented by companies</h2>
-<h2>-Investing, established supply chain and brand name may be factors</h2>
-<h2>-Most of the patents that don't turn into products were patented in universities of by small startups that were unsuccessful.
-</h2>
+  <center>
+    <table>
+      <tr>
+        <td><b>Validated Part / Validated Contribution</b></td>
+        <td>Created, documented, and submitted 36 (4 genes + 32 primers) new BioBrick Parts to the Registry, following all of the DNA submission requirements and shipping guidelines (<a href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Parts"target="_blank">Read more</a>)</td>
+      </tr>
+      <tr>
+        <td rowspan="5"><b>Collaboration</b></th>
+          <td>Organized the Science Sketch Collaboration, participated by teams REC Chennai, CPU China, Uppsala, TEC-Chihuahua, and ICT_Mumbai (<a href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Science_Sketch"target="_blank">Read more</a>).
+  </td>
+      </tr>
+      <tr>
+        <td>Organized the Virtual Conference, participated by teams HKUST, REC Chennai, VIT Vellore, Saint Joseph Istanbul, and iGEM Macquarie. Organized the Wiki Workshop (<a href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Virtual_Conference"target="_blank">Read more</a>)</td>
+      </tr>
+      <tr>
+        <td>Mentored team VIT Vellore and helped them with their wiki and InterLab.</td>
+      </tr>
+      <tr>
+        <td>Collaborated with Team Linkoping Sweden in their Dear Diary initiative (<a href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Other_Collaborations"target="_blank">Read more</a>)</td>
+      </tr>
+      <tr>
+        <td>Collaborated with IlT-Madras in their Language Project Initiative and created several synthetic biology educational videos in various languages including Mandarin, Lithuanian, Korean, Arabic, Spanish, and Bosnian (<a href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Other_Collaborations"target="_blank">Read more</a>)</td>
+      </tr>
+      <tr>
+        <td rowspan="5"><b>Human Practices</b></th>
+          <td>Organized Human Practices programmes in Australia, Egypt, Hong Kong, India, Lebanon, and Mexico (<a href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Home_Outreach"target="_blank">Read more</a>)</td>
+      </tr>
+      <tr>
+        <td>Organized Youth Debates, attended by experts including Her Excellency Mariam Al Mehairi, Minister of State for Food Security of the UAE as the panel of judges (<a href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Engagement"target="_blank">Read more</a>)</td>
+      </tr>
+      <tr>
+        <td>Helped organize STEM out of the Box (<a href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Engagement"target="_blank">Read more</a>)</td>
+      </tr>
+      <tr>
+        <td>Organized High School Workshops (<a href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Engagement"target="_blank">Read more</a>)</td>
+      </tr>
+      <tr>
+        <td>Utilized Social Media (<a href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Social_Media"target="_blank">Read more</a>)</td>
+      </tr>
+    </table>
+  </center>
 </center>
-		</article>
-</div>
+        </article>
+    </div>
 
-<div id="engineering" class="tabcontent">
-		<article>
+    <div id="engineering" class="tabcontent">
+        <article>
 <center>
-	<br>
-	<h4><u>Observation on design:</u></h4>
-<h2>-Usually big and bulky</h2>
-<h2>-Digital screen or connect to other digital device</h2>
-<h2>-Big machines fully automated (x pipetting, from sample tube to result)</h2>
-<h2>-Other design include paper sticks (positive negative), magnetic racks
-</h2>
-<h2>-No fully developed products for end users</h2>
-<br>
-	<h4><u>Detection Technology:</u></h4>
-	<h2>-Most PCR</h2>
-<h2>-rRNA detection</h2>
-<h2>-Magnetic nanoparticles linked to antibodies</h2>
-<h2>-Liquid Crystal Technology
-</h2>
-	<br>
-	<h4><u>Labs for food pathogen testing in the UAE:</u></h4>
-<h2>-Al Hoty Stanger labs, GHP group, Wimpey labs, National Reference Lab,Qualitas Material, Intertek, Specifico co.</h2>
-<h2>-Prices range from 220 to 250 dirhams (per 1 sample with 3 basic parameters)</h2>
-<h2>-Takes 3-5 days for results
-</h2>
+
+  <center>
+    <table>
+      <tr>
+        <td><b>Integrated Human Practices</b></td>
+        <td>Integrated the investigated issues into the purpose, design, and execution of the product. Documented how our project has changed based upon our human practices work (<a href="http://2018.igem.org/Team:NYU_Abu_Dhabi/HP/Gold_Integrated"target="_blank">Read more</a>)</td>
+      </tr>
+      <tr>
+        <td><b>Improve a Previous Part or Project</b></td>
+        <td>??</td>
+      </tr>
+      <tr>
+        <td><b>Model Your Project</b></td>
+        <td>???</td>
+      </tr>
+      <tr>
+        <td><b>Demonstration of Your Work</b></td>
+        <td>??</td>
+      </tr>
+
+    </table>
+  </center>
 </center>
-		</article>
-</div>
+        </article>
+    </div>
 
 </div>
 
-<div id="Proof of Concept" class="tabcontent">
-<article>
-
-<center>
-	<br>
-	<h4><u>Breathalyzers</u></h4>
-	<br>
-<h2>In order to analyze how one detection device can have drastically different features, price ranges and target groups, even when operating with the same functional technology, a study was made on another detection device on the market: breathalyzers.</h2>
-<br>
-<h2>Although the outcome is the same and the method of use is similar, a breathalyzer can be priced at under 4$ or over 4000$. The size can also be that it can be used as a keychain with small button batteries, or become a plug-in device that takes significant space on a desk. More importantly, its high accuracy can lead it to become a standard adopted by the police force, and additional features such as bluetooth can popularize it in the private sector and explain its 100$ price point.
-</h2>
-<br>
-<h2>Pathogene’s inner workings are already determined, but the way the device is going to look, feel and cost are specifications that will constrain it to one target group or another. This has led the iGem team to aim to have a project that isn’t just a product, but a service where the customer can select the specifications of the device in terms of detection method (LAMP or RPA), target pathogens and size.
-</h2>
-<br>
-<h4><u>Inspiration from Other Devices</u></h4>
-<br>
-<h2>From extensive research on other detection devices available currently on the market, we were able to consider the disposability, environmental impact and mechanisms of the Pathogene device. In particular, one important takeaway from this research component was the inspiration taken from the at-home mould detection kit, specifically the sample collection element. The final sample collector module of Pathogene offers a cotton bud tip and reagent releasing mechanism similar in terms of functionality to the Healthful Home mould sample collector. </h2>
-<br>
-<h2> Our full research on other detection devices can be found <a href="http://2018.igem.org/wiki/images/6/6a/T--NYU_Abu_Dhabi--Other_Detection_Devices.pdf" target="_blank">here.</a></h2>
-</center>
 
 
-</article>
-</div>
+
+
 
 <!--script for buttons -->
 <script>
