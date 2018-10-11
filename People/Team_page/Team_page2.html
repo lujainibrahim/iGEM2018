@@ -497,7 +497,6 @@ h2 {
 	color: black;
 	font-size: 15px;
 	text-align: justify;
-	margin-right: 90px;
 	margin-left: 90px;
 }
 /* USE THIS FOR ANYTHING UNDER SUBHEADING TO BE IN A DIFFERENT COLOUR*/
@@ -687,288 +686,398 @@ html, body {
     margin: 0;
     padding: 0;
 }
-</style>
 
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+}
+
+.sec {
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+}
+
+.img-container {
+    float: left;
+    width: 300px;
+    padding: 5px;
+}
+
+.text-container {
+    float: left;
+    width: 700px;
+    height: 400px;
+    padding: 5px;
+
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+    margin: 30px;
+}
+
+/* Make the container relative */
+.swap-on-hover {
+    position: relative;
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+    /* Select the image and make it absolute to the container */
+    .swap-on-hover img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        /* Sets the width and height for the images*/
+        width: 300px;
+        height: 300px;
+    }
+
+    /*
+We set z-index to be higher than the back image, so it's alwyas on the front.
+We give it an opacity leaner to .25s, that way when we hover we will get a nice fading effect.
+*/
+    .swap-on-hover .swap-on-hover__front-image {
+        z-index: 1000;
+        transition: opacity .5s linear;
+
+    }
+
+    /* When we hover the figure element, the block with .swap-on-hover, we want to use > so the front-image is going to have opacity of 0, which means it will be hidden, to the back image will show */
+    .swap-on-hover:hover > .swap-on-hover__front-image {
+        opacity: 0;
+    }
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 10em;
+    margin-right: 10em;
+    border-style: inset;
+    border-width: 2px;
+}
+
+.instructorimage {
+    float: left;
+    width: 500px;
+    padding-left: 100px;
+}
+</style>
+</head>
+
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////// HTML GOES HERE ////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <div class="bg"></div>
 
 <body>
 	<div class="content">
     <div class="content-inside">
-			<h6><b>Education and Public Engagement</b></h6>
-			<!-- <hr style="width:25%"> -->
-
-			<div class="section-block">
-
-			<center>
-			    <div class="tab">
-			        <button class="tablinks" onclick="openTab(event, 'Key Achievments')" id="defaultOpen">High School Workshops</button>
-			        <button class="tablinks2" onclick="openTab(event, 'biology')">Youth Debates</button>
-							<button class="tablinks4" onclick="openTab(event, 'STEM')">STEM Out Of The Box</button>
-							<button class="tablinks5" onclick="openTab(event, 'Shadowing')">Shadowing Opportunity</button>
-							<button class="tablinks3" onclick="openTab(event, 'Uni')">University Outreach Program</button>
-
-			    </div>
-			</center>
-
-			<br>
-			    <div id="Key Achievments" class="tabcontent">
-			        <article>
-			<center>
-			<h2>Over the course of one week, from September 16th till September 20th, four different schools sent an average of 30 students for a workshop organized and run by our team. The competition was advertised to the schools through their counsellors as well as through flyers describing our competition.
-			</h2>
-			<br>
-			<img src="http://2018.igem.org/wiki/images/0/02/T--NYU_Abu_Dhabi--HS_1.jpeg"
-					class="center">
-			<br>
-			<h2> The flyer for this workshop series can be found <a href="http://2018.igem.org/wiki/images/3/31/T--NYU_Abu_Dhabi--HighSchoolWorkshop_Flyer.pdf" target="_blank">here.<a></h2>
-			 <br>
-			<h2>Given the high level of responses we got at 171 registrations, we had to select students on a first-come-first- serve basis as we could only accommodate 30 students per school due to the lab capacity available.
-			</h2>
-			<br>
-			<h2>The workshop’s primary focus was biology and engineering. Every workshop ran from 9:45 am until 2 :00 pm. A summary of the breakdown of each day’s events is shown in Table 1. The workshop was kickstarted with an introduction to iGEM, the different tracks available, emphasizing the global scale of the competition as well as the fact that high school, graduate as well as undergraduate teams were eligible to participate. They were also introduced briefly to the field of synthetic biology.
-			</h2>
-			<br>
-			<img src="http://2018.igem.org/wiki/images/5/59/T--NYU_Abu_Dhabi--HS_7.jpeg" width="500" class="center">
-			<br>
-			<h2>During the introduction, the students were told that they will be contacted in a week with information about a competition for which they could form their own teams. They were not, however, informed of the specifics at the time so as to be fair to students whose workshops were later in the week.
-			</h2>
-			<br>
-			<h2>The students were then introduced briefly to the field of synthetic biology, then split into two seperate groups, for the engineering and biology workshops.
-			</h2>
-			<br>
-			<img src="http://2018.igem.org/wiki/images/a/ab/T--NYU_Abu_Dhabi--HS_table1.png" width="500" class="center">
-			<br>
-			<h2>On the Biology side, the concept of transformation as well as general terms such as plasmids, recombinant DNA, vector and gene regulation were explained to the students in a presentation form.
-			</h2>
-			<br>
-			<embed src="http://2018.igem.org/wiki/images/5/5a/T--NYU_Abu_Dhabi--HS_biology_workshop.pdf"  width="800" height="350" type='application/pdf' class="center">
-			<br><br>
-			<h2> After that, they were taken to the lab, where they transformed E.Coli Dh5α with pGLO plasmid. They then plated their transformed plasmid on different plates as summarized in Table 2. As the incubation period is 16 hours, they were then shown the results on samples already prepared and incubated previously.
-			</h2>
-			<br>
-			<img src="http://2018.igem.org/wiki/images/8/80/T--NYU_Abu_Dhabi--HS_6.png" width="500" class="center">
-			<br>
-			<h2>The protocol used can be found <a href="http://2018.igem.org/wiki/images/b/bf/T--NYU_Abu_Dhabi--HS_Protocol.pdf" target="_blank">here.</a>
-			</h2>
-			<br>
-			<img src="http://2018.igem.org/wiki/images/b/be/T--NYU_Abu_Dhabi--HS_table2.png" width="500" class="center">
-			<br>
-			<h2> On the Engineering side,the students were introduced to the arduino and basis of circuit making. Each team consisted of two to three members and each team was given a circuit kit which consisted of: Resistors, LEDs , breadboards, an arduino UNO board and wires.</h2>
-			<br>
-			<img src="http://2018.igem.org/wiki/images/7/73/T--NYU_Abu_Dhabi--HS_3.jpeg
-			" width="500" class="center">
-			<br>
-			<h2>They were walked through the polarity of the components and connections in the circuit. The first task was to teach the students how to code for a blinking LED. We taught them the circuit connections and explained each line of the code- to make sure that they will be able to make their own connections in the next half of the workshop. After this, we explained how a push button works and integrated that with an LED, to form a “push to light up” circuit. </h2>
-			<br>
-			<h2>After this time period, the students were allowed to play around with the circuitry and code, to build a system of LEDs with their own rhythm of blinking, for around 10 to 15 minutes.
-			</h2>
-			<br>
-			<h2>Following this, we explained to them how such a simple circuit can be utilised and used in different ways- which was used as a transition to explain the design process. The students were introduced to the process of design thinking and the different iterations of it. We explained the different stages in detail and about how few stages are often repeated numerous times. This introduction was given to help students in understanding the broader picture of engineering and also to assist students interested in the high school competition to come up with their own ideas.
-			</h2>
-			<br>
-			<img src="http://2018.igem.org/wiki/images/f/f8/T--NYU_Abu_Dhabi--HS_2.png
-			" width="500" class="center">
-			 <br>
-			<h2>Each of the workshops ran for an hour, after which, the students were taken for lunch. The workshops were then conducted again so that the teams that had been in the biology workshop were now in the engineering one and vice versa. The purpose of splitting the students each day into 2 teams of 15, and running each workshop twice was to increase the amount of interaction we had with each student, and to attract their attention in a more efficient way that is likely to enhance their result in them benefiting more from the workshop and absorbing more of the information. Two members of the team were with each group of students at all times, leading the workshop, answering the students questions and addressing their concerns.
-			</h2>
-			<br>
-			<h2>After the both sets of the parallel engineering and biology workshops were over, the students were taken on a tour around our campus, and invited to take a group photo before they were escorted to their school bus at 2:00 pm.
-			</h2>
-			<br>
-			<img src="http://2018.igem.org/wiki/images/d/df/T--NYU_Abu_Dhabi--HS_5.png"
-				width="500"	class="center">
-					<br>
-			<h2>After the last workshop on Thursday September 20th, all students who participated in the workshop were sent the details and instructions for the competition. They were given one week to come up with a potential project idea for iGEM, and submit a 500 word abstract supported by cited references of their idea. Students were encouraged to team up with students from other schools as well in forming their teams for the competition should they wish to, in an effort to foster their collaborative skills and build their team skills especially with team mates they may not be as familiar with.
-			</h2>
-			<br>
-			<h4><u>High School Competition</u></h4>
-			<h2>As a part of our education and public engagement, we are planning to conduct a High School Competition in early or mid November. The four schools: ADNOC, Al Hunain, Brighton School and GEMS Dubai American Academy, that participated in the High School workshop series were invited to join this competition.
-			</h2>
-			<br>
-			<h2>On Thursday September 20th, all students who participated in our workshop series were sent the details and instructions for the competition. They were asked to form teams with two to four people and come up with a potential project idea for iGEM, and submit a 500 word abstract supported by cited references of their idea. Students were encouraged to team up with students from other schools as well in forming their teams for the competition should they wish to, in an effort to foster their collaborative skills and build their team skills especially with team mates they may not be as familiar with. This competition has been planned to take place in early or mid November, thus making sure the students have enough time for research and ideation. The students were given this <a href="http://2018.igem.org/wiki/images/d/db/T--NYU_Abu_Dhabi--HS_Competiton_Prompt.pdf" target="_blank">prompt</a>.
-			</h2>
-			<br>
-			<h2>Few students submitted their project proposal in the early deadline and their project abstracts will receive feedback, giving them an advantage for the competition.
-			</h2>
-			<br>
-			<h2><u>Here are some of the early proposals:</u></h2>
-			<h2>-<a href="http://2018.igem.org/wiki/images/a/a8/T--NYU_Abu_Dhabi--HS_Competiton_Proposal1.pdf" target="_blank">Proposal 1</a></h2>
-			<h2>-<a href="http://2018.igem.org/wiki/images/2/2e/T--NYU_Abu_Dhabi--HS_Competiton_Proposal2.pdf" target="_blank">Proposal 2</a></h2>
-			<h2>-<a href="http://2018.igem.org/wiki/images/1/13/T--NYU_Abu_Dhabi--HS_Competiton_Proposal3.pdf" target="_blank">Proposal 3</a></h2>
-<br><br><br>
-			</center>
-
-			        </article>
-			    </div>
-				</div>
-
-			    <div id="biology" class="tabcontent">
-			        <article>
-			<center>
-			<h2>As a part of our outreach program for this year, we hosted a youth debate, in collaboration with the Emirates Youth Council, under the Minister of Youth, relating to synthetic biology. The Youth Debate is an initiative launched by the Ministry of Youth that brings together experts and young minds to discuss issues  of extreme importance to the nation, region, and the world. During 45 minute segments, two teams formally debate a thoughtfully crafted argument, that  is followed with a vote by a panel of judges and the audience to decide on a winning team. Quote from H.E. Shamma Al Mazrui, UAE Minister of State for Youth Affairs, on this event can be found <a href="http://2018.igem.org/wiki/images/2/26/T--NYU_Abu_Dhabi--Youth-Debate_Quote.pdf"target="_blank">here</a>.</h2>
-			<br>
-			<img src="http://2018.igem.org/wiki/images/9/9c/T--NYU_Abu_Dhabi--youthdebate9.png"
-		class="center">
-			<br>
-			<h2>The team worked with the Youth Ministry from early June to conduct this event. Since it was the first ever English Youth Debates to be conducted, a lot of time, effort and thought was invested to craft this event. The iGEM team came up with five possible motions relating to Synthetic Biology and the Youth Debates management and the iGEM team discussed them in detail, before selecting our final motion. Since it had to be scientific, debatable and accessible to non science majors as well, the decision making process took a while. The proposed motions were:</h2>
-			 <br>
-			 <h2><b>1. DNA Databases:</b><i> While firms like 23&me are famous for tracking your ancestry, they gain access to your DNA sequence- something that defines you. This information can be used to solve crimes, understand diseases and also to track every single person. Is building DNA databases the right way to keep track in the future or is it invading your privacy ?
-			 </i></h2>
-			 <h2><b>2. Can synthetic biology solve world hunger?:</b><i> While there is a huge need for food and limited space for agriculture, will synthetic biology help solve world hunger ? The labs can recreate all necessary climatic conditions and every nation could sustain its own population. Topics that we could discuss within this topic are possible policies, renewable energy, economic impact of this change for UAE and the world.
-			</i></h2>
-			 <h2><b>3. Can CRISPR feed the world?:</b><i> CRISPR is a revolutionary and powerful tool that can easily edit genomes. CRISPR’s precision allows scientists to select for desired traits and insert them leaving out genes that make plants susceptible to disease and other undesirable factors. And so, using CRISPR in the food industry can increase the yield of crops in unfavorable conditions, and even possibly stop certain crops from becoming extinct.</i></h2>
-			 <h2><b>4. Patentable genes and organism ownership:</b><i> Patenting genes is a heated topic in bioethics. Some claim that it is unethical to patent genes as it gives life a commercial value. Others believe that life cannot be owned by anyone. However, companies that file for patents believe that novel genetically modified crops should be the protected as the property of the company. Whether anyone owns genetically modified organisms is still up to question.</i></h2>
-			 <h2><b>5. Laboratory grown meat is the solution to future food security:</b> Stem cells obtained from the animal are nurtured in the lab by keeping the external factors like the environment, temperature and humidity similar to the conditions inside the body. In short, you cheat the cells to believe that they are still in the animal and make them grow into tissues. The economic, social and policy impacts of this can be discussed.</i></h2>
-			<br>
-			<img src="			http://2018.igem.org/wiki/images/7/74/T--NYU_Abu_Dhabi--youthdebate7.png"
-		class="center">
+<h6>Our Team</h6>
 <br>
-			<h2>Out of these topics, the second one was chosen and the Youth Debate held by the NYUAD iGEM team was on the topic :<i><b>“ Is synthetic biology the solution to world hunger?”</b></i>. This event was the first ever Youth Debate  in English and was also the first to involve a scientific topic.
-			</h2>
-			<br>
-			<img src="http://2018.igem.org/wiki/images/7/7c/T--NYU_Abu_Dhabi--youthdebate4.png"
-		class="center">
-		<br>
-			<h2>The event was held on the 10th of September at the NYUAD Campus. Her Excellency Mariam Al Mehairi, Minister of State for Food Security, Professor Rashid Ali, Research Assistant Professor, Khalifa Centre for Genetic Engineering and Biotechnology and Professor Alexis Gambis, Professor of Biology and Film and New Media, New York University Abu Dhabi served in the panel of judges. The affirmative team proposed that investing in synthetic biology was the solution to world hunger along with many other problems. The competitive team proposed that food policy programs and food management programs would be the quicker and practical solution to world hunger. Both teams consisted of a member of the iGEM team (Yejie Yun and Sion Hau), a non-science major student from NYUAD’s Debate Union (Matea Kocevska and Madhav Juneja) and a student from American University of Sharjah (Feraas Tayeh and Maryam AlMazrouei). This diversity in the teams made sure that the debate not only addressed the scientific perspective of things but also put it in context within the bigger picture. The ethics behind food policy programs, short term and long term benefits of artificial food production, the effects of both options in the local economy and the possible change in power dynamics between nations after introduction of synthetic food production were few topics addressed in the debate.
-			</h2>
-			<br>
-			<img src="http://2018.igem.org/wiki/images/1/1e/T--NYU_Abu_Dhabi--youthdebate5.png"
-		class="center">
-		<br>
-			<h2> The debate served as a great introduction to the real life applications of synthetic biology and put into perspective what its influence will be in the UAE and around the world. H.E. Mariam also addressed the gathering and gave a short introduction to the current food programs she is working on.
-			</h2>
-			<br>
-			<h4><u>NYUAD Youth Debate Media Mentions</u></h4>
-			<br>
-			<h4><u><a href="http://wam.ae/en/details/1395302707738" target="_blank">Emirates News Agency</a></u></h4>
-			<h2><i>"Youth debates will help limit global food shortage issue: Mariam Almheiri"</i></h2>
-			<br>
-			<img src="http://2018.igem.org/wiki/images/9/99/T--NYU_Abu_Dhabi--Youth-Debate_Media1.png"width="300" class="center">
-			<br>
-			<h4><u><a href="https://www.thegazelle.org/issue/139/news/news-of-the-week-139" target="_blank">The Gazelle</a></u></h4>
-			<h2><i>“The Youth Debate challenged me personally to think outside of my own biases as a Biology major, and to take into consideration existing food policy programs to support advances in synthetic biology to address the issue of world hunger.”
-			</i></h2>
-			<br>
-			<img src="http://2018.igem.org/wiki/images/3/38/T--NYU_Abu_Dhabi--Youth-Debate_Media2.png"width="300" class="center">
-			<br>
-			<h4><u><a href="https://www.eyeofdubai.net/ar/news/details/1536825322" target="_blank">Eye Of Dubai</a></u></h4>
-			<h2><i>"The Youth Hub organizes 3 Youth Debates"</i></h2>
-			<br>
-			<img src="http://2018.igem.org/wiki/images/9/90/T--NYU_Abu_Dhabi--Youth-Debate_Media3.png"width="300" class="center">
-			<br>
-			<h4><u><a href="http://www.prpal.me/pr/detail/Agricultural-Biotechnology-Proves-Fertile-Topic-for-Youth-Debate-970" target="_blank">PR Pal</a></u></h4>
-			<h2><i>"The issue of biotechnology in agriculture proved to be a fertile subject for discussion at the third Emirati Youth Debate. Hosted at New York University (NYU) Abu Dhabi on Monday evening, the forum pitched two teams of students against each other to argue the relative merits of using the latest genetic technology to end world hunger."</i></h2>
-			<br>
-			<img src="http://2018.igem.org/wiki/images/1/13/T--NYU_Abu_Dhabi--Youth-Debate_Media4.png"width="300" class="center">
-			<br>
-			<h4><u><a href="https://www.zawya.com/mena/en/story/Agricultural_Biotechnology_proves_fertile_topic_for_youth_debate-ZAWYA20180911112114/" target="_blank">Zawaya</a></u></h4>
-			<h2><i>"Organised by the Federal Youth Authority, the inaugural discussion in the Youth Debates programme – the region’s first youth-oriented debating platform – saw the attendance of H.E. Mariam Almheiri, Minister of State for Future Food Security, as special guest and judge"</i></h2>
-			<br>
-			<img src="http://2018.igem.org/wiki/images/9/9c/T--NYU_Abu_Dhabi--Youth-Debate_Media5.png"width="300" class="center">
-			<br>
-			<br>
-			<h4><u><a href="http://emarat-news.ae/1536678256616-11-09-2018" target="_blank">Emarat News</a></u></h4>
-			<h2><i>"The Youth Hub organizes 3 Youth Debates"</i></h2>
-			<br>
-			<img src="http://2018.igem.org/wiki/images/5/5e/T--NYU_Abu_Dhabi--Youth-Debate_Media6.png"width="300" class="center">
-			<br>
+<!-- INSERT CONTENT HERE: -->
+<center><img src="http://2018.igem.org/wiki/images/9/95/T--NYU_Abu_Dhabi--map.png" alt="Workplace" usemap="#worldmap" width="1000" position="relative" /></center>
+<div class="center"><font size="6">THE STUDENTS </font></div>
+
+<hr>
+
+<div id="Doo" class="clearfix">
+    <div class="img-container">
+        <div class="swap-on-hover">
+            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/7/7d/T--NYU_Abu_Dhabi--Doo1.jpeg" />
+            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/1/13/T--NYU_Abu_Dhabi--Doo2.jpeg" />
+        </div>
+    </div>
+    <div class="text-container">
+        <h4><b><font size="5.5">Doovaraha Maheswarasarma</font></b></h4>
+        <h4><i><font size="3.5">Sri Lanka &amp; India </font></i></h4>
+        <h2> A third year Mechanical Engineering student, Doovaraha is one of our two hard-working co-leaders of the 2018 NYUAD iGEM team. She is an absolute queen when it comes to outreach projects, arranging elaborate community events to spread the word of synthetic biology and the iGEM competition. Doovaraha also leads the engineering team in their work and is always running around from meeting to meeting. If she wasn’t so good at being a team leader, she could easily be the next Masterchef with her amazing cooking skills, feeding the entire team over the summer!  </h2>
+    </div>
+</div>
+
+<div id="Laura" class="clearfix">
+    <div class="img-container">
+        <div class="swap-on-hover">
+            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/6/6e/T--NYU_Abu_Dhabi--Laura1.jpeg" />
+            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/e/e4/T--NYU_Abu_Dhabi--Laura2.jpeg" />
+        </div>
+    </div>
+    <div class="text-container">
+        <h4><b><font size="5.5">Laura Karpauskaite</font></b></h4>
+        <h4><i><font size="3.5">Lithuania</font></i></h4>
+        <h2> Laura is a third year Biology major from Lithuania, who along with having an unstoppable passion for biology, also has an insatiable passion for coffee. Typical of an NYUAD iGEM team leader, she often works too hard and worries too much about our project, staying in the lab until absurd hours working on the synthetic biology research components. Laura is also the grand master of our iGEM team, having worked on last year’s project as well, imparting all her iGEM wisdom on us throughout the semester.  </h2>
+    </div>
+</div>
+
+<div id="Biswas" class="clearfix">
+    <div class="img-container">
+        <div class="swap-on-hover">
+            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/6/6d/T--NYU_Abu_Dhabi--Biswas1.jpeg" />
+            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/7/70/T--NYU_Abu_Dhabi--Biswas2.jpeg" />
+        </div>
+    </div>
+    <div class="text-container">
+        <h4><b><font size="5.5">Biswas Shrestha</font></b></h4>
+        <h4><i><font size="3.5">Nepal</font></i></h4>
+        <h2> Passionate about Biology and Bioengineering, Biswas is the ultimate keen bean of the team. His main roles include: Biology, InterLab Study, BioBrick parts, Project Management, Grants and Sponsorships. Besides iGEM, he works on gene regulation in development and differentiation at the Percipalle Lab. He is always ready to help out with anything and everything from ideation to genomics. He is also a problem solver who can think outside of the box, even preparing our own DIY DNA loading dye once when we ran out. </h2>
+    </div>
+</div>
+
+<div id="Cristian" class="clearfix">
+    <div class="img-container">
+        <div class="swap-on-hover">
+            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/1/16/T--NYU_Abu_Dhabi--Cristian1.jpeg" />
+            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/e/ee/T--NYU_Abu_Dhabi--Cristian2.jpeg" />
+        </div>
+    </div>
+    <div class="text-container">
+        <h4><b><font size="5.5">Cristian Garcia Zamora</font></b></h4>
+        <h4><i><font size="3.5">Mexico</font></i></h4>
+        <h2> Cristian is a second year Engineering student working mainly on engineering design and prototyping. Originally from Mexico, you can now find him in the engineering design studio, sawing, cutting and constructing away into wee hours of the morning. Once we caught him reading a design book at 4am in the engineering design studio! Coincidentally, Cris experienced his worst food poisoning experience in the first week of iGEM prototyping… oh the irony! </h2>
+    </div>
+</div>
+
+<div id="Daniel" class="clearfix">
+    <div class="img-container">
+        <div class="swap-on-hover">
+            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/8/87/T--NYU_Abu_Dhabi--Daniel1.jpeg" />
+            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/3/39/T--NYU_Abu_Dhabi--Daniel2.jpeg" />
+        </div>
+    </div>
+    <div class="text-container">
+        <h4><b><font size="5.5">Daniel Obaji</font></b></h4>
+        <h4><i><font size="3.5">Nigeria</font></i></h4>
+        <h2> Daniel is a fourth year student majoring in Biology and can oftentimes be found working in the biology lab or on outreach programs. Though, do not be fooled by his presence in the lab, we have caught him watching anime while in his lab coat one too many times! </h2>
+    </div>
+</div>
+
+<div id="Imtiyaz" class="clearfix">
+    <div class="img-container">
+        <div class="swap-on-hover">
+            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/3/3c/T--NYU_Abu_Dhabi--Imtiyaz1.jpeg" />
+            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/6/69/T--NYU_Abu_Dhabi--Imtiyaz2.jpeg" />
+        </div>
+    </div>
+    <div class="text-container">
+        <h4><b><font size="5.5">Imtiyaz Hariyani</font></b></h4>
+        <h4><i><font size="3.5">India</font></i></h4>
+        <h2> Imtiyaz is a fourth year student majoring in Biology and has never had any food poisoning experiences…(except for that one time his stomach felt weird after eating a cake he had baked himself)! Being the eldest on the team, Imtiyaz is the designated team grandpa, giving unsolicited, but greatly appreciated advice on academics and life in general to the younger team members. In an ideal lab partner he is looking for someone with good vibes, who can provide Reese’s chocolate and can tolerate his cricket watching in the lab.  </h2>
+    </div>
+</div>
+
+<div id="Kai-Wen" class="clearfix">
+    <div class="img-container">
+        <div class="swap-on-hover">
+            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/f/f7/T--NYU_Abu_Dhabi--KaiWen1.jpeg" />
+            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/5/5f/T--NYU_Abu_Dhabi--KaiWen2.jpeg" />
+        </div>
+    </div>
+    <div class="text-container">
+        <h4><b><font size="5.5">Kai-Wen Yang</font></b></h4>
+        <h4><i><font size="3.5">Taiwan</font></i></h4>
+        <h2> Kai-Wen is a third year Electrical Engineering major from Taiwan. Apart from being physically flexible, she is also incredibly mentally flexible, helping out with team collaborations, web development and engineering design on the team, not to mention her artistic talents and contributions to our science sketch videos! Kai-wen loves the feeling of everyone on the team working hard towards a common goal, so wholesome.  </h2>
+    </div>
+</div>
+
+<div id="Lujain" class="clearfix">
+    <div class="img-container">
+        <div class="swap-on-hover">
+            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/3/3f/T--NYU_Abu_Dhabi--Lujain1.jpeg" />
+            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/0/03/T--NYU_Abu_Dhabi--Lujain2.jpeg" />
+        </div>
+    </div>
+    <div class="text-container">
+        <h4><b><font size="5.5">Lujain Ibrahim</font></b></h4>
+        <h4><i><font size="3.5">Palestine &amp; Jordan</font></i></h4>
+        <h2> Lujain is a third year student majoring in Computer Engineering and so, naturally, is also our Wiki guru and digital media expert. From editing videos to script writing, to microfluidic chip design and testing, to Arabic translations, there is nothing much that can be too challenging for Lujain. Also, a generous foodie at heart, Lujain often initiates team bubble tea acquirement events and shares much appreciated Knafeh with everyone. </h2>
+    </div>
+</div>
+
+<div id="Mariam" class="clearfix">
+    <div class="img-container">
+        <div class="swap-on-hover">
+            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/9/91/T--NYU_Abu_Dhabi--Mariam1.jpeg" />
+            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/c/cf/T--NYU_Abu_Dhabi--Mariam2.jpeg" />
+        </div>
+    </div>
+    <div class="text-container">
+        <h4><b><font size="5.5">Mariam Anwar</font></b></h4>
+        <h4><i><font size="3.5">Egypt</font></i></h4>
+        <h2> Mariam is a third year student majoring in biology. She has had too many food poisoning experiences to count, which explains her diet of coffee, kitkats and biscuits. Mariam is also an absolute gun when it comes to hustling in the lab and outreach programs. She also happens to be one of the few people on the team who have the patience and dedication to helping others document their work, so much love for this patient soul. </h2>
+    </div>
+</div>
+
+<div id="Munib" class="clearfix">
+    <div class="img-container">
+        <div class="swap-on-hover">
+            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/8/82/T--NYU_Abu_Dhabi--Munib1.jpeg" />
+            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/2/22/T--NYU_Abu_Dhabi--Munib2.jpeg" />
+        </div>
+    </div>
+    <div class="text-container">
+        <h4><b><font size="5.5">Munib Mesinovic</font></b></h4>
+        <h4><i><font size="3.5">Bosnia and Herzegovina</font></i></h4>
+        <h2> A third year Electrical Engineering student, Munib takes on multiples roles in the engineering design process as well as microfluidics, web development and outreach programs. His worst food poisoning experience landed him in Abu Dhabi’s Cleveland clinic in the middle of the night (shout-out to Munib’s roommate)! The great thing about Munib is that he takes suggestions and feedback to heart, just look at him sitting cross-legged on a traffic bollard in the middle of a forty degree day, simply because it was suggested to him that it would make for a great photo.  </h2>
+    </div>
+</div>
+
+<div id="Sion" class="clearfix">
+    <div class="img-container">
+        <div class="swap-on-hover">
+            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/3/37/T--NYU_Abu_Dhabi--Sion1.jpeg" />
+            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/4/40/T--NYU_Abu_Dhabi--Sion2.jpeg" />
+        </div>
+    </div>
+    <div class="text-container">
+        <h4><b><font size="5.5">Sion Hau</font></b></h4>
+        <h4><i><font size="3.5">Australia</font></i></h4>
+        <h2> Sion is a second year student majoring in Biology and is always proactive. She is the assigned cake-baker for teammate birthdays (Pathogene approved) but isn’t too great at surprises. You can often find her playing some sick tunes in the lab or on her phone attempting to make yet another viral post for the team. If you have enjoyed the lame puns on the Instagram stories or Facebook posts, she would very much like to meet you! </h2>
+    </div>
+</div>
+
+<div id="Tom" class="clearfix">
+    <div class="img-container">
+        <div class="swap-on-hover">
+            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/f/fd/T--NYU_Abu_Dhabi--Tom1.jpeg" />
+            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/d/d4/T--NYU_Abu_Dhabi--Tom2.jpeg" />
+        </div>
+    </div>
+    <div class="text-container">
+        <h4><b><font size="5.5">Tom Abi Samra</font></b></h4>
+        <h4><i><font size="3.5">USA &amp; Lebanon</font></i></h4>
+        <h2> Tom is a second year student interested in everything design related, and true to his talents and interests, if given the chance to come up with his dream lab instruments, he would want a 3D microscope. The 3D microscope would help him see in real-time the movements inside of cells, just like all the biology animations and illustrations. Our team’s logo and publication designs have all been created by Tom. </h2>
+    </div>
+</div>
+
+<div id="Yejie" class="clearfix">
+    <div class="img-container">
+        <div class="swap-on-hover">
+            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/c/c3/T--NYU_Abu_Dhabi--Yejie1.jpeg" />
+            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/c/ca/T--NYU_Abu_Dhabi--Yejie2.jpeg" />
+        </div>
+    </div>
+    <div class="text-container">
+        <h4><b><font size="5.5">Yejie Yun</font></b></h4>
+        <h4><i><font size="3.5">South Korea</font></i></h4>
+        <h2> Yejie is a second year student pursuing multiple majors and contributing to the engineering team’s work. She is also an integral part of many other objectives in our team including Youth Debates, microfluidics chip design and science sketches. Her facourite iGEM moment thus far was when more of our teammates started to appreciate bubble tea...her bubble tea obsession is quite reflective of her bubbly personali-tea too! Unfortunately, Yejie has a sensitive stomach and has had several food poisoning experiences...making her someone who could benefit significantly from out project! </h2>
+    </div>
+</div>
 
 
+<div class="center"><font size="6">THE INSTRUCTORS </font></div>
+<hr>
 
+<div id="Song" class="clearfix">
+    <div class="img-container">
+        <div class="swap-on-hover">
+            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/3/33/T--NYU_Abu_Dhabi--Song1.jpeg" />
+            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/e/e5/T--NYU_Abu_Dhabi--Song2.jpeg" />
+        </div>
+    </div>
+    <div class="text-container">
+        <h4><b><font size="5.5">Yong-Ak (Rafael) Song</font></b></h4>
+        <h4><i><font size="3.5">South Korea</font></i></h4>
+        <h2> Rafael Song received his Ph.D. in Biomedical Engineering from RWTH Aachen University (Aachen, Germany) and has worked at the Korea Institute of Science and Technology as a Senior Research Scientist. His lab is focused on applying microfluidics and nanofluidics to a broad range of bioscience challenges, targeting the interface between biology, physics and engineering. He is currently an Assistant Professor of Mechanical and Biomedical Engineering and as the Principal Investigator of the Micro- and Nanoscale Bioengineering Lab at NYUAD. </h2>
+    </div>
+</div>
 
+<div id="Mazin" class="clearfix">
+    <div class="img-container">
+        <div class="swap-on-hover">
+            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/7/74/T--NYU_Abu_Dhabi--Mazin1.jpeg" />
+            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/3/3e/T--NYU_Abu_Dhabi--Mazin2.jpeg" />
+        </div>
+    </div>
+    <div class="text-container">
+        <h4><b><font size="5.5">Mazin Magzoub</font></b></h4>
+        <h4><i><font size="3.5">Sudan</font></i></h4>
+        <h2> Mazin Magzoub received his Ph.D. in Biophysics from Stockholm University (Stockholm, Sweden) studying the biophysical properties of cell-penetrating peptides. His lab focuses on drug delivery strategies, amyloid diseases, and cancer therapeutics. He currently serves as an Assistant Professor of Practice in Biology and as the Principal Investigator of the Biophysics Lab at NYUAD. </h2>
+    </div>
+</div>
 
-			<br><br>
-			</center>
-			        </article>
-			    </div>
+<div id="Andras" class="clearfix">
+    <div class="img-container">
+        <div class="swap-on-hover">
+            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/2/23/T--NYU_Abu_Dhabi--Andras1.jpeg" />
+            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/9/95/T--NYU_Abu_Dhabi--Andras2.jpeg" />
+        </div>
+    </div>
+    <div class="text-container">
+        <h4><b><font size="5.5">Andras Gyorgy</font></b></h4>
+        <h4><i><font size="3.5">Hungary</font></i></h4>
+        <h2> Andras Gyorgy received his Ph.D. in Electrical Engineering from Massachusetts Institute of Technology, studying modularity in cellular systems blending theory with experiments. His lab focuses on networked dynamical systems, including but not limited to rational forward-engineering of synthetic biology systems and design and analysis of multi-scale systems prevalent in biology. He currently serves as an Assistant Professor of Electrical Engineering and as the Principal Investigator of the NetBio group Lab at NYUAD. </h2>
+    </div>
+</div>
 
-			<div id="STEM" class="tabcontent">
-					<article>
-			<center>
-			<h2>STEM out of the box was a two day workshop by an NYU Abu Dhabi student interest called weSTEM.  Members of the iGEM team collaborated with the organisers of the workshop by helping in the planning and execution of the workshop. The team also consisted of  a civil engineering graduate to ensure expertise in the topic.
-			</h2>
-			<br>
-			<h2>The workshop started with a presentation from Professor Matthew Karau about the design spaces available in NYUAD and the process of design thinking. Throughout this presentation, the importance of research, analysis and re-thinking was explained and the it served as the introduction to the process the six student teams were expected to follow in the two day workshop.
-			</h2>
-			<br>
-			<h2>The task given to the teams was to design a house, with numerous restrictions. The restriction differed from team to team, to ensure that there was no unnecessary competition among them. The prompts of the house design ranged from home for refugee camps in Greece and Kenya, home for medical tourism to homes for lower income families of cooks or carpenters. The area for the house was also limited to 240 sq.feet.
-			</h2>
-			<br>
-			<h2>The students started with brainstorming, list making and finalising requirements for the first day of the workshop.At the end of the first day, they presented their requirements and assumptions to the other teams and received criticism from their peers and NYUAD engineering students.  On the second day, they continued with their research and were also taught how to use SweetHome3D, an outsourced software for basic interior design. Using this software, the students designed the house completely, ranging from floor plan to windows. On the end of the second day, the students presented their completed house designs and were awarded a certificate of participation.
-			</h2>
-			<br><br>
-			</center>
-					</article>
-			</div>
+<div id="Ibrahim" class="clearfix">
+    <div class="img-container">
+        <div class="swap-on-hover">
+            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/8/84/T--NYU_Abu_Dhabi--Ibrahim1.jpeg" />
+            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/d/dc/T--NYU_Abu_Dhabi--Ibrahim2.jpeg" />
+        </div>
+    </div>
+    <div class="text-container">
+        <h4><b><font size="5.5">Ibrahim Chehade</font></b></h4>
+        <h4><i><font size="3.5">Canada</font></i></h4>
+        <h2> Ibrahim Chehade received his M.Sc. in Integrative Biology at Wilfrid Laurier University (Waterloo, Ontario, Canada) in the field of Environmental Toxicology and Endocrinology. He currently serves as an Associate Instructor of Biology at NYUAD. </h2>
+    </div>
+</div>
 
+<div id="Ashley" class="clearfix">
+    <div class="img-container">
+        <div class="swap-on-hover">
+            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/6/66/T--NYU_Abu_Dhabi--Ashley1.jpeg" />
+            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/b/bb/T--NYU_Abu_Dhabi--Ashley2.jpeg" />
+        </div>
+    </div>
+    <div class="text-container">
+        <h4><b><font size="5.5">Ashley Isaac</font></b></h4>
+        <h4><i><font size="3.5">South Africa</font></i></h4>
+        <h2> Ashley Isaac received his M.Sc. in Microbiology from the University of KwaZulu-Natal (Durban, South Africa) and has served as the LIMS Administrator at the HIV Prevention Research Unit. He currently serves as an Associate Instructor of Biology at NYUAD.  </h2>
+    </div>
+</div>
 
-			<div id="Shadowing" class="tabcontent">
-					<article>
-			<center>
-				<br>
-				<img src="http://2018.igem.org/wiki/images/1/1f/T--NYU_Abu_Dhabi--Shadowing1.jpeg"
-			class="center">
-			<br>
-			<h2>During the summer, a student participant from the STEM out of the box workshop reached out to us with a few doubts about our work for iGEM and how Biology and Engineering was working together in it. We offered him an opportunity to shadow us for a day. During this time, he learnt about how the microfluidic chips were made, about the design process for the sample collection mechanism and also about the biology techniques used by us. The student also had the opportunity to join us for our design feedback meeting in which he had the opportunity to learn about how much effort goes into designing the smallest of things like a screw. Through this shadowing opportunity, both the student and the team learned a lot. While he learned about different techniques, tools and machines, the student’s curiosity and the questions asked allowed the team to look at things from a fresh perspective.
-			</h2>
-			<br>
-			<img src="http://2018.igem.org/wiki/images/4/46/T--NYU_Abu_Dhabi--Shadowing2.png"
-		class="center">
-		<br>
-			<h2>The student even reflected on his experience by writing this <a href="http://2018.igem.org/wiki/images/e/ef/T--NYU_Abu_Dhabi--Reflection.pdf" target="_blank">reflection piece<a></h2>
-				<br><br>
-			</center>
-					</article>
-			</div>
-
-			<div id="Uni" class="tabcontent">
-					<article>
-			<center>
-			<h2>UAE. The team chose six universities known for their active involvement in STEM and reached out to the Deans of Sciences/Engineering or Biotechnology, depending on the departments present in the universities of our interest. The Deans of the following universities were contacted:
-			</h2><br>
-			<h2><i>-American University of Sharjah</i></h2>
-			<h2><i>-Khalifa University</i></h2>
-			<h2><i>-University of Sharjah</i></h2>
-			<h2><i>-Zayed University</i></h2>
-			<h2><i>-American University of Ras Al Khaimah</i></h2>
-			<h2><i>-UAE University</i></h2>
-			<br>
-			<h2>We have introduced iGEM to them and are in the process of getting permission to host information sessions to interested students about this.</h2>
-			<br><br>
-			</center>
-					</article>
-			</div>
-  </div>
-  <footer class="footer">
-		<div class="columns2">
+<div id="Esteban" class="clearfix">
+    <div class="img-container">
+        <div class="swap-on-hover">
+            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/1/15/T--NYU_Abu_Dhabi--Esteban1.jpeg" />
+            <img class="swap-on-hover__back-image"  src="http://2018.igem.org/wiki/images/e/e9/T--NYU_Abu_Dhabi--Esteban2.jpeg" />
+        </div>
+    </div>
+    <div class="text-container">
+        <h4><b><font size="5.5">Esteban Salvemini</font></b></h4>
+        <h4><i><font size="3.5">Spain</font></i></h4>
+        <h2>Esteban Salvemini received his Integrated Product Design Master, Industrial Design at Technische Universiteit Delft. He is specialized and passionate about model making, 3D modeling with CAD program, mechanical design solutions, research and user experience/interaction. He currently serves as the manager of the Advanced Manufacturing Workshop at NYUAD.</h2>
+    </div>
+</div>
+</div>
+<footer class="footer">
+  <div class="columns2">
 <a href="http://2018.igem.org/Team:NYU_Abu_Dhabi" target="_blank"><img src="http://2018.igem.org/wiki/images/d/d9/T--NYU_Abu_Dhabi--PathoGene2.png" alt="sponsor" width="200" margin-left="60px" ></a>
 <br>
-		<a href="mailto:nyuad.igem@nyu.edu" target="_blank"><span class="fa fa-google"></span></a>
-		<a href="https://www.facebook.com/iGEMNYUAD/" target="_blank"><span class="fa fa-facebook"></span></a>
-		<a href="https://www.twitter.com/igemnyuad/" target="_blank"><span class="fa fa-twitter"></span></a>
-		<a href="https://www.instagram.com/igem_nyuad/" target="_blank"><span class="fa fa-instagram"></span></a>
+  <a href="mailto:nyuad.igem@nyu.edu" target="_blank"><span class="fa fa-google"></span></a>
+  <a href="https://www.facebook.com/iGEMNYUAD/" target="_blank"><span class="fa fa-facebook"></span></a>
+  <a href="https://www.twitter.com/igemnyuad/" target="_blank"><span class="fa fa-twitter"></span></a>
+  <a href="https://www.instagram.com/igem_nyuad/" target="_blank"><span class="fa fa-instagram"></span></a>
 
-		</div>
-		<div class="columns">
-			<h3>Sponsors:</h3>
-		                  <a href="https://worldwide.promega.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/2/23/T--NYU_Abu_Dhabi--Promega.jpeg" alt="sponsor" width="90"></a>
-			                  <a href="http://www.appslink-me.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/f/f6/T--NYU_Abu_Dhabi--Appslink2.png" alt="sponsor" width="90"></a>
-			                  <a href="https://eu.idtdna.com/pages" target="_blank"><img src="http://2018.igem.org/wiki/images/1/17/T--NYU_Abu_Dhabi--IDT.png" alt="sponsor" width="90"></a>
-			                  <a href="https://www.mathworks.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/7/7f/T--NYU_Abu_Dhabi--Mathworks.png" alt="sponsor" width="90"></a>
-												<a href="http://www.snapgene.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/5/59/T--NYU_Abu_Dhabi--snapgene.png" alt="sponsor" width="90"></a>
-												<a href="https://www.geneious.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/0/06/T--NYU_Abu_Dhabi--Geneious.png" alt="sponsor" width="90"></a>
-												<a href="https://www.jenabioscience.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/7/7a/T--NYU_Abu_Dhabi--JenaBioscience.png" alt="sponsor" width="90"></a>
+  </div>
+  <div class="columns">
+    <h3>Sponsors:</h3>
+                    <a href="https://worldwide.promega.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/2/23/T--NYU_Abu_Dhabi--Promega.jpeg" alt="sponsor" width="90"></a>
+                      <a href="http://www.appslink-me.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/f/f6/T--NYU_Abu_Dhabi--Appslink2.png" alt="sponsor" width="90"></a>
+                      <a href="https://eu.idtdna.com/pages" target="_blank"><img src="http://2018.igem.org/wiki/images/1/17/T--NYU_Abu_Dhabi--IDT.png" alt="sponsor" width="90"></a>
+                      <a href="https://www.mathworks.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/7/7f/T--NYU_Abu_Dhabi--Mathworks.png" alt="sponsor" width="90"></a>
+                      <a href="http://www.snapgene.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/5/59/T--NYU_Abu_Dhabi--snapgene.png" alt="sponsor" width="90"></a>
+                      <a href="https://www.geneious.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/0/06/T--NYU_Abu_Dhabi--Geneious.png" alt="sponsor" width="90"></a>
+                      <a href="https://www.jenabioscience.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/7/7a/T--NYU_Abu_Dhabi--JenaBioscience.png" alt="sponsor" width="90"></a>
 
-		</div>
+  </div>
 </footer>
 </body>
-
-
-<!-- END -->
-
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-<!--- Menu --->
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 
 <!--script for buttons -->
@@ -988,12 +1097,6 @@ html, body {
         }
     document.getElementById("defaultOpen").click();
     </script>
-
-
-
-</body>
-
-
 
 
 <!-- END -->
@@ -1081,7 +1184,7 @@ html, body {
            <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Parts">Parts</a>
            <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Safety">Safety</a>
            <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Interlab">Interlab</a>
-					            <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Modelling">Modelling</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Modelling">Modelling</a>
 					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Medal_Requirments">Medal Requirements</a>
 
 				 </div>
@@ -1094,7 +1197,7 @@ html, body {
          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
            <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Biology">Biology</a>
            <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Ideation">Ideation</a>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Engineering">Engineering</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Ideation">Engineering</a>
 
          </div>
        </li>
@@ -1104,12 +1207,13 @@ html, body {
            Human practices
          </a>
          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Engagement">Education and Public Engagement</a>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/HP/Gold_Integrated">Integrated Human Practices</a>
-					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Home_Outreach">Home Country Outreach</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Engagement">Education and public engagement</a>
+           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/HP/Gold_Integrated">Integrated human practices</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Social_Media">Home Country Outreach</a>
 					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Social_Media">Social Media</a>
          </div>
        </li>
+
        <li class="nav-item dropdown">
          <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
            Collaborations
@@ -1126,41 +1230,6 @@ html, body {
 
    </div>
   </nav>
-
-	<!-- Footer Begins -->
-	<!-- <footer class="footer">
-		<div style="margin-top:100px;" class="footer">
-						<div class="row">
-								<div class="col-lg-8 col-sm-5 col-xm-5 col-md-6 footer-section" style="
-	    min-width: 200px;
-	">
-										<h3 class="footer-text">
-		                  <a href="https://worldwide.promega.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/f/ff/T--NYU_Abu_Dhabi--Promega.png" alt="sponsor" width="90"></a>
-		                  <a href="http://www.appslink-me.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/5/5a/T--NYU_Abu_Dhabi--Appslink.png" alt="sponsor" width="90"></a>
-		                  <a href="https://eu.idtdna.com/pages" target="_blank"><img src="http://2018.igem.org/wiki/images/1/17/T--NYU_Abu_Dhabi--IDT.png" alt="sponsor" width="90"></a>
-		                  <a href="https://www.mathworks.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/6/65/T--NYU_Abu_Dhabi--Mathworks.jpeg" alt="sponsor" width="90"></a>
-											<a href="http://www.snapgene.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/5/59/T--NYU_Abu_Dhabi--snapgene.png" alt="sponsor" width="90"></a>
-											<a href="https://www.geneious.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/0/06/T--NYU_Abu_Dhabi--Geneious.png" alt="sponsor" width="90"></a>
-										  <a href="https://nyuad.nyu.edu/en/" target="_blank"><img src="http://2018.igem.org/wiki/images/7/7b/T--NYU_Abu_Dhabi--NYUADlogo.png" alt="sponsor" width="90"></a>
-			            	</h3>
-								  </div>
-
-		              <div class="col-lg-4 col-sm-5 col-xm-5 col-md-6 footer-section" style="
-	    display: block;
-	    min-width: 200px;">
-		  							  <h3 class="footer-text">
-		                  <a href="mailto:nyuad.igem@nyu.edu" target="_blank"><span class="fa fa-google"></span></a>
-		                  <a href="https://www.facebook.com/iGEMNYUAD/" target="_blank"><span class="fa fa-facebook"></span></a>
-		                  <a href="https://www.twitter.com/igemnyuad/" target="_blank"><span class="fa fa-twitter"></span></a>
-		                  <a href="https://www.instagram.com/igem_nyuad/" target="_blank"><span class="fa fa-instagram"></span></a>
-		                </h3>
-		  						</div>
-
-		          </div>
-	</div>
-	</footer> -->
-
-	<!-- Footer Ends -->
 </body>
 
 

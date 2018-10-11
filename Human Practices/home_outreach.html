@@ -30,10 +30,10 @@
 	#home_logo, #sideMenu { display:none; }
 	#sideMenu, #top_title, .patrollink  {display:none;}
 	#content { margin-left:0px; margin-top:-7px; padding:0px; width:100%;}
-	body {background-color:white;
-				width: 960px;
+	/* body {background-color:white;
+				width: 960px; */
 		    /* width: 80%; */
-	      margin: auto;}
+	      /* margin: auto;} */
 	#bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 { margin-bottom: 0px; }
 	.judges-will-not-evaluate { border: 4px solid #e4dede; padding: 2% !important; width: 92%!important;}
 /**************************************************************************************************************************************************************************************************/
@@ -139,76 +139,75 @@
 	    color: #000;
 	}
 	/*Styling Buttons*/
-	  .fa {
-	    font-size: 20px;
-	    padding:17px;
-	    width: 54px;
-	    text-align: center;
-	    text-decoration: none;
-	    /* margin: 5px 2px; */
-	    border-radius: 50%;
-	  }
-	  .fa:hover {
-	      opacity: 0.7;
-	  }
-	  .fa-facebook {
-	    background: #7E5BD3;
-	    color: white;
-	  }
-	  .fa-twitter {
-	    background: #7E5BD3;
-	    color: white;
-	  }
-	  .fa-google {
-	    background: #7E5BD3;
-	    color: white;
-	  }
-	  .fa-youtube {
-	    background: #7E5BD3;
-	    color: white;
-	  }
-	  .fa-instagram {
-	    background: #7E5BD3;
-	    color: white;
-	  }
-	  /* end of styling buttons */
+		.fa {
+			font-size: 20px;
+			padding:17px;
+			width: 54px;
+			text-align: center;
+			text-decoration: none;
+			/* margin: 5px 2px; */
+			border-radius: 50%;
+		}
+		.fa:hover {
+				opacity: 0.7;
+		}
+		.fa-facebook {
+			background: #7E5BD3;
+			color: white;
+		}
+		.fa-twitter {
+			background: #7E5BD3;
+			color: white;
+		}
+		.fa-google {
+			background: #7E5BD3;
+			color: white;
+		}
+		.fa-youtube {
+			background: #7E5BD3;
+			color: white;
+		}
+		.fa-instagram {
+			background: #7E5BD3;
+			color: white;
+		}
+		/* end of styling buttons */
 	/* Styling the footer */
-  .footer>.container-fluid {
-      padding: 10px 10px;
-  }
-  .footer>.container-fluid>.row {
-      display: flex;
-  }
-  .footer-section {
-      text-align: center !important;
-      /* padding: 0px 25px; */
-      display: flex;
+	.footer>.container-fluid {
+			padding: 10px 10px;
+	}
+	.footer>.container-fluid>.row {
+			display: flex;
+	}
+	.footer-section {
+			text-align: center !important;
+			/* padding: 0px 25px; */
+			display: flex;
 			flex-wrap: wrap;
-      flex-direction: row;
-      align-items: center;
-      align-content: center;
-      justify-content: center;
-  		font-family: 'IBM Plex Sans', sans-serif;
-  }
-  .footer-text {
-      text-align: center !important;
-  		font-family: 'IBM Plex Sans', sans-serif;
-  }
-  .footer-logo {
-      width: 80%;
-  padding-right: 10px;
-      display: inline-block;
-  }
-  .footer-logo2 {
-      width: 100%;
-  padding-right: 15px;
-      display: inline-block;
-  }
-  .footer {
-      /* background-color: #F5F5F5; */
-  		font-family: 'IBM Plex Sans', sans-serif;
+			flex-direction: row;
+			align-items: center;
+			align-content: center;
+			justify-content: center;
+			font-family: 'IBM Plex Sans', sans-serif;
+	}
+	.footer-text {
+			text-align: center !important;
+			font-family: 'IBM Plex Sans', sans-serif;
+	}
+	.footer-logo {
+			width: 80%;
+	padding-right: 10px;
+			display: inline-block;
+	}
+	.footer-logo2 {
+			width: 100%;
+	padding-right: 15px;
+			display: inline-block;
+	}
+	.footer {
+			font-family: 'IBM Plex Sans', sans-serif;
 			width:100%;
-  }
+	}
 /*end of styling the footer */
 /*mobile menu bar styling*/
 /**************************************************************************************************************************************************************************************************/
@@ -504,9 +503,9 @@ h2 {
 /* USE THIS FOR ANYTHING UNDER SUBHEADING TO BE IN A DIFFERENT COLOUR*/
 h3 {
 	font-family: 'IBM Plex Sans', serif;
-	color: #101F40;
-  font-size: 19px;
-  text-align: left;
+	color: white;
+  font-size: 15px;
+  /* text-align: left; */
   /* margin-right: 90px;
   margin-left: 90px; */
 }
@@ -528,9 +527,9 @@ h5 {
   margin-left: 90px;
 }
 body {
-    /* background-image: url("http://2018.igem.org/wiki/images/d/d8/T--NYU_Abu_Dhabi--backgroundlong.png"); */
+		/* background-image: url("http://2018.igem.org/wiki/images/d/df/T--NYU_Abu_Dhabi--Homepage.png"); */
     background-size: cover;
-		background-repeat: repeat;
+		background-repeat: no-repeat;
 }
 div{
 			/* width: 1000px; */
@@ -544,6 +543,21 @@ div{
     width: 60%;
 }
 .tablinks {
+	margin-top: 15px;
+	/* margin-left: 50%;
+	transform: translateX(-50%); */
+	min-width: 80px;
+	padding: 10px 15px 10px 15px;
+	border: 2px solid black;
+	border-radius: 20px;
+	transition: background-color 0.1s linear, color 0.1s linear;
+	text-transform: uppercase;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 0.7rem;
+	letter-spacing: 2px;
+	font-weight: 800;
+}
+.tablinks6 {
 	margin-top: 15px;
 	/* margin-left: 50%;
 	transform: translateX(-50%); */
@@ -618,21 +632,6 @@ div{
 	letter-spacing: 2px;
 	font-weight: 800;
 }
-.tablinks6 {
-	margin-top: 15px;
-	/* margin-left: 50%;
-	transform: translateX(-50%); */
-	min-width: 80px;
-	padding: 10px 15px 10px 15px;
-	border: 2px solid black;
-	border-radius: 20px;
-	transition: background-color 0.1s linear, color 0.1s linear;
-	text-transform: uppercase;
-	font-family: 'IBM Plex Sans', sans-serif;
-	font-size: 0.7rem;
-	letter-spacing: 2px;
-	font-weight: 800;
-}
 	.tablinks:hover {
 		background-color: #7E5BD3;
 		color: white; }
@@ -648,19 +647,70 @@ div{
 	.tablinks5:hover {
 	     background-color: #101F40;
 			 color: white; }
-	.tablinks6:hover {
-				background-color: black;
-				color: white; }
+			 .tablinks6:hover {
+		 	     background-color: black;
+		 			 color: white; }
    .tabcontent {
 		 		display: none;
  				padding: 3px 9px;
 		 			 	}
 button:focus {outline:0;}
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.content {
+  min-height: 100%;
+}
+.content-inside {
+  padding: 20px;
+  padding-bottom: 50px;
+}
+.footer {
+  height: 150px;
+	min-height: 150px;
+  margin-top: -50px;
+	background-color: #0085B6;
+	flex-wrap: wrap;
+	bottom: 0;
+}
+.footer .columns {
+    float: left;
+    width: 65%;
+    position: relative;
+		    padding-top: 15px;
+}
+/* .footer .columns1 {
+    float: left;
+    width: 20%;
+    position: relative;
+		    padding-top: 25px;
+} */
+.footer .columns2 {
+    float: left;
+    width: 35%;
+		/* height: 100%; */
+    position: relative;
+		text-align: center;
+		margin-top: 25px;
+
+}
+
+#globalWrapper {
+    position: relative;
+    font-size: 127%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 </style>
 
-<br> <br>
-<h6><b>Home Country Outreach</b></h6>
+<div class="bg"></div>
+
+<body>
+	<div class="content">
+    <div class="content-inside"><h6><b>Home Country Outreach</b></h6>
 <!-- <hr style="width:25%"> -->
 
 
@@ -684,7 +734,7 @@ button:focus {outline:0;}
         <article>
 
 <center>
-	<img src="http://2018.igem.org/wiki/images/a/a6/T--NYU_Abu_Dhabi--Mexico.png"width="1500" class="center">
+	<img src="http://2018.igem.org/wiki/images/a/a6/T--NYU_Abu_Dhabi--Mexico.png" class="center">
 	<br>
 	<h4><u>Presenter:</h4></u><h2><i>Cristian Garcia </i></h2>
 	<h4><u>City, Country:</h4></u><h2><i>Tampico, Mexico</i></h2>
@@ -695,6 +745,7 @@ button:focus {outline:0;}
 	<h4><u>Brief Description:</u></h4></u>
 	<h2>After the American School of Tampico (ATS) administration showed concern over the student body’s falling interest on STEM courses and majors, NYUAD iGEM offered to help. A recurring misception among mexican students is that STEM opportunities in Mexico are subpar and extremely limited. Thus, NYUAD iGEM perform several rounds of a short presentations showcasing opportunities in STEM majors, most prominent among them were iGEM projects. Cristian Garcia shared his experience working in the iGEM project as an ATS alumni and showcased NYUAD iGEM project and the work done by Mexican iGEM projects. Over 80 highschool students attended the presentation throughout its four different timings.
 	</h2>
+	<br><br><br>
 </center>
 
         </article>
@@ -703,7 +754,7 @@ button:focus {outline:0;}
     <div id="biology" class="tabcontent">
         <article>
 <center>
-	<img src="http://2018.igem.org/wiki/images/3/3b/T--NYU_Abu_Dhabi--India.png"width="1500" class="center">
+	<img src="http://2018.igem.org/wiki/images/3/3b/T--NYU_Abu_Dhabi--India.png"class="center">
 	<br>
 	<h4><u>Presenter:</h4></u><h2><i>Doovaraha Maheswarasarma</i></h2>
 	<h4><u>City, Country:</h4></u><h2><i>Tiruchirapalli, India</i></h2>
@@ -723,13 +774,14 @@ button:focus {outline:0;}
 <br>
 <h2>This session was followed by a question answer session in which the teachers and students asked about various topics related to STEM field.
 </h2>
+	<br><br><br>
 </center>
         </article>
     </div>
 
     <div id="engineering" class="tabcontent">
         <article>
-					<img src="http://2018.igem.org/wiki/images/c/c2/T--NYU_Abu_Dhabi--Egypt.png"width="1500" class="center">
+					<img src="http://2018.igem.org/wiki/images/c/c2/T--NYU_Abu_Dhabi--Egypt.png" class="center">
 					<br>
 					<h4><u>Presenter:</h4></u><h2><i>Mariam Anwar</i></h2>
 					<h4><u>City, Country:</h4></u><h2><i>Cairo,Egypt</i></h2>
@@ -742,7 +794,7 @@ button:focus {outline:0;}
 					</h2>
 					<br>
 					<embed src="http://2018.igem.org/wiki/images/e/ee/T--NYU_Abu_Dhabi--Outreach_presentation.pdf"  width="800" height="350" type='application/pdf' class="center">
-
+	<br><br><br>
 </center>
         </article>
     </div>
@@ -753,7 +805,7 @@ button:focus {outline:0;}
 		<article>
 
 <center>
-	<img src="http://2018.igem.org/wiki/images/0/06/T--NYU_Abu_Dhabi--Hongkong2.png"width="1500" class="center">
+	<img src="http://2018.igem.org/wiki/images/0/06/T--NYU_Abu_Dhabi--Hongkong2.png" class="center">
 	<br>
 	<h4><u>Presenter:</h4></u><h2><i>Kai-Wen Yang</i></h2>
 	<h4><u>City, Country:</h4></u><h2><i>Kowloon, Hong Kong</i></h2>
@@ -764,7 +816,7 @@ button:focus {outline:0;}
 	<h4><u>Brief Description:</u></h4>
 	<h2>In relation to our project about food pathogen detection, one of our members taught a class about food sciences when she worked as a student teacher at Summerbridge Hong Kong (a non-profit organization, which aims to improve the educational trajectories of underprivileged students by providing them with tuition-free quality English language education and life skills development opportunities), in which she designed and taught daily for 5 weeks. With the aim of fostering the students’ passion in science and highlighting how science can be applied in our everyday lives, students learned about various science concepts through interesting hands-on experiments with materials that can be found in the kitchen. For instance, they learned about melting point depression through “Making Ice Cream” experiment, the characteristic of fat through “Color-changing Milk”, neutralization through “Building a Volcano”, vibration through “Singing Glasses”, and more. They also learned about the scientific method and applied it to their final project: the students came up with questions they were curious about from their everyday lives and the demonstrations they have done in class. The students then followed the scientific method to discover the answers to the questions, and created a little booklet to share their findings with the general public.
 	</h2>
-
+	<br><br><br>
 </center>
 
 
@@ -775,7 +827,7 @@ button:focus {outline:0;}
 		<article>
 
 <center>
-	<img src="http://2018.igem.org/wiki/images/2/27/T--NYU_Abu_Dhabi--Lebanon.png"width="1500" class="center">
+	<img src="http://2018.igem.org/wiki/images/2/27/T--NYU_Abu_Dhabi--Lebanon.png"class="center">
 	<br>
 	<h4><u>Presenter:</u></h4><h2><i>Adnan Ali-Hassan</i></h2>
 	<h4><u>City, Country:</u></h4><h2><i>Chebanieh and Beirut, Lebanon</i></h2>
@@ -788,6 +840,7 @@ button:focus {outline:0;}
 	<br>
 	<h2>The following Saturday, August 25th, a meeting was held with the Rovers, about 15 students, in an eco-cafe in the town of Chebanieh. There, many of the students spoke about what their understanding of the STEM field is, including future job opportunities. A presentation was then given from the iGEM member about the array of possible STEM majors and universities to pursue, putting attention on NYUAD as a good example that not  many of the students knew about. The topic followed with what opportunities are available in the STEM field both after graduation and during university.The focus then shifted to iGEM where the presenter spoke about their team’s project and experience, as well as what iGEM is as a whole and what projects other universities have worked on in the past. The idea of starting an iGEM project the following year in new universities, such as the American University of Beirut, was also discussed. The event consisted of short presentations followed by longer conversations and took about 3 hours.
 	</h2>
+		<br><br><br>
 </center>
 
 
@@ -798,7 +851,7 @@ button:focus {outline:0;}
 		<article>
 
 <center>
-	<img src="http://2018.igem.org/wiki/images/f/f1/T--NYU_Abu_Dhabi--Australia.jpeg"width="1500" class="center">
+	<img src="http://2018.igem.org/wiki/images/f/f1/T--NYU_Abu_Dhabi--Australia.jpeg" class="center">
 	<br>
 <h4><u>Presenter:</h4></u><h2><i>Sion Hau</i></h2>
 <h4><u>City, Country:</h4></u><h2><i>Melbourne, Victoria, Australia</i></h2>
@@ -811,11 +864,36 @@ button:focus {outline:0;}
 </h2>
 <br>
 <embed src="http://2018.igem.org/wiki/images/e/ee/T--NYU_Abu_Dhabi--Outreach_presentation.pdf"  width="800" height="350" type='application/pdf' class="center">
-
+	<br><br><br>
 </center>
 
 		</article>
 </div>
+</div>
+<footer class="footer">
+	<div class="columns2">
+<a href="http://2018.igem.org/Team:NYU_Abu_Dhabi" target="_blank"><img src="http://2018.igem.org/wiki/images/d/d9/T--NYU_Abu_Dhabi--PathoGene2.png" alt="sponsor" width="200" margin-left="60px" ></a>
+<br>
+	<a href="mailto:nyuad.igem@nyu.edu" target="_blank"><span class="fa fa-google"></span></a>
+	<a href="https://www.facebook.com/iGEMNYUAD/" target="_blank"><span class="fa fa-facebook"></span></a>
+	<a href="https://www.twitter.com/igemnyuad/" target="_blank"><span class="fa fa-twitter"></span></a>
+	<a href="https://www.instagram.com/igem_nyuad/" target="_blank"><span class="fa fa-instagram"></span></a>
+
+	</div>
+	<div class="columns">
+		<h3>Sponsors:</h3>
+										<a href="https://worldwide.promega.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/2/23/T--NYU_Abu_Dhabi--Promega.jpeg" alt="sponsor" width="90"></a>
+											<a href="http://www.appslink-me.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/f/f6/T--NYU_Abu_Dhabi--Appslink2.png" alt="sponsor" width="90"></a>
+											<a href="https://eu.idtdna.com/pages" target="_blank"><img src="http://2018.igem.org/wiki/images/1/17/T--NYU_Abu_Dhabi--IDT.png" alt="sponsor" width="90"></a>
+											<a href="https://www.mathworks.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/7/7f/T--NYU_Abu_Dhabi--Mathworks.png" alt="sponsor" width="90"></a>
+											<a href="http://www.snapgene.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/5/59/T--NYU_Abu_Dhabi--snapgene.png" alt="sponsor" width="90"></a>
+											<a href="https://www.geneious.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/0/06/T--NYU_Abu_Dhabi--Geneious.png" alt="sponsor" width="90"></a>
+											<a href="https://www.jenabioscience.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/7/7a/T--NYU_Abu_Dhabi--JenaBioscience.png" alt="sponsor" width="90"></a>
+
+	</div>
+
+</footer>
+</body>
 
 <!--script for buttons -->
 <script>
@@ -836,8 +914,6 @@ button:focus {outline:0;}
     </script>
 
 
-
-</body>
 
 
 
@@ -927,6 +1003,7 @@ button:focus {outline:0;}
            <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Parts">Parts</a>
            <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Safety">Safety</a>
            <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Interlab">Interlab</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Modelling">Modelling</a>
 					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Medal_Requirments">Medal Requirements</a>
 
 				 </div>
@@ -956,10 +1033,6 @@ button:focus {outline:0;}
          </div>
        </li>
 
-       <li class="nav-item">
-         <a  class="nav-link" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Entrepreurship">Entrepreneurship</a>
-       </li>
-
        <li class="nav-item dropdown">
          <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
            Collaborations
@@ -976,39 +1049,6 @@ button:focus {outline:0;}
 
    </div>
   </nav>
-
-	<!-- Footer Begins -->
-	<footer class="footer">
-		<div style="margin-top:100px;" class="footer">
-						<div class="row">
-								<div class="col-lg-8 col-sm-5 col-xm-5 col-md-6 footer-section" style="
-	    min-width: 200px;
-	">
-										<h3 class="footer-text">
-		                  <a href="https://worldwide.promega.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/f/ff/T--NYU_Abu_Dhabi--Promega.png" alt="sponsor" width="90"></a>
-		                  <a href="http://www.appslink-me.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/5/5a/T--NYU_Abu_Dhabi--Appslink.png" alt="sponsor" width="90"></a>
-		                  <a href="https://eu.idtdna.com/pages" target="_blank"><img src="http://2018.igem.org/wiki/images/1/17/T--NYU_Abu_Dhabi--IDT.png" alt="sponsor" width="90"></a>
-		                  <a href="https://www.mathworks.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/6/65/T--NYU_Abu_Dhabi--Mathworks.jpeg" alt="sponsor" width="90"></a>
-											<a href="http://www.snapgene.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/5/59/T--NYU_Abu_Dhabi--snapgene.png" alt="sponsor" width="90"></a>
-											<a href="https://www.geneious.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/0/06/T--NYU_Abu_Dhabi--Geneious.png" alt="sponsor" width="90"></a>
-										  <!-- <a href="https://nyuad.nyu.edu/en/" target="_blank"><img src="http://2018.igem.org/wiki/images/7/7b/T--NYU_Abu_Dhabi--NYUADlogo.png" alt="sponsor" width="90"></a> -->
-			            	</h3>
-								  </div>
-
-		              <div class="col-lg-4 col-sm-5 col-xm-5 col-md-6 footer-section" style="
-	    display: block;
-	    min-width: 200px;">
-		  							  <h3 class="footer-text">
-		                  <a href="mailto:nyuad.igem@nyu.edu" target="_blank"><span class="fa fa-google"></span></a>
-		                  <a href="https://www.facebook.com/iGEMNYUAD/" target="_blank"><span class="fa fa-facebook"></span></a>
-		                  <a href="https://www.twitter.com/igemnyuad/" target="_blank"><span class="fa fa-twitter"></span></a>
-		                  <a href="https://www.instagram.com/igem_nyuad/" target="_blank"><span class="fa fa-instagram"></span></a>
-		                </h3>
-		  						</div>
-
-		          </div>
-	</div>
-	</footer>
 
 	<!-- Footer Ends -->
 </body>

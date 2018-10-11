@@ -30,10 +30,10 @@
 	#home_logo, #sideMenu { display:none; }
 	#sideMenu, #top_title, .patrollink  {display:none;}
 	#content { margin-left:0px; margin-top:-7px; padding:0px; width:100%;}
-	body {background-color:white;
-				width: 960px;
+	/* body {background-color:white;
+				width: 960px; */
 		    /* width: 80%; */
-	      margin: auto;}
+	      /* margin: auto;} */
 	#bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 { margin-bottom: 0px; }
 	.judges-will-not-evaluate { border: 4px solid #e4dede; padding: 2% !important; width: 92%!important;}
 /**************************************************************************************************************************************************************************************************/
@@ -139,76 +139,75 @@
 	    color: #000;
 	}
 	/*Styling Buttons*/
-	/*Styling Buttons*/
-	  .fa {
-	    font-size: 20px;
-	    padding:17px;
-	    width: 54px;
-	    text-align: center;
-	    text-decoration: none;
-	    /* margin: 5px 2px; */
-	    border-radius: 50%;
-	  }
-	  .fa:hover {
-	      opacity: 0.7;
-	  }
-	  .fa-facebook {
-	    background: #7E5BD3;
-	    color: white;
-	  }
-	  .fa-twitter {
-	    background: #7E5BD3;
-	    color: white;
-	  }
-	  .fa-google {
-	    background: #7E5BD3;
-	    color: white;
-	  }
-	  .fa-youtube {
-	    background: #7E5BD3;
-	    color: white;
-	  }
-	  .fa-instagram {
-	    background: #7E5BD3;
-	    color: white;
-	  }
-	  /* end of styling buttons */
+		.fa {
+			font-size: 20px;
+			padding:17px;
+			width: 54px;
+			text-align: center;
+			text-decoration: none;
+			/* margin: 5px 2px; */
+			border-radius: 50%;
+		}
+		.fa:hover {
+				opacity: 0.7;
+		}
+		.fa-facebook {
+			background: #7E5BD3;
+			color: white;
+		}
+		.fa-twitter {
+			background: #7E5BD3;
+			color: white;
+		}
+		.fa-google {
+			background: #7E5BD3;
+			color: white;
+		}
+		.fa-youtube {
+			background: #7E5BD3;
+			color: white;
+		}
+		.fa-instagram {
+			background: #7E5BD3;
+			color: white;
+		}
+		/* end of styling buttons */
 	/* Styling the footer */
-  .footer>.container-fluid {
-      padding: 10px 10px;
-  }
-  .footer>.container-fluid>.row {
-      display: flex;
-  }
-  .footer-section {
-      text-align: center !important;
-      /* padding: 0px 25px; */
-      display: flex;
+	.footer>.container-fluid {
+			padding: 10px 10px;
+	}
+	.footer>.container-fluid>.row {
+			display: flex;
+	}
+	.footer-section {
+			text-align: center !important;
+			/* padding: 0px 25px; */
+			display: flex;
 			flex-wrap: wrap;
-      flex-direction: row;
-      align-items: center;
-      align-content: center;
-      justify-content: center;
-  		font-family: 'IBM Plex Sans', sans-serif;
-  }
-  .footer-text {
-      text-align: center !important;
-  		font-family: 'IBM Plex Sans', sans-serif;
-  }
-  .footer-logo {
-      width: 80%;
-  padding-right: 10px;
-      display: inline-block;
-  }
-  .footer-logo2 {
-      width: 100%;
-  padding-right: 15px;
-      display: inline-block;
-  }
-  .footer {
-  		font-family: 'IBM Plex Sans', sans-serif;
+			flex-direction: row;
+			align-items: center;
+			align-content: center;
+			justify-content: center;
+			font-family: 'IBM Plex Sans', sans-serif;
+	}
+	.footer-text {
+			text-align: center !important;
+			font-family: 'IBM Plex Sans', sans-serif;
+	}
+	.footer-logo {
+			width: 80%;
+	padding-right: 10px;
+			display: inline-block;
+	}
+	.footer-logo2 {
+			width: 100%;
+	padding-right: 15px;
+			display: inline-block;
+	}
+	.footer {
+			font-family: 'IBM Plex Sans', sans-serif;
 			width:100%;
-  }
+	}
 /*end of styling the footer */
 /*mobile menu bar styling*/
 /**************************************************************************************************************************************************************************************************/
@@ -504,11 +503,11 @@ h2 {
 /* USE THIS FOR ANYTHING UNDER SUBHEADING TO BE IN A DIFFERENT COLOUR*/
 h3 {
 	font-family: 'IBM Plex Sans', serif;
-	color: #101F40;
-  font-size: 19px;
-  text-align: left;
-  margin-right: 90px;
-  margin-left: 90px;
+	color: white;
+  font-size: 15px;
+  /* text-align: left; */
+  /* margin-right: 90px;
+  margin-left: 90px; */
 }
 /* USE THIS FOR SUBHEADINGS */
 h4 {
@@ -648,7 +647,7 @@ button:focus {outline:0;}
 table {
   	font-family: 'IBM Plex Sans', sans-serif;
     border-collapse: collapse;
-    width: 80%;
+    width: 90%;
 
 }
 
@@ -663,8 +662,61 @@ tr:nth-child(even) {
     background-color: #F5F5F5;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.content {
+  min-height: 100%;
+}
+.content-inside {
+  padding: 20px;
+  padding-bottom: 50px;
+}
+.footer {
+  height: 150px;
+	min-height: 150px;
+  margin-top: -50px;
+	background-color: #0085B6;
+	flex-wrap: wrap;
+	bottom: 0;
+}
+.footer .columns {
+    float: left;
+    width: 65%;
+    position: relative;
+		    padding-top: 15px;
+}
+/* .footer .columns1 {
+    float: left;
+    width: 20%;
+    position: relative;
+		    padding-top: 25px;
+} */
+.footer .columns2 {
+    float: left;
+    width: 35%;
+		/* height: 100%; */
+    position: relative;
+		text-align: center;
+		margin-top: 25px;
+
+}
+
+#globalWrapper {
+    position: relative;
+    font-size: 127%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 </style>
-<br> <br>
+
+<div class="bg"></div>
+
+<body>
+	<div class="content">
+    <div class="content-inside">
 <h6><b>Parts</b></h6>
 <!-- <hr style="width:25%"> -->
 <br>
@@ -678,7 +730,12 @@ tr:nth-child(even) {
     <td><a href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K2808000">BBa_K2808000</a></td>
     <td>DNA
     </td>
-    <td>gbpA gene for the detection of Vibrio cholera</td>
+    <td> N-acetyl glucosamine-binding protein A (gbpA) gene for the detection of <i>Vibrio cholera</i>
+The gbpA gene in <i>Vibrio cholerae</i> codes for the N-acetyl glucosamine-binding protein A
+(GbpA), which is a chitin-binding protein involved in the attachment of V. cholerae to environmental
+chitin surfaces and human intestinal cells. The gbpA gene has been found to be consistently present and
+highly conserved in <i>V. cholerae</i>. GbpA has been used as a target gene for the species-specific detection
+of <i>V. cholerae</i> O1, O139, Non-O1/Non-O139.</td>
   </tr>
 	<tr>
 		<td><a href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K2808001">
@@ -687,7 +744,10 @@ BBa_K2808001
 		<td>DNA
 		</td>
 		<td>
-hipO gene for the detection of Campylobacter
+			N-benzoylglycine amidohydrolase (hippuricase) (hipO) gene for the detection of <i>Campylobacter jejuni</i>
+		 hipO gene codes for N-benzoylglycine amidohydrolase (hippuricase) in <i>Campylobacter
+		 jejuni</i>. Due its specificity to the organism and the lack of toxicity, various research projects have used
+		 this gene for the detection of <i>C. jejuni</i> through techniques such as PCR.
 </td>
 	</tr>
 	<tr>
@@ -697,7 +757,11 @@ BBa_K2808002
 		<td>DNA
 		</td>
 		<td>
-invA gene for the detection of Salmonella
+			Invasion protein (invA) gene for the detection of <i>Salmonella typhimurium</i>
+		 The invA gene is involved in the invasion of the cells of the intestinal epithelium
+		 and could be involved in the translocation of the InvE protein in <i>Salmonella typhimurium</i>. Due
+		 its specificity to the organism and the lack of toxicity, various research projects have used this gene for
+		 the detection of <i>S. typhimurium</i>.
 </td>
 	</tr>
 	<tr>
@@ -706,8 +770,10 @@ BBa_K2808003
 </a></td>
 		<td>DNA
 		</td>
-		<td>
-lmo0733 gene for the detection of Listeria
+		<td>lmo0773 alcohol dehydrogenase gene for the detection of <i>Listeria monocytogenes</i>
+			The lmo0773 alcohol dehydrogenase is involved in oxidoreductase activity. Due its
+			specificity to the organism and the lack of toxicity, various research projects have used this gene for the
+			detection of <i>Listeria monocytogenes</i>.
 </td>
 	</tr>
 	<tr>
@@ -1058,7 +1124,31 @@ lmo0733 RPA R1
 <br>
 <h2><i>Figure 1: Agarose gel electrophoresis showing double digestion of the gbpA BioBrick <a href="http://parts.igem.org/Part:BBa_K2808000"target="_blank">BBA_K2808000</a> (gbpA gene (1458 bp) inserted into the pSB1C3 backbone (2070 bp)) with EcoRI and PstI. (Lane 1) 500 bp DNA ladder (Bio-Rad); (Lane 2) gbpA BioBrick; (Lane 3) gbpA BioBrick digested with EcoRI and PstI.
 </i></h2>
+<br><br><br>
+</div>
+<footer class="footer">
+  <div class="columns2">
+<a href="http://2018.igem.org/Team:NYU_Abu_Dhabi" target="_blank"><img src="http://2018.igem.org/wiki/images/d/d9/T--NYU_Abu_Dhabi--PathoGene2.png" alt="sponsor" width="200" margin-left="60px" ></a>
+<br>
+  <a href="mailto:nyuad.igem@nyu.edu" target="_blank"><span class="fa fa-google"></span></a>
+  <a href="https://www.facebook.com/iGEMNYUAD/" target="_blank"><span class="fa fa-facebook"></span></a>
+  <a href="https://www.twitter.com/igemnyuad/" target="_blank"><span class="fa fa-twitter"></span></a>
+  <a href="https://www.instagram.com/igem_nyuad/" target="_blank"><span class="fa fa-instagram"></span></a>
 
+  </div>
+  <div class="columns">
+    <h3>Sponsors:</h3>
+                    <a href="https://worldwide.promega.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/2/23/T--NYU_Abu_Dhabi--Promega.jpeg" alt="sponsor" width="90"></a>
+                      <a href="http://www.appslink-me.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/f/f6/T--NYU_Abu_Dhabi--Appslink2.png" alt="sponsor" width="90"></a>
+                      <a href="https://eu.idtdna.com/pages" target="_blank"><img src="http://2018.igem.org/wiki/images/1/17/T--NYU_Abu_Dhabi--IDT.png" alt="sponsor" width="90"></a>
+                      <a href="https://www.mathworks.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/7/7f/T--NYU_Abu_Dhabi--Mathworks.png" alt="sponsor" width="90"></a>
+                      <a href="http://www.snapgene.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/5/59/T--NYU_Abu_Dhabi--snapgene.png" alt="sponsor" width="90"></a>
+                      <a href="https://www.geneious.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/0/06/T--NYU_Abu_Dhabi--Geneious.png" alt="sponsor" width="90"></a>
+                      <a href="https://www.jenabioscience.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/7/7a/T--NYU_Abu_Dhabi--JenaBioscience.png" alt="sponsor" width="90"></a>
+
+  </div>
+</footer>
+</body>
 
 
 <!--script for buttons -->
@@ -1078,11 +1168,6 @@ lmo0733 RPA R1
         }
     document.getElementById("defaultOpen").click();
     </script>
-
-
-
-</body>
-
 
 
 
@@ -1171,6 +1256,7 @@ lmo0733 RPA R1
            <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Parts">Parts</a>
            <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Safety">Safety</a>
            <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Interlab">Interlab</a>
+					            <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Modelling">Modelling</a>
 					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Medal_Requirments">Medal Requirements</a>
 				 </div>
        </li>
@@ -1199,10 +1285,6 @@ lmo0733 RPA R1
          </div>
        </li>
 
-       <li class="nav-item">
-         <a  class="nav-link" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Entrepreurship">Entrepreneurship</a>
-       </li>
-
        <li class="nav-item dropdown">
          <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
            Collaborations
@@ -1220,40 +1302,7 @@ lmo0733 RPA R1
    </div>
   </nav>
 
-	<!-- Footer Begins -->
-	<footer class="footer">
-		<div style="margin-top:100px;" class="footer">
-						<div class="row">
-								<div class="col-lg-8 col-sm-5 col-xm-5 col-md-6 footer-section" style="
-	    min-width: 200px;
-	">
-										<h3 class="footer-text">
-		                  <a href="https://worldwide.promega.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/f/ff/T--NYU_Abu_Dhabi--Promega.png" alt="sponsor" width="90"></a>
-		                  <a href="http://www.appslink-me.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/5/5a/T--NYU_Abu_Dhabi--Appslink.png" alt="sponsor" width="90"></a>
-		                  <a href="https://eu.idtdna.com/pages" target="_blank"><img src="http://2018.igem.org/wiki/images/1/17/T--NYU_Abu_Dhabi--IDT.png" alt="sponsor" width="90"></a>
-		                  <a href="https://www.mathworks.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/6/65/T--NYU_Abu_Dhabi--Mathworks.jpeg" alt="sponsor" width="90"></a>
-											<a href="http://www.snapgene.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/5/59/T--NYU_Abu_Dhabi--snapgene.png" alt="sponsor" width="90"></a>
-											<a href="https://www.geneious.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/0/06/T--NYU_Abu_Dhabi--Geneious.png" alt="sponsor" width="90"></a>
-										  <!-- <a href="https://nyuad.nyu.edu/en/" target="_blank"><img src="http://2018.igem.org/wiki/images/7/7b/T--NYU_Abu_Dhabi--NYUADlogo.png" alt="sponsor" width="90"></a> -->
-			            	</h3>
-								  </div>
 
-		              <div class="col-lg-4 col-sm-5 col-xm-5 col-md-6 footer-section" style="
-	    display: block;
-	    min-width: 200px;">
-		  							  <h3 class="footer-text">
-		                  <a href="mailto:nyuad.igem@nyu.edu" target="_blank"><span class="fa fa-google"></span></a>
-		                  <a href="https://www.facebook.com/iGEMNYUAD/" target="_blank"><span class="fa fa-facebook"></span></a>
-		                  <a href="https://www.twitter.com/igemnyuad/" target="_blank"><span class="fa fa-twitter"></span></a>
-		                  <a href="https://www.instagram.com/igem_nyuad/" target="_blank"><span class="fa fa-instagram"></span></a>
-		                </h3>
-		  						</div>
-
-		          </div>
-	</div>
-	</footer>
-
-	<!-- Footer Ends -->
 </body>
 
 

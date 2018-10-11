@@ -30,10 +30,10 @@
 	#home_logo, #sideMenu { display:none; }
 	#sideMenu, #top_title, .patrollink  {display:none;}
 	#content { margin-left:0px; margin-top:-7px; padding:0px; width:100%;}
-	body {background-color:white;
-				width: 960px;
+	/* body {background-color:white;
+				width: 960px; */
 		    /* width: 80%; */
-	      margin: auto;}
+	      /* margin: auto;} */
 	#bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 { margin-bottom: 0px; }
 	.judges-will-not-evaluate { border: 4px solid #e4dede; padding: 2% !important; width: 92%!important;}
 /**************************************************************************************************************************************************************************************************/
@@ -139,76 +139,75 @@
 	    color: #000;
 	}
 	/*Styling Buttons*/
-	  .fa {
-	    font-size: 20px;
-	    padding:17px;
-	    width: 54px;
-	    text-align: center;
-	    text-decoration: none;
-	    /* margin: 5px 2px; */
-	    border-radius: 50%;
-	  }
-	  .fa:hover {
-	      opacity: 0.7;
-	  }
-	  .fa-facebook {
-	    background: #7E5BD3;
-	    color: white;
-	  }
-	  .fa-twitter {
-	    background: #7E5BD3;
-	    color: white;
-	  }
-	  .fa-google {
-	    background: #7E5BD3;
-	    color: white;
-	  }
-	  .fa-youtube {
-	    background: #7E5BD3;
-	    color: white;
-	  }
-	  .fa-instagram {
-	    background: #7E5BD3;
-	    color: white;
-	  }
-	  /* end of styling buttons */
+		.fa {
+			font-size: 20px;
+			padding:17px;
+			width: 54px;
+			text-align: center;
+			text-decoration: none;
+			/* margin: 5px 2px; */
+			border-radius: 50%;
+		}
+		.fa:hover {
+				opacity: 0.7;
+		}
+		.fa-facebook {
+			background: #7E5BD3;
+			color: white;
+		}
+		.fa-twitter {
+			background: #7E5BD3;
+			color: white;
+		}
+		.fa-google {
+			background: #7E5BD3;
+			color: white;
+		}
+		.fa-youtube {
+			background: #7E5BD3;
+			color: white;
+		}
+		.fa-instagram {
+			background: #7E5BD3;
+			color: white;
+		}
+		/* end of styling buttons */
 	/* Styling the footer */
-  .footer>.container-fluid {
-      padding: 10px 10px;
-  }
-  .footer>.container-fluid>.row {
-      display: flex;
-  }
-  .footer-section {
-      text-align: center !important;
-      /* padding: 0px 25px; */
-      display: flex;
+	.footer>.container-fluid {
+			padding: 10px 10px;
+	}
+	.footer>.container-fluid>.row {
+			display: flex;
+	}
+	.footer-section {
+			text-align: center !important;
+			/* padding: 0px 25px; */
+			display: flex;
 			flex-wrap: wrap;
-      flex-direction: row;
-      align-items: center;
-      align-content: center;
-      justify-content: center;
-  		font-family: 'IBM Plex Sans', sans-serif;
-  }
-  .footer-text {
-      text-align: center !important;
-  		font-family: 'IBM Plex Sans', sans-serif;
-  }
-  .footer-logo {
-      width: 80%;
-  padding-right: 10px;
-      display: inline-block;
-  }
-  .footer-logo2 {
-      width: 100%;
-  padding-right: 15px;
-      display: inline-block;
-  }
-  .footer {
-      /* background-color: #F5F5F5; */
-  		font-family: 'IBM Plex Sans', sans-serif;
+			flex-direction: row;
+			align-items: center;
+			align-content: center;
+			justify-content: center;
+			font-family: 'IBM Plex Sans', sans-serif;
+	}
+	.footer-text {
+			text-align: center !important;
+			font-family: 'IBM Plex Sans', sans-serif;
+	}
+	.footer-logo {
+			width: 80%;
+	padding-right: 10px;
+			display: inline-block;
+	}
+	.footer-logo2 {
+			width: 100%;
+	padding-right: 15px;
+			display: inline-block;
+	}
+	.footer {
+			font-family: 'IBM Plex Sans', sans-serif;
 			width:100%;
-  }
+	}
 /*end of styling the footer */
 /*mobile menu bar styling*/
 /**************************************************************************************************************************************************************************************************/
@@ -504,9 +503,9 @@ h2 {
 /* USE THIS FOR ANYTHING UNDER SUBHEADING TO BE IN A DIFFERENT COLOUR*/
 h3 {
 	font-family: 'IBM Plex Sans', serif;
-	color: #101F40;
-  font-size: 19px;
-  text-align: left;
+	color: white;
+  font-size: 15px;
+  /* text-align: left; */
   /* margin-right: 90px;
   margin-left: 90px; */
 }
@@ -528,9 +527,9 @@ h5 {
   margin-left: 90px;
 }
 body {
-    /* background-image: url("http://2018.igem.org/wiki/images/d/d8/T--NYU_Abu_Dhabi--backgroundlong.png"); */
+		/* background-image: url("http://2018.igem.org/wiki/images/d/df/T--NYU_Abu_Dhabi--Homepage.png"); */
     background-size: cover;
-		background-repeat: no-srepeat;
+		background-repeat: no-repeat;
 }
 div{
 			/* width: 1000px; */
@@ -640,9 +639,61 @@ div{
 		 			 	}
 button:focus {outline:0;}
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.content {
+  min-height: 100%;
+}
+.content-inside {
+  padding: 20px;
+  padding-bottom: 50px;
+}
+.footer {
+  height: 150px;
+	min-height: 150px;
+  margin-top: -50px;
+	background-color: #0085B6;
+	flex-wrap: wrap;
+	bottom: 0;
+}
+.footer .columns {
+    float: left;
+    width: 65%;
+    position: relative;
+		    padding-top: 15px;
+}
+/* .footer .columns1 {
+    float: left;
+    width: 20%;
+    position: relative;
+		    padding-top: 25px;
+} */
+.footer .columns2 {
+    float: left;
+    width: 35%;
+		/* height: 100%; */
+    position: relative;
+		text-align: center;
+		margin-top: 25px;
+
+}
+
+#globalWrapper {
+    position: relative;
+    font-size: 127%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 </style>
 
-<br><br>
+<div class="bg"></div>
+
+<body>
+	<div class="content">
+    <div class="content-inside">
 <h6><b>Expert Counsel</b></h6>
 <!-- <hr style="width:25%"> -->
 
@@ -654,7 +705,6 @@ Cleveland Clinic Abu Dhabi </font></i> </h2>
   <h4> &ldquo;Currently, the fastest clinical tools for pathogen detection take over 6 hours and cost 140$ per test.&rdquo; </h4>
     <h2> Clinical laboratories are at the center of the health providers&rsquo; analysis of food pathogens. Currently, the fastest tools they possess are PCR-based and take over 6 hours with per-sample price of over 100$. Less financially supported hospitals and healthcare providers might have to depend on machines that take several days. The more rapid the result is, the faster the response the clinical laboratory can provide to physicians and others. Bacterial pathogens of note in the region of Abu Dhabi are Campylobacter and Shigella. Devices used in the laboratory are provided for free by the manufacturers and they are recharged for the biological buffer and reagents. </h2>
 </div>
-<br>
 <div id='carol'>
   <br> <br>
   <img src="http://2018.igem.org/wiki/images/6/69/T--NYU_Abu_Dhabi--carol2.png" alt="carol" border="0" style="width:230px;height:230px; float: left; margin-top:60px;border-radius: 100%; border: 0%; margin-left:50px;margin-right:25px">
@@ -664,7 +714,6 @@ NYU Abu Dhabi </font></i> </h2>
   <h4> &ldquo;This device can create a global network of increasing food safety and contribute significantly to global health.&rdquo; </h4>
     <h2> The device could be a first step in creating an integrated network across the world, providing low-income communities not only with much higher food safety, but coupled with educational programs, providing them also with the skills they need to take it even further. Reaching out to local members of the community can make the device a household name and increase trust, not just in the device, but also in the NGOs working on the field. To this end, collaboration with already developed on-the-ground NGOs is a great window into integrating the device into the communities. Therefore, with centers around the world working on feedback and education of the device, it can make an even bigger contribution to global health. </h2>
 </div>
-<br>
 <div id='akpaka'>
   <br> <br>
   <img src="http://2018.igem.org/wiki/images/9/9f/T--NYU_Abu_Dhabi--Patrick.png" alt="Patrick" border="0" style="width:230px;height:230px; float: left; margin-top:70px;border-radius: 100%; border: 0%; margin-left:50px; margin-right:25px">
@@ -674,18 +723,16 @@ NYU Abu Dhabi </font></i> </h2>
   <h4> &ldquo;Conventional tests take 48 hours and cost 30-50$, being limited by series of tests needed after which the results are still not definitive.&ldquo; </h4>
     <h2> Dr. Akpaka informed us about the impact Salmonella and pathogenic E. Coli have on the communities on Trinidad, encasing our project as one of global impact. Current highest-class toxin identifiers take 30 minutes with the devices being expensive and not usable in the field. The conventional tests are much cheaper but take several days, thereby restricting diagnosis by physicians and laboratories. It is finding a balance between cheap, fast, and reliable that has led our project through development. In Dr. Akpaka&rsquo;s own words: &ldquo;such a device would enable the doctor to give a more accurate diagnosis.&rdquo; In the end, point-of-care diagnostics are limited by their price and their sensitivity, both issues solved by our simple design and amplifying technique. </h2>
 </div>
-<br>
 <div id='khalid'>
   <br> <br>
   <img src="http://2018.igem.org/wiki/images/e/ee/T--NYU_Abu_Dhabi--khalid2.png" alt="khalid" border="0" style="width:230px;height:230px; float: left; margin-top:75px;border-radius: 100%; border: 0%; margin-left:50px; margin-right:25px">
   <h2> <br> <br> <br> <br> <br> <font size="5.5"> Dr. Khalid Malik </font> </h2>
   <h2> <i> <font size="3"> Consultant Physician
- <br>
  NYU Abu Dhabi Health and Wellness </font> </i> </h2>
   <h4> &ldquo;Currently, we have to wait 48-72 hours for targeted laboratory results of the patient&rsquo;s blood and stool sample.&rdquo; </h4>
     <h2> Dr. Khalid has stressed the important potential the device can contribute by making the diagnosis of food infections much faster, providing nearly immediate results compared to current solutions. This attribute provides the physician with more time and higher flexibility when trying to diagnose. The device can also make sure the patients themselves check their food as well as themselves for possible infections before having to consult a physician. Such opportunity becomes even more important, even life-saving, in communities with lower access to health professionals. </h2>
 </div>
-<br><br>
+
 <div id='food_agency'>
   <br> <br>
   <img src="http://2018.igem.org/wiki/images/thumb/e/e2/T--NYU_Abu_Dhabi--food_safety2.png/1200px-T--NYU_Abu_Dhabi--food_safety2.png" alt="food_safety" border="0" style="width:230px;height:230px; float: left; margin-top:40px;border-radius: 100%; border: 0%; margin-left:50px; margin-right:25px">
@@ -694,7 +741,7 @@ NYU Abu Dhabi </font></i> </h2>
   <h4> &ldquo;With a much faster response than 3 days, the device makes rapid and urgent response possible for the food inspector.&rdquo; </h4>
     <h2> As food products are being imported into the UAE, they are being kept at airports and ports of entry until they are screened for bacterial pathogens which can takes more than 3 days. With this device, products can enter the market faster, and with food, the chance of it going to waste is severely decreased. It also makes it possible for routine inspections in grocery stores and restaurants to end in immediate response by the food inspector so that when the results are positive, the business can be closed for the public&rsquo;s safety. The Agency has expressed full support of the project and suggests that accreditation of the device is possible for use in government regulation. </h2>
 </div>
-<br><br><br>
+
 <div id='niyati'>
   <br> <br>
   <img src="http://2018.igem.org/wiki/images/a/a8/T--NYU_Abu_Dhabi--parekh2.png" alt="Perekh_Niyati_center" border="0" style="width:230px;height:230px; float: left; margin-top:70px;border-radius: 100%; border: 0%; margin-left:50px; margin-right:25px">
@@ -706,7 +753,7 @@ NYU Abu Dhabi </font></i> </h2>
   <h4> &ldquo;Lots of children&rsquo;s lives were lost yearly due to contacting water contaminated with food-related pathogens.&rdquo; </h4>
     <h2> From her devotion in community outreach and involvement in projects related to global health back in India, Dr. Parekh stressed the paucity of potable, uncontaminated water in underdeveloped communities. Enormous number of young people, especially children under 5, suffer or die from dehydration due to consuming unclean water. To make an impact, Dr. Parekh highlighted the importance of instilling the mindset of valuing the safety of food and water through educational programs. She commented on how marketing strategies, such as the four Ps of marketing (product/place/price/promotion), can be utilized to aid cultivating the habit and promoting health and wellness in these communities.  </h2>
 </div>
-<br>
+
 <div id='diana'>
   <br> <br>
   <img src="http://2018.igem.org/wiki/images/5/5c/T--NYU_Abu_Dhabi--diana2.png" alt="Silver_Diana_Center2" border="0" style="width:230px;height:230px; float: left; margin-top:70px;border-radius: 100%; border: 0%; margin-left:50px; margin-right:25px">
@@ -718,7 +765,7 @@ NYU Abu Dhabi </font></i> </h2>
   <h4> &ldquo;This device could contribute to the health of immuno-compromised individuals in the US, and to communities in low-income countries&rdquo; </h4>
     <h2> A challenge to implement this device in low-income countries would be the cost, drawing from a similar discussion on insect repellent bed nets (ITNs). The take-up could also be faced with other barriers in trying to make the device more affordable. For the US, the USDA (Department of Agriculture) can provide possible frameworks in ensuring food regulation through such a device.  </h2>
 </div>
-<br>
+
 <div id='sanela'>
   <br> <br>
   <img src="http://2018.igem.org/wiki/images/4/43/T--NYU_Abu_Dhabi--sanela2.png" alt="sanela" border="0" style="width:230px;height:230px; float: left; margin-top:70px;border-radius: 100%; border: 0%; margin-left:50px; margin-right:25px">
@@ -741,15 +788,49 @@ NYU Abu Dhabi </font></i> </h2>
   <h4> &ldquo;This device will allow inspectors to act immediately to contain food-related dangers, and not have to depend on several days old laboratory results. In that time, the food would have already been eaten.&rdquo; </h4>
     <h2> Accreditation will be the cornerstone of the fidelity of using such a device. The low cost of having such an accurate and fast way of detecting these pathogens is revolutionary for many areas of food inspection. Presently, devices that rely on similar DNA amplification methods are too expensive, and bulky, to significantly contribute to the improvement of food safety and sanitation in large parts of the world. </h2>
 </div>
+
+<div id='who'>
+  <br> <br>
+  <img src="http://2018.igem.org/wiki/images/9/96/T--NYU_Abu_Dhabi--who.png" alt="who" border="0" style="width:230px;height:230px; float: left; margin-top:60px;border-radius: 100%; border: 0%; margin-left:50px; margin-right:25px">
+  <h2> <br> <br> <br> <br> <font size="5.5"> World Health Organization, Office in Bosnia and Herzegovina </font> </h2>
+  <h4> &ldquo;Food safety is an important component of any public health policy or measures to prevent diseases. Any region of the world can be affected where no or weak measure of food safety is implemented.&rdquo; </h4>
+    <h2> The WHO stressed the recent outbreaks of Listeria in Hungary, and stressed the benefit our device would provide to Food Authorities and Public Health Institutions. The project directly touches upon the WHO principles as pointed out on their main web page. Prior to the use of the device for setting a standard in Food Health globally, authoritative licensing is required. </h2>
+</div>
+
 <div id='public_health'>
   <br> <br>
   <img src="http://2018.igem.org/wiki/images/c/c7/T--NYU_Abu_Dhabi--zavod.jpeg" alt="zavod" border="0" style="width:230px;height:230px; float: left; margin-top:60px;border-radius: 100%; border: 0%; margin-left:50px; margin-right:25px">
   <h2> <br> <br> <br> <br> <font size="5.5"> Institute for Public Health, Central Bosnia </font> </h2>
   <h4> &ldquo;The faster the result, the faster we can act. In intervening circumstances, such as in educational institutions, being able to prevent harm is vital.&rdquo; </h4>
-    <h2> The device would make life much easier for the food inspection patrol. Immediate action can be taken, on-the-ground, without waiting for several days to receive the result. This kind of action is needed in certain intervening circumstances, such as in educational institutions, and in massive public gatherings, where the scale of impact of an infection is severe. </h2>
+	    <h2> The device would make life much easier for the food inspection patrol. Immediate action can be taken, on-the-ground, without waiting for several days to receive the result. This kind of action is needed in certain intervening circumstances, such as in educational institutions, and in massive public gatherings, where the scale of impact of an infection is severe. </h2>
+</div>
+<br><br><br><br><br>
 </div>
 
+<footer class="footer">
+	<div class="columns2">
+<a href="http://2018.igem.org/Team:NYU_Abu_Dhabi" target="_blank"><img src="http://2018.igem.org/wiki/images/d/d9/T--NYU_Abu_Dhabi--PathoGene2.png" alt="sponsor" width="200" margin-left="60px" ></a>
+<br>
+	<a href="mailto:nyuad.igem@nyu.edu" target="_blank"><span class="fa fa-google"></span></a>
+	<a href="https://www.facebook.com/iGEMNYUAD/" target="_blank"><span class="fa fa-facebook"></span></a>
+	<a href="https://www.twitter.com/igemnyuad/" target="_blank"><span class="fa fa-twitter"></span></a>
+	<a href="https://www.instagram.com/igem_nyuad/" target="_blank"><span class="fa fa-instagram"></span></a>
 
+	</div>
+	<div class="columns">
+		<h3>Sponsors:</h3>
+										<a href="https://worldwide.promega.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/2/23/T--NYU_Abu_Dhabi--Promega.jpeg" alt="sponsor" width="90"></a>
+											<a href="http://www.appslink-me.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/f/f6/T--NYU_Abu_Dhabi--Appslink2.png" alt="sponsor" width="90"></a>
+											<a href="https://eu.idtdna.com/pages" target="_blank"><img src="http://2018.igem.org/wiki/images/1/17/T--NYU_Abu_Dhabi--IDT.png" alt="sponsor" width="90"></a>
+											<a href="https://www.mathworks.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/7/7f/T--NYU_Abu_Dhabi--Mathworks.png" alt="sponsor" width="90"></a>
+											<a href="http://www.snapgene.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/5/59/T--NYU_Abu_Dhabi--snapgene.png" alt="sponsor" width="90"></a>
+											<a href="https://www.geneious.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/0/06/T--NYU_Abu_Dhabi--Geneious.png" alt="sponsor" width="90"></a>
+											<a href="https://www.jenabioscience.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/7/7a/T--NYU_Abu_Dhabi--JenaBioscience.png" alt="sponsor" width="90"></a>
+
+	</div>
+</footer>
+
+</body>
 
 
 
@@ -778,9 +859,6 @@ NYU Abu Dhabi </font></i> </h2>
     document.getElementById("defaultOpen").click();
     </script>
 
-
-
-</body>
 
 
 
@@ -870,6 +948,7 @@ NYU Abu Dhabi </font></i> </h2>
            <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Parts">Parts</a>
            <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Safety">Safety</a>
            <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Interlab">Interlab</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Modelling">Modelling</a>
 					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Medal_Requirments">Medal Requirements</a>
 				 </div>
        </li>
@@ -897,11 +976,6 @@ NYU Abu Dhabi </font></i> </h2>
 					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Social_Media">Social Media</a>
          </div>
        </li>
-
-       <li class="nav-item">
-         <a  class="nav-link" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Entrepreurship">Entrepreneurship</a>
-       </li>
-
        <li class="nav-item dropdown">
          <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
            Collaborations
@@ -920,37 +994,6 @@ NYU Abu Dhabi </font></i> </h2>
   </nav>
 
 	<!-- Footer Begins -->
-	<footer class="footer">
-		<div style="margin-top:100px;" class="footer">
-						<div class="row">
-								<div class="col-lg-8 col-sm-5 col-xm-5 col-md-6 footer-section" style="
-	    min-width: 200px;
-	">
-										<h3 class="footer-text">
-		                  <a href="https://worldwide.promega.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/f/ff/T--NYU_Abu_Dhabi--Promega.png" alt="sponsor" width="90"></a>
-		                  <a href="http://www.appslink-me.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/5/5a/T--NYU_Abu_Dhabi--Appslink.png" alt="sponsor" width="90"></a>
-		                  <a href="https://eu.idtdna.com/pages" target="_blank"><img src="http://2018.igem.org/wiki/images/1/17/T--NYU_Abu_Dhabi--IDT.png" alt="sponsor" width="90"></a>
-		                  <a href="https://www.mathworks.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/6/65/T--NYU_Abu_Dhabi--Mathworks.jpeg" alt="sponsor" width="90"></a>
-											<a href="http://www.snapgene.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/5/59/T--NYU_Abu_Dhabi--snapgene.png" alt="sponsor" width="90"></a>
-											<a href="https://www.geneious.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/0/06/T--NYU_Abu_Dhabi--Geneious.png" alt="sponsor" width="90"></a>
-										  <!-- <a href="https://nyuad.nyu.edu/en/" target="_blank"><img src="http://2018.igem.org/wiki/images/7/7b/T--NYU_Abu_Dhabi--NYUADlogo.png" alt="sponsor" width="90"></a> -->
-			            	</h3>
-								  </div>
-
-		              <div class="col-lg-4 col-sm-5 col-xm-5 col-md-6 footer-section" style="
-	    display: block;
-	    min-width: 200px;">
-		  							  <h3 class="footer-text">
-		                  <a href="mailto:nyuad.igem@nyu.edu" target="_blank"><span class="fa fa-google"></span></a>
-		                  <a href="https://www.facebook.com/iGEMNYUAD/" target="_blank"><span class="fa fa-facebook"></span></a>
-		                  <a href="https://www.twitter.com/igemnyuad/" target="_blank"><span class="fa fa-twitter"></span></a>
-		                  <a href="https://www.instagram.com/igem_nyuad/" target="_blank"><span class="fa fa-instagram"></span></a>
-		                </h3>
-		  						</div>
-
-		          </div>
-	</div>
-	</footer>
 
 	<!-- Footer Ends -->
 </body>

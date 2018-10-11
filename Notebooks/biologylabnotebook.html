@@ -30,10 +30,10 @@
 	#home_logo, #sideMenu { display:none; }
 	#sideMenu, #top_title, .patrollink  {display:none;}
 	#content { margin-left:0px; margin-top:-7px; padding:0px; width:100%;}
-	body {background-color:white;
-				width: 960px;
+	/* body {background-color:white;
+				width: 960px; */
 		    /* width: 80%; */
-	      margin: auto;}
+	      /* margin: auto;} */
 	#bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 { margin-bottom: 0px; }
 	.judges-will-not-evaluate { border: 4px solid #e4dede; padding: 2% !important; width: 92%!important;}
 /**************************************************************************************************************************************************************************************************/
@@ -503,9 +503,9 @@ h2 {
 /* USE THIS FOR ANYTHING UNDER SUBHEADING TO BE IN A DIFFERENT COLOUR*/
 h3 {
 	font-family: 'IBM Plex Sans', serif;
-	color: #101F40;
-  font-size: 19px;
-  text-align: left;
+	color: white;
+  font-size: 15px;
+  /* text-align: left; */
   /* margin-right: 90px;
   margin-left: 90px; */
 }
@@ -527,9 +527,9 @@ h5 {
   margin-left: 90px;
 }
 body {
-    /* background-image: url("http://2018.igem.org/wiki/images/d/d8/T--NYU_Abu_Dhabi--backgroundlong.png"); */
+		/* background-image: url("http://2018.igem.org/wiki/images/d/df/T--NYU_Abu_Dhabi--Homepage.png"); */
     background-size: cover;
-		background-repeat: repeat;
+		background-repeat: no-repeat;
 }
 div{
 			/* width: 1000px; */
@@ -639,18 +639,90 @@ div{
 		 			 	}
 button:focus {outline:0;}
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.content {
+  min-height: 100%;
+}
+.content-inside {
+  padding: 20px;
+  padding-bottom: 50px;
+}
+.footer {
+  height: 150px;
+	min-height: 150px;
+  margin-top: -50px;
+	background-color: #0085B6;
+	flex-wrap: wrap;
+	bottom: 0;
+}
+.footer .columns {
+    float: left;
+    width: 65%;
+    position: relative;
+		    padding-top: 15px;
+}
+/* .footer .columns1 {
+    float: left;
+    width: 20%;
+    position: relative;
+		    padding-top: 25px;
+} */
+.footer .columns2 {
+    float: left;
+    width: 35%;
+		/* height: 100%; */
+    position: relative;
+		text-align: center;
+		margin-top: 25px;
+
+}
+
+#globalWrapper {
+    position: relative;
+    font-size: 127%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 </style>
 
-<br><br>
+<div class="bg"></div>
+
+<body>
+	<div class="content">
+    <div class="content-inside">
 <h6><b>Biology Lab Notebook</b></h6>
-<br>
+
 <!-- <hr style="width:25%"> -->
-<embed src="http://2017.igem.org/wiki/images/7/7b/LabNoteEng.pdf#toolbar=1&amp;navpanes=0&amp;scrollbar=1&amp;page=1&amp;view=FitH
-" width="300" height="600" type='application/pdf' class="center">
 
+</div>
 
+<footer class="footer">
+  <div class="columns2">
+<a href="http://2018.igem.org/Team:NYU_Abu_Dhabi" target="_blank"><img src="http://2018.igem.org/wiki/images/d/d9/T--NYU_Abu_Dhabi--PathoGene2.png" alt="sponsor" width="200" margin-left="60px" ></a>
+<br>
+  <a href="mailto:nyuad.igem@nyu.edu" target="_blank"><span class="fa fa-google"></span></a>
+  <a href="https://www.facebook.com/iGEMNYUAD/" target="_blank"><span class="fa fa-facebook"></span></a>
+  <a href="https://www.twitter.com/igemnyuad/" target="_blank"><span class="fa fa-twitter"></span></a>
+  <a href="https://www.instagram.com/igem_nyuad/" target="_blank"><span class="fa fa-instagram"></span></a>
 
+  </div>
+  <div class="columns">
+    <h3>Sponsors:</h3>
+                    <a href="https://worldwide.promega.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/2/23/T--NYU_Abu_Dhabi--Promega.jpeg" alt="sponsor" width="90"></a>
+                      <a href="http://www.appslink-me.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/f/f6/T--NYU_Abu_Dhabi--Appslink2.png" alt="sponsor" width="90"></a>
+                      <a href="https://eu.idtdna.com/pages" target="_blank"><img src="http://2018.igem.org/wiki/images/1/17/T--NYU_Abu_Dhabi--IDT.png" alt="sponsor" width="90"></a>
+                      <a href="https://www.mathworks.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/7/7f/T--NYU_Abu_Dhabi--Mathworks.png" alt="sponsor" width="90"></a>
+                      <a href="http://www.snapgene.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/5/59/T--NYU_Abu_Dhabi--snapgene.png" alt="sponsor" width="90"></a>
+                      <a href="https://www.geneious.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/0/06/T--NYU_Abu_Dhabi--Geneious.png" alt="sponsor" width="90"></a>
+                      <a href="https://www.jenabioscience.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/7/7a/T--NYU_Abu_Dhabi--JenaBioscience.png" alt="sponsor" width="90"></a>
 
+  </div>
+</footer>
+</body>
 
 <!-- END -->
 
@@ -676,10 +748,6 @@ button:focus {outline:0;}
         }
     document.getElementById("defaultOpen").click();
     </script>
-
-
-
-</body>
 
 
 
@@ -769,9 +837,10 @@ button:focus {outline:0;}
            <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Parts">Parts</a>
            <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Safety">Safety</a>
            <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Interlab">Interlab</a>
+					            <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Modelling">Modelling</a>
 					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Medal_Requirments">Medal Requirements</a>
 
-				 </div>
+         </div>
        </li>
 
   <li class="nav-item dropdown">
@@ -797,11 +866,6 @@ button:focus {outline:0;}
 					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Social_Media">Social Media</a>
          </div>
        </li>
-
-       <li class="nav-item">
-         <a  class="nav-link" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Entrepreurship">Entrepreneurship</a>
-       </li>
-
        <li class="nav-item dropdown">
          <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
            Collaborations
@@ -819,40 +883,7 @@ button:focus {outline:0;}
    </div>
   </nav>
 
-	<!-- Footer Begins -->
-	<footer class="footer">
-		<div style="margin-top:100px;" class="footer">
-						<div class="row">
-								<div class="col-lg-8 col-sm-5 col-xm-5 col-md-6 footer-section" style="
-	    min-width: 200px;
-	">
-										<h3 class="footer-text">
-		                  <a href="https://worldwide.promega.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/f/ff/T--NYU_Abu_Dhabi--Promega.png" alt="sponsor" width="90"></a>
-		                  <a href="http://www.appslink-me.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/5/5a/T--NYU_Abu_Dhabi--Appslink.png" alt="sponsor" width="90"></a>
-		                  <a href="https://eu.idtdna.com/pages" target="_blank"><img src="http://2018.igem.org/wiki/images/1/17/T--NYU_Abu_Dhabi--IDT.png" alt="sponsor" width="90"></a>
-		                  <a href="https://www.mathworks.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/6/65/T--NYU_Abu_Dhabi--Mathworks.jpeg" alt="sponsor" width="90"></a>
-											<a href="http://www.snapgene.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/5/59/T--NYU_Abu_Dhabi--snapgene.png" alt="sponsor" width="90"></a>
-											<a href="https://www.geneious.com/" target="_blank"><img src="http://2018.igem.org/wiki/images/0/06/T--NYU_Abu_Dhabi--Geneious.png" alt="sponsor" width="90"></a>
-										  <!-- <a href="https://nyuad.nyu.edu/en/" target="_blank"><img src="http://2018.igem.org/wiki/images/7/7b/T--NYU_Abu_Dhabi--NYUADlogo.png" alt="sponsor" width="90"></a> -->
-			            	</h3>
-								  </div>
 
-		              <div class="col-lg-4 col-sm-5 col-xm-5 col-md-6 footer-section" style="
-	    display: block;
-	    min-width: 200px;">
-		  							  <h3 class="footer-text">
-		                  <a href="mailto:nyuad.igem@nyu.edu" target="_blank"><span class="fa fa-google"></span></a>
-		                  <a href="https://www.facebook.com/iGEMNYUAD/" target="_blank"><span class="fa fa-facebook"></span></a>
-		                  <a href="https://www.twitter.com/igemnyuad/" target="_blank"><span class="fa fa-twitter"></span></a>
-		                  <a href="https://www.instagram.com/igem_nyuad/" target="_blank"><span class="fa fa-instagram"></span></a>
-		                </h3>
-		  						</div>
-
-		          </div>
-	</div>
-	</footer>
-
-	<!-- Footer Ends -->
 </body>
 
 
