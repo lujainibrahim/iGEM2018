@@ -542,6 +542,12 @@ div{
     margin-right: auto;
     width: 50%;
 }
+.center2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
 .tablinks {
 	margin-top: 15px;
 	/* margin-left: 50%;
@@ -617,6 +623,21 @@ div{
 	letter-spacing: 2px;
 	font-weight: 800;
 }
+.tablinks6 {
+	margin-top: 15px;
+	/* margin-left: 50%;
+	transform: translateX(-50%); */
+	min-width: 80px;
+	padding: 10px 15px 10px 15px;
+	border: 2px solid black;
+	border-radius: 20px;
+	transition: background-color 0.1s linear, color 0.1s linear;
+	text-transform: uppercase;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 0.7rem;
+	letter-spacing: 2px;
+	font-weight: 800;
+}
 	.tablinks:hover {
 		background-color: #7E5BD3;
 		color: white; }
@@ -632,7 +653,9 @@ div{
 	.tablinks5:hover {
 	     background-color: #101F40;
 			 color: white; }
-
+			 .tablinks6:hover {
+		 	     background-color: black;
+		 			 color: white; }
    .tabcontent {
 		 		display: none;
  				padding: 3px 9px;
@@ -706,7 +729,7 @@ html, body {
 							<button class="tablinks4" onclick="openTab(event, 'STEM')">STEM Out Of The Box</button>
 							<button class="tablinks5" onclick="openTab(event, 'Shadowing')">Shadowing Opportunity</button>
 							<button class="tablinks3" onclick="openTab(event, 'Uni')">University Outreach Program</button>
-
+							<button class="tablinks6" onclick="openTab(event, 'Gazelle')">The Gazelle Feature</button>
 			    </div>
 			</center>
 
@@ -820,7 +843,7 @@ html, body {
 			 <h2><b>4. Patentable genes and organism ownership:</b><i> Patenting genes is a heated topic in bioethics. Some claim that it is unethical to patent genes as it gives life a commercial value. Others believe that life cannot be owned by anyone. However, companies that file for patents believe that novel genetically modified crops should be the protected as the property of the company. Whether anyone owns genetically modified organisms is still up to question.</i></h2>
 			 <h2><b>5. Laboratory grown meat is the solution to future food security:</b> Stem cells obtained from the animal are nurtured in the lab by keeping the external factors like the environment, temperature and humidity similar to the conditions inside the body. In short, you cheat the cells to believe that they are still in the animal and make them grow into tissues. The economic, social and policy impacts of this can be discussed.</i></h2>
 			<br>
-			<img src="			http://2018.igem.org/wiki/images/7/74/T--NYU_Abu_Dhabi--youthdebate7.png"
+			<img src="http://2018.igem.org/wiki/images/7/74/T--NYU_Abu_Dhabi--youthdebate7.png"
 		class="center">
 <br>
 			<h2>Out of these topics, the second one was chosen and the Youth Debate held by the NYUAD iGEM team was on the topic :<i><b>“ Is synthetic biology the solution to world hunger?”</b></i>. This event was the first ever Youth Debate  in English and was also the first to involve a scientific topic.
@@ -938,6 +961,26 @@ html, body {
 			</center>
 					</article>
 			</div>
+			<div id="Gazelle" class="tabcontent">
+					<article>
+			<center>
+				<img src="http://2018.igem.org/wiki/images/9/9d/T--NYU_Abu_Dhabi--Gazelle.png"
+			class="center2">
+			<br>
+			<h2>As part of our community outreach, we have successfully penned and published a special Feature in the school newspaper The Gazelle. The reason why we pursued the initiative is because we found that the iGEM competition and idea is not well known on campus as well as the Abu Dhabi community.</h2>
+			<br>
+			<h2>The first step we made to publicly engage on the social and journalistic level was to identify the newspaper and platform we wanted to reach out to. We picked The Gazelle due to its outreach on campus as well as in Abu Dhabi, as well as its social media platform. After the outreach to the newspaper, we agreed that the best approach would be to create a special Feature written by two of the team members familiar with all parts of the project and iGEM process.</h2>
+			<br>
+			<h2>To have the feature informative and unbiased, and thereby more reliable, we decided to look at both the good and the less good sides of iGEM at NYUAD. We first identified the people to interview that would bring deep and special perspectives of the iGEM process. We interviewed the PIs from current and previous years, instructors, and previous team leaders that have graduated. Throughout the interviews, we identified key instances such as personal stories of how people got involved with iGEM, their good and bad experiences, the lessons learned, and the advice for future and other iGEM teams. We also focused on the interviewee’s views on how iGEM contributes to NYUAD, and the UAE at large.</h2>
+			<br>
+			<h2>One of the feature’s main focuses was the interdisciplinarity required in bringing about a complex and fully refurbished iGEM project. We stressed the need for more designers, artists, social scientists, and others to join in the iGEM projects as we did not want it to come off as your any other science project and more as a project integrating and contributing to human practices.</h2>
+			<br>
+			<h2>Following the feature’s publication, we have received higher interest in our very own iGEM Student Interest Group (SIG) and in future team formation. We have also received more questions about iGEM and people expressing their positive impression of iGEM’s goals and our project. You can read the feature <a href="https://www.thegazelle.org/issue/142/features/igem-142" target="_blank">here</a>.
+			</h2>
+			<br><br>
+			</center>
+					</article>
+			</div>
   </div>
   <footer class="footer">
 		<div class="columns2">
@@ -1049,80 +1092,80 @@ html, body {
      <span class="navbar-toggler-icon"></span>
    </button>
 
-   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-     <ul class="navbar-nav mr-auto">
+	 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		 <ul class="navbar-nav mr-auto">
 
-       <li class="nav-item" >
-         <a  class="nav-link"  href="http://2018.igem.org/Team:NYU_Abu_Dhabi">Home<span class="sr-only"></span></a>
-       </li>
+			 <li class="nav-item" >
+				 <a  class="nav-link"  href="http://2018.igem.org/Team:NYU_Abu_Dhabi">Home<span class="sr-only"></span></a>
+			 </li>
 
-       <li  class="nav-item dropdown">
-         <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           People
-         </a>
-         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-           <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Team">Team</a>
-           <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Attributions">Attributions</a>
-           <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Sponsors">Sponsors</a>
-           <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/About_Us">About Us</a>
-         </div>
-       </li>
+			 <li  class="nav-item dropdown">
+				 <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					 People
+				 </a>
+				 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					 <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Team">Team</a>
+					 <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Attributions">Attributions</a>
+					 <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Sponsors">Sponsors</a>
+					 <a  class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/About_Us">About Us</a>
+				 </div>
+			 </li>
 
 
-       <li class="nav-item dropdown">
-         <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           Project
-         </a>
-         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Description">Description</a>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Design">Design</a>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Demonstration">Demonstration</a>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Results">Results</a>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Parts">Parts</a>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Safety">Safety</a>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Interlab">Interlab</a>
-					            <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Modelling">Modelling</a>
+			 <li class="nav-item dropdown">
+				 <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					 Project
+				 </a>
+				 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Description">Description</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Hardware">Design</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Demonstrate">Demonstration</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Results">Results</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Parts">Parts</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Safety">Safety</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/InterLab">Interlab</a>
+						<a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Model">Modelling</a>
 					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Medal_Requirments">Medal Requirements</a>
+				 </div>
+			 </li>
+
+	<li class="nav-item dropdown">
+				 <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					 Lab notebooks
+				 </a>
+				 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Biology">Biology</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Ideation">Ideation</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Engineering">Engineering</a>
 
 				 </div>
-       </li>
+			 </li>
 
-  <li class="nav-item dropdown">
-         <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           Lab notebooks
-         </a>
-         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Biology">Biology</a>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Ideation">Ideation</a>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Engineering">Engineering</a>
-
-         </div>
-       </li>
-
-  <li class="nav-item dropdown">
-         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           Human practices
-         </a>
-         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Engagement">Education and Public Engagement</a>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/HP/Gold_Integrated">Integrated Human Practices</a>
+	<li class="nav-item dropdown">
+				 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					 Human practices
+				 </a>
+				 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Public_Engagement">Education and Public Engagement</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Human_Practices">Integrated Human Practices</a>
 					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Home_Outreach">Home Country Outreach</a>
 					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Social_Media">Social Media</a>
-         </div>
-       </li>
-       <li class="nav-item dropdown">
-         <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           Collaborations
-         </a>
-         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Science_Sketch">Science Sketch</a>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Virtual_Conference">Virtual Conference</a>
-           <div class="dropdown-divider"></div>
-           <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Other_Collaborations">Other Collaborations</a>
+				 </div>
+			 </li>
 
-         </div>
-       </li>
-     </ul>
+			 <li class="nav-item dropdown">
+				 <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					 Collaborations
+				 </a>
+				 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Science_Sketch">Science Sketch</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Virtual_Conference">Virtual Conference</a>
+					 <div class="dropdown-divider"></div>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Collaborations">Other Collaborations</a>
+
+				 </div>
+			 </li>
+		 </ul>
 
    </div>
   </nav>
