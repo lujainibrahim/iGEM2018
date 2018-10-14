@@ -16,9 +16,9 @@
 
 <head>
 	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <!-- Bootstrap -->
         <link rel="stylesheet" href="http://2018.igem.org/Template:NYU_Abu_Dhabi/BootstrapCSSV4?action=raw&amp;ctype=text/css" />
         <script type="text/javascript" src="http://2018.igem.org/Template:NYU_Abu_Dhabi/BootstrapJSV4?action=raw&amp;ctype=text/javascript"></script>
@@ -35,7 +35,7 @@
 		    /* width: 80%; */
 	      /* margin: auto;} */
 	#bodyContent h1, #bodyContent h2, #bodyContent h3, #bodyContent h4, #bodyContent h5 { margin-bottom: 0px; }
-	.judges-will-not-evaluate { border: 4px solid #e4dede; padding: 2% !important; width: 92%!important;}
+
 /**************************************************************************************************************************************************************************************************/
 /* MENU */
 /**************************************************************************************************************************************************************************************************/
@@ -497,6 +497,7 @@ h2 {
 	color: black;
 	font-size: 15px;
 	text-align: justify;
+	margin-right: 90px;
 	margin-left: 90px;
 }
 /* USE THIS FOR ANYTHING UNDER SUBHEADING TO BE IN A DIFFERENT COLOUR*/
@@ -539,7 +540,7 @@ div{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 30%;
 }
 .tablinks {
 	margin-top: 15px;
@@ -600,6 +601,18 @@ div{
 	font-size: 0.7rem;
 	letter-spacing: 2px;
 	font-weight: 800;
+}
+.center2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.center3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
 }
 .tablinks5 {
 	margin-top: 15px;
@@ -686,377 +699,60 @@ html, body {
     margin: 0;
     padding: 0;
 }
-
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-}
-
-.sec {
-    font-family: 'IBM Plex Sans', sans-serif;
-    text-align: center;
-}
-
-.img-container {
-    float: left;
-    width: 300px;
-    padding: 5px;
-		margin-left: 100px;
-}
-
-.text-container {
-    float: left;
-    width: 700px;
-    height: 400px;
-    padding: 5px;
-		margin-left: 350px;
-
-}
-
-.clearfix {
-    content: "";
-    clear: both;
-    display: table;
-    margin: 30px;
-}
-
-/* Make the container relative */
-.swap-on-hover {
-    position: relative;
-    margin: 0 auto;
-    max-width: 300px;
-}
-
-    /* Select the image and make it absolute to the container */
-    .swap-on-hover img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        overflow: hidden;
-        /* Sets the width and height for the images*/
-        width: 300px;
-        height: 300px;
-    }
-
-    /*
-We set z-index to be higher than the back image, so it's alwyas on the front.
-We give it an opacity leaner to .25s, that way when we hover we will get a nice fading effect.
-*/
-    .swap-on-hover .swap-on-hover__front-image {
-        z-index: 1000;
-        transition: opacity .5s linear;
-
-    }
-
-    /* When we hover the figure element, the block with .swap-on-hover, we want to use > so the front-image is going to have opacity of 0, which means it will be hidden, to the back image will show */
-    .swap-on-hover:hover > .swap-on-hover__front-image {
-        opacity: 0;
-    }
-
-hr {
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: 10em;
-    margin-right: 10em;
-    border-style: inset;
-    border-width: 2px;
-}
-
-.instructorimage {
-    float: left;
-    width: 500px;
-    padding-left: 100px;
-}
 </style>
-</head>
 
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////// HTML GOES HERE ////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <div class="bg"></div>
 
 <body>
 	<div class="content">
     <div class="content-inside">
-<h6>Our Team</h6>
+<h6><b>Improve</b></h6>
+<h2>The 2018 iGEM NYU Abu Dhabi designed a BioBrick that includes a gene that can be targeted for species-specific detection of <i>Vibrio cholera</i>. </h2>
 <br>
-<!-- INSERT CONTENT HERE: -->
-<center><img src="http://2018.igem.org/wiki/images/9/95/T--NYU_Abu_Dhabi--map.png" alt="Workplace" usemap="#worldmap" width="1000" position="relative" /></center>
-<div class="center"><font size="6">THE STUDENTS </font></div>
+<h2>Part <a href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K2808000">BBa_K2808000</a> was designed by including N-acetyl glucosamine-binding protein A (gbpA) gene for the detection of Vibrio cholera. The gbpA gene in Vibrio cholerae codes for the N-acetyl glucosamine-binding protein A (GbpA), which is a chitin-binding protein involved in the attachment of V. cholerae to environmental chitin surfaces and human intestinal cells. The gbpA gene has been found to be consistently present and highly conserved in V. cholerae. GbpA has been used as a target gene for the species-specific detection of V. cholerae O1, O139, Non-O1/Non-O139.</h2>
+<br>
+<h4><u>Improvement upon part <a href= "http://parts.igem.org/Part:BBa_K2299000">BBa_K2299000</a></u></h4>
+<h2>Instead of the 39 bp sequence found in CTX RstA gene that is used by <a href="http://parts.igem.org/Part:BBa_K2299000">BBa_K2299000</a>, part <a href="http://parts.igem.org/wiki/index.php?title=Part:BBa_K2808000">BBa_K2808000</a> uses gbpA gene for the detection of V. cholera. The advantages of using gbpA as a gene target compared to ctxA are various such as ctxA is involved in the production of the cholera toxin production which requires special safety precautions during bacterial transformation, lab experiments, shipping reagents, customs, etc. whereas the use of gbpA solves these problems as gbpA is not directly involved in the production of cholera toxin.</h2>
+<br>
+<h4><u>gbpA BioBrick double digestion reaction</u></h4>
 
-<hr>
+<img src="http://2018.igem.org/wiki/images/b/bf/T--NYU_Abu_Dhabi--Parts3.png" height="400" class="center2">
+<br>
+<h2><i>Figure 1: Agarose gel electrophoresis showing double digestion of the gbpA BioBrick <a href="http://parts.igem.org/Part:BBa_K2808000"target="_blank">BBA_K2808000</a> (gbpA gene (1458 bp) inserted into the pSB1C3 backbone (2070 bp)) with EcoRI and PstI. (Lane 1) 500 bp DNA ladder (Bio-Rad); (Lane 2) gbpA BioBrick; (Lane 3) gbpA BioBrick digested with EcoRI and PstI.
+</i></h2>
+<br>
+<h4><u>BioBricks PCR amplification</u></h4>
+<img src="http://2018.igem.org/wiki/images/4/4a/T--NYU_Abu_Dhabi--Parts4.png" height="400" class="center2">
+<br>
+<h2><i>Figure 1: Agarose gel electrophoresis showing PCR amplification of: gbpA BioBrick <a href="http://parts.igem.org/Part:BBa_K2808000"target="_blank">BBA_K2808000</a>; hipO <a href="http://parts.igem.org/Part:BBa_K2808001"target="_blank">BBA_K2808001</a>; invA <a href="http://parts.igem.org/Part:BBa_K2808002"target="_blank">BBA_K2808002</a>; lmo0733 <a href="http://parts.igem.org/Part:BBa_K2808003"target="_blank">BBA_K2808003</a>. (Lane 1) 500 bp DNA ladder (Bio-Rad); (Lane 2) gbpA BioBrick; (Lane 3) negative control for gbpA BioBrick; (Lane 4) hipO BioBrick; (Lane 5) negative control for hipO BioBrick; (Lane 6) invA BioBrick; (Lane 7) negative control for invA BioBrick; (Lane 8) lmo0733 BioBrick; (Lane 9) negative control for lmo0733 BioBrick. Lanes 2, 4, 6, and 8 show bands around 1019 bp, 203 bp, 818 bp, and 403 bp respectively as expected for the PCR products of the gbpA, hipO, invA, and lmo0733 BioBricks respectively.
+</i></h2>
+<br>
 
-<div id="Doo" class="clearfix">
-    <div class="img-container">
-        <div class="swap-on-hover">
-            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/7/7d/T--NYU_Abu_Dhabi--Doo1.jpeg" />
-            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/1/13/T--NYU_Abu_Dhabi--Doo2.jpeg" />
-        </div>
-    </div>
-    <div class="text-container">
-        <h4><b><font size="5.5">Doovaraha Maheswarasarma</font></b></h4>
-        <h4><i><font size="3.5">Sri Lanka &amp; India </font></i></h4>
-        <h2> A third year Mechanical Engineering student, Doovaraha is one of our two hard-working co-leaders of the 2018 NYUAD iGEM team. She is an absolute queen when it comes to outreach projects, arranging elaborate community events to spread the word of synthetic biology and the iGEM competition. Doovaraha also leads the engineering team in their work and is always running around from meeting to meeting. If she wasn’t so good at being a team leader, she could easily be the next Masterchef with her amazing cooking skills, feeding the entire team over the summer!  </h2>
-    </div>
+<h4><u>Special Track:</u></h4>
+<h2>The NYUAD iGEM 2018 team immensely improved the project of the NYUAD teams of 2016 and 2017. We not only developed the existing process but also extended it to beyond the single pathogen the team of 2017 was working with.
+</h2>
+<br>
+<h2>The 2017 team worked on a portable device that could identify Shiga Toxin producing E.Coli over 30 minutes. This device utilised LAMP for amplification and the reaction took place in a gel with wells. The issues with this device are as follows:
+</h2>
+<h2>1. <b>User Interaction: </b>The user was required to mix the food sample in a test tube and pipette it into each well separately. It can be noticed that this device was not user friendly as the target group were roadside food vendors. Most food vendors will not have the time or knowledge to use a pipette to check the food before serving it.
+ </h2>
+<h2>2. <b>Variety of Pathogens: </b>As mentioned earlier the device was able to find only one food pathogen and did not work have the choice to amplify other pathogens.
+ </h2>
+<h2>3. <b>Device design: </b>The device was not designed to suit the innate rush in a food stall/restaurant and did not take into account the different environments it might be used it. The device was also bulky and space within it was not optimised.</h2>
+<h2>4. <b>Method used: </b>The team used LAMP for DNA amplification and it was visualised by fluorescence. This visualisation also needed a UV lamp, which is not cheap or easily available for the target group in mind.
+</h2>
+<br>
+<h2>While our team was brainstorming for new project ideas, we  noticed these issues in EcoLamp and considered the option of improving it. This thought was further strengthened by our interaction with potential target customers and users. The team took each aspect from the above observations and improved them in the following ways:
+</h2>
+<h2>1. <b>User Interaction: </b>The team worked on developing a hardware component that will include all the processes of sample collection and processing into one device. This meant replacing the test tube, cotton swab and pipette with one device, which was also contamination free and does not leak. The team after multiple tests, developed the sample collector which uses the ‘swab and press’ mechanism for sample collection. The sample is then added to the testing unit (chip) by the lid with a dripper. These additions simplify the numerous processes, thus making it suitable for any user with any background.</h2>
+<h2>2. <b>Variety of Pathogens: </b>The biologists in the team worked hard and developed the existing protocol to suit multiplexing, which can be used in other devices made by Pathogene in the future. The team also worked on primers for four different pathogens which has enabled us to develop a device that can test for four different pathogens with one sample. </h2>
+<h2>3. <b>Device Design: </b>Since Pathogene offers a series of customizable pathogen detection devices, it gives the user the option to choose a device depending on the environment. The device completed now, is suited for different kinds of travellers or people on the go, as it is handy and can be used with much ease. At the same time, it also takes into account people using it from a stationary place, thus giving the choice between battery pack and wire. </h2>
+<h2>4. <b>Methods Used: </b>The team worked on both Lamp and RPA for the four different pathogens. This gives the user the option to choose high specificity with heating or comparatively less specificity without the additional heating. For visualisation, the team tested out fluorescence and colorimetry for both methods, thus adding more choices for customisation. The team also found that fluorescence can be visualised with specific kind of blue LED and incorporated that in the device design- thus replacing the UV light and making the overall product and process more accessible to everyone.
+ </h2>
+<br><br>
+
 </div>
 
-<div id="Laura" class="clearfix">
-    <div class="img-container">
-        <div class="swap-on-hover">
-            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/6/6e/T--NYU_Abu_Dhabi--Laura1.jpeg" />
-            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/e/e4/T--NYU_Abu_Dhabi--Laura2.jpeg" />
-        </div>
-    </div>
-    <div class="text-container">
-        <h4><b><font size="5.5">Laura Karpauskaite</font></b></h4>
-        <h4><i><font size="3.5">Lithuania</font></i></h4>
-        <h2> Laura is a third year Biology major from Lithuania, who along with having an unstoppable passion for biology, also has an insatiable passion for coffee. Typical of an NYUAD iGEM team leader, she often works too hard and worries too much about our project, staying in the lab until absurd hours working on the synthetic biology research components. Laura is also the grand master of our iGEM team, having worked on last year’s project as well, imparting all her iGEM wisdom on us throughout the semester.  </h2>
-    </div>
-</div>
-
-<div id="Biswas" class="clearfix">
-    <div class="img-container">
-        <div class="swap-on-hover">
-            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/6/6d/T--NYU_Abu_Dhabi--Biswas1.jpeg" />
-            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/7/70/T--NYU_Abu_Dhabi--Biswas2.jpeg" />
-        </div>
-    </div>
-    <div class="text-container">
-        <h4><b><font size="5.5">Biswas Shrestha</font></b></h4>
-        <h4><i><font size="3.5">Nepal</font></i></h4>
-        <h2> Passionate about Biology and Bioengineering, Biswas is the ultimate keen bean of the team. His main roles include: Biology, InterLab Study, BioBrick parts, Project Management, Grants and Sponsorships. Besides iGEM, he works on gene regulation in development and differentiation at the Percipalle Lab. He is always ready to help out with anything and everything from ideation to genomics. He is also a problem solver who can think outside of the box, even preparing our own DIY DNA loading dye once when we ran out. </h2>
-    </div>
-</div>
-
-<div id="Cristian" class="clearfix">
-    <div class="img-container">
-        <div class="swap-on-hover">
-            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/1/16/T--NYU_Abu_Dhabi--Cristian1.jpeg" />
-            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/e/ee/T--NYU_Abu_Dhabi--Cristian2.jpeg" />
-        </div>
-    </div>
-    <div class="text-container">
-        <h4><b><font size="5.5">Cristian Garcia Zamora</font></b></h4>
-        <h4><i><font size="3.5">Mexico</font></i></h4>
-        <h2> Cristian is a second year Engineering student working mainly on engineering design and prototyping. Originally from Mexico, you can now find him in the engineering design studio, sawing, cutting and constructing away into wee hours of the morning. Once we caught him reading a design book at 4am in the engineering design studio! Coincidentally, Cris experienced his worst food poisoning experience in the first week of iGEM prototyping… oh the irony! </h2>
-    </div>
-</div>
-
-<div id="Daniel" class="clearfix">
-    <div class="img-container">
-        <div class="swap-on-hover">
-            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/8/87/T--NYU_Abu_Dhabi--Daniel1.jpeg" />
-            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/3/39/T--NYU_Abu_Dhabi--Daniel2.jpeg" />
-        </div>
-    </div>
-    <div class="text-container">
-        <h4><b><font size="5.5">Daniel Obaji</font></b></h4>
-        <h4><i><font size="3.5">Nigeria</font></i></h4>
-        <h2> Daniel is a fourth year student majoring in Biology and can oftentimes be found working in the biology lab or on outreach programs. Though, do not be fooled by his presence in the lab, we have caught him watching anime while in his lab coat one too many times! </h2>
-    </div>
-</div>
-
-<div id="Imtiyaz" class="clearfix">
-    <div class="img-container">
-        <div class="swap-on-hover">
-            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/3/3c/T--NYU_Abu_Dhabi--Imtiyaz1.jpeg" />
-            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/6/69/T--NYU_Abu_Dhabi--Imtiyaz2.jpeg" />
-        </div>
-    </div>
-    <div class="text-container">
-        <h4><b><font size="5.5">Imtiyaz Hariyani</font></b></h4>
-        <h4><i><font size="3.5">India</font></i></h4>
-        <h2> Imtiyaz is a fourth year student majoring in Biology and has never had any food poisoning experiences…(except for that one time his stomach felt weird after eating a cake he had baked himself)! Being the eldest on the team, Imtiyaz is the designated team grandpa, giving unsolicited, but greatly appreciated advice on academics and life in general to the younger team members. In an ideal lab partner he is looking for someone with good vibes, who can provide Reese’s chocolate and can tolerate his cricket watching in the lab.  </h2>
-    </div>
-</div>
-
-<div id="Kai-Wen" class="clearfix">
-    <div class="img-container">
-        <div class="swap-on-hover">
-            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/f/f7/T--NYU_Abu_Dhabi--KaiWen1.jpeg" />
-            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/5/5f/T--NYU_Abu_Dhabi--KaiWen2.jpeg" />
-        </div>
-    </div>
-    <div class="text-container">
-        <h4><b><font size="5.5">Kai-Wen Yang</font></b></h4>
-        <h4><i><font size="3.5">Taiwan</font></i></h4>
-        <h2> Kai-Wen is a third year Electrical Engineering major from Taiwan. Apart from being physically flexible, she is also incredibly mentally flexible, helping out with team collaborations, web development and engineering design on the team, not to mention her artistic talents and contributions to our science sketch videos! Kai-wen loves the feeling of everyone on the team working hard towards a common goal, so wholesome.  </h2>
-    </div>
-</div>
-
-<div id="Lujain" class="clearfix">
-    <div class="img-container">
-        <div class="swap-on-hover">
-            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/3/3f/T--NYU_Abu_Dhabi--Lujain1.jpeg" />
-            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/0/03/T--NYU_Abu_Dhabi--Lujain2.jpeg" />
-        </div>
-    </div>
-    <div class="text-container">
-        <h4><b><font size="5.5">Lujain Ibrahim</font></b></h4>
-        <h4><i><font size="3.5">Palestine &amp; Jordan</font></i></h4>
-        <h2> Lujain is a third year student majoring in Computer Engineering and so, naturally, is also our Wiki guru and digital media expert. From editing videos to script writing, to microfluidic chip design and testing, to Arabic translations, there is nothing much that can be too challenging for Lujain. Also, a generous foodie at heart, Lujain often initiates team bubble tea acquirement events and shares much appreciated Knafeh with everyone. </h2>
-    </div>
-</div>
-
-<div id="Mariam" class="clearfix">
-    <div class="img-container">
-        <div class="swap-on-hover">
-            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/9/91/T--NYU_Abu_Dhabi--Mariam1.jpeg" />
-            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/c/cf/T--NYU_Abu_Dhabi--Mariam2.jpeg" />
-        </div>
-    </div>
-    <div class="text-container">
-        <h4><b><font size="5.5">Mariam Anwar</font></b></h4>
-        <h4><i><font size="3.5">Egypt</font></i></h4>
-        <h2> Mariam is a third year student majoring in biology. She has had too many food poisoning experiences to count, which explains her diet of coffee, kitkats and biscuits. Mariam is also an absolute gun when it comes to hustling in the lab and outreach programs. She also happens to be one of the few people on the team who have the patience and dedication to helping others document their work, so much love for this patient soul. </h2>
-    </div>
-</div>
-
-<div id="Munib" class="clearfix">
-    <div class="img-container">
-        <div class="swap-on-hover">
-            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/8/82/T--NYU_Abu_Dhabi--Munib1.jpeg" />
-            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/2/22/T--NYU_Abu_Dhabi--Munib2.jpeg" />
-        </div>
-    </div>
-    <div class="text-container">
-        <h4><b><font size="5.5">Munib Mesinovic</font></b></h4>
-        <h4><i><font size="3.5">Bosnia and Herzegovina</font></i></h4>
-        <h2> A third year Electrical Engineering student, Munib takes on multiples roles in the engineering design process as well as microfluidics, web development and outreach programs. His worst food poisoning experience landed him in Abu Dhabi’s Cleveland clinic in the middle of the night (shout-out to Munib’s roommate)! The great thing about Munib is that he takes suggestions and feedback to heart, just look at him sitting cross-legged on a traffic bollard in the middle of a forty degree day, simply because it was suggested to him that it would make for a great photo.  </h2>
-    </div>
-</div>
-
-<div id="Sion" class="clearfix">
-    <div class="img-container">
-        <div class="swap-on-hover">
-            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/3/37/T--NYU_Abu_Dhabi--Sion1.jpeg" />
-            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/4/40/T--NYU_Abu_Dhabi--Sion2.jpeg" />
-        </div>
-    </div>
-    <div class="text-container">
-        <h4><b><font size="5.5">Sion Hau</font></b></h4>
-        <h4><i><font size="3.5">Australia</font></i></h4>
-        <h2> Sion is a second year student majoring in Biology and is always proactive. She is the assigned cake-baker for teammate birthdays (Pathogene approved) but isn’t too great at surprises. You can often find her playing some sick tunes in the lab or on her phone attempting to make yet another viral post for the team. If you have enjoyed the lame puns on the Instagram stories or Facebook posts, she would very much like to meet you! </h2>
-    </div>
-</div>
-
-<div id="Tom" class="clearfix">
-    <div class="img-container">
-        <div class="swap-on-hover">
-            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/f/fd/T--NYU_Abu_Dhabi--Tom1.jpeg" />
-            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/d/d4/T--NYU_Abu_Dhabi--Tom2.jpeg" />
-        </div>
-    </div>
-    <div class="text-container">
-        <h4><b><font size="5.5">Tom Abi Samra</font></b></h4>
-        <h4><i><font size="3.5">USA &amp; Lebanon</font></i></h4>
-        <h2> Tom is a second year student, majoring in Computer Science, interested in everything design related, and true to his talents and interests, if given the chance to come up with his dream lab instruments, he would want a 3D microscope. The 3D microscope would help him see in real-time the movements inside of cells, just like all the biology animations and illustrations. Our team’s logo, most of the Wiki's figures, and publication designs have all been created by Tom. </h2>
-    </div>
-</div>
-
-<div id="Yejie" class="clearfix">
-    <div class="img-container">
-        <div class="swap-on-hover">
-            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/c/c3/T--NYU_Abu_Dhabi--Yejie1.jpeg" />
-            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/c/ca/T--NYU_Abu_Dhabi--Yejie2.jpeg" />
-        </div>
-    </div>
-    <div class="text-container">
-        <h4><b><font size="5.5">Yejie Yun</font></b></h4>
-        <h4><i><font size="3.5">South Korea</font></i></h4>
-        <h2> Yejie is a second year student pursuing multiple majors and contributing to the engineering team’s work. She is also an integral part of many other objectives in our team including Youth Debates, microfluidics chip design and science sketches. Her facourite iGEM moment thus far was when more of our teammates started to appreciate bubble tea...her bubble tea obsession is quite reflective of her bubbly personali-tea too! Unfortunately, Yejie has a sensitive stomach and has had several food poisoning experiences...making her someone who could benefit significantly from out project! </h2>
-    </div>
-</div>
-
-
-<div class="center"><font size="6">THE INSTRUCTORS </font></div>
-<hr>
-
-<div id="Song" class="clearfix">
-    <div class="img-container">
-        <div class="swap-on-hover">
-            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/3/33/T--NYU_Abu_Dhabi--Song1.jpeg" />
-            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/e/e5/T--NYU_Abu_Dhabi--Song2.jpeg" />
-        </div>
-    </div>
-    <div class="text-container">
-        <h4><b><font size="5.5">Yong-Ak (Rafael) Song</font></b></h4>
-        <h4><i><font size="3.5">South Korea</font></i></h4>
-        <h2> Rafael Song received his Ph.D. in Biomedical Engineering from RWTH Aachen University (Aachen, Germany) and has worked at the Korea Institute of Science and Technology as a Senior Research Scientist. His lab is focused on applying microfluidics and nanofluidics to a broad range of bioscience challenges, targeting the interface between biology, physics and engineering. He is currently an Assistant Professor of Mechanical and Biomedical Engineering and as the Principal Investigator of the Micro- and Nanoscale Bioengineering Lab at NYUAD. </h2>
-    </div>
-</div>
-
-<div id="Mazin" class="clearfix">
-    <div class="img-container">
-        <div class="swap-on-hover">
-            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/7/74/T--NYU_Abu_Dhabi--Mazin1.jpeg" />
-            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/3/3e/T--NYU_Abu_Dhabi--Mazin2.jpeg" />
-        </div>
-    </div>
-    <div class="text-container">
-        <h4><b><font size="5.5">Mazin Magzoub</font></b></h4>
-        <h4><i><font size="3.5">Sudan</font></i></h4>
-        <h2> Mazin Magzoub received his Ph.D. in Biophysics from Stockholm University (Stockholm, Sweden) studying the biophysical properties of cell-penetrating peptides. His lab focuses on drug delivery strategies, amyloid diseases, and cancer therapeutics. He currently serves as an Assistant Professor of Practice in Biology and as the Principal Investigator of the Biophysics Lab at NYUAD. </h2>
-    </div>
-</div>
-
-<div id="Andras" class="clearfix">
-    <div class="img-container">
-        <div class="swap-on-hover">
-            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/2/23/T--NYU_Abu_Dhabi--Andras1.jpeg" />
-            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/9/95/T--NYU_Abu_Dhabi--Andras2.jpeg" />
-        </div>
-    </div>
-    <div class="text-container">
-        <h4><b><font size="5.5">Andras Gyorgy</font></b></h4>
-        <h4><i><font size="3.5">Hungary</font></i></h4>
-        <h2> Andras Gyorgy received his Ph.D. in Electrical Engineering from Massachusetts Institute of Technology, studying modularity in cellular systems blending theory with experiments. His lab focuses on networked dynamical systems, including but not limited to rational forward-engineering of synthetic biology systems and design and analysis of multi-scale systems prevalent in biology. He currently serves as an Assistant Professor of Electrical Engineering and as the Principal Investigator of the NetBio group Lab at NYUAD. </h2>
-    </div>
-</div>
-
-<div id="Ibrahim" class="clearfix">
-    <div class="img-container">
-        <div class="swap-on-hover">
-            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/8/84/T--NYU_Abu_Dhabi--Ibrahim1.jpeg" />
-            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/d/dc/T--NYU_Abu_Dhabi--Ibrahim2.jpeg" />
-        </div>
-    </div>
-    <div class="text-container">
-        <h4><b><font size="5.5">Ibrahim Chehade</font></b></h4>
-        <h4><i><font size="3.5">Canada</font></i></h4>
-        <h2> Ibrahim Chehade received his M.Sc. in Integrative Biology at Wilfrid Laurier University (Waterloo, Ontario, Canada) in the field of Environmental Toxicology and Endocrinology. He currently serves as an Associate Instructor of Biology at NYUAD. </h2>
-    </div>
-</div>
-
-<div id="Ashley" class="clearfix">
-    <div class="img-container">
-        <div class="swap-on-hover">
-            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/6/66/T--NYU_Abu_Dhabi--Ashley1.jpeg" />
-            <img class="swap-on-hover__back-image" src="http://2018.igem.org/wiki/images/b/bb/T--NYU_Abu_Dhabi--Ashley2.jpeg" />
-        </div>
-    </div>
-    <div class="text-container">
-        <h4><b><font size="5.5">Ashley Isaac</font></b></h4>
-        <h4><i><font size="3.5">South Africa</font></i></h4>
-        <h2> Ashley Isaac received his M.Sc. in Microbiology from the University of KwaZulu-Natal (Durban, South Africa) and has served as the LIMS Administrator at the HIV Prevention Research Unit. He currently serves as an Associate Instructor of Biology at NYUAD.  </h2>
-    </div>
-</div>
-
-<div id="Esteban" class="clearfix">
-    <div class="img-container">
-        <div class="swap-on-hover">
-            <img class="swap-on-hover__front-image" src="http://2018.igem.org/wiki/images/1/15/T--NYU_Abu_Dhabi--Esteban1.jpeg" />
-            <img class="swap-on-hover__back-image"  src="http://2018.igem.org/wiki/images/e/e9/T--NYU_Abu_Dhabi--Esteban2.jpeg" />
-        </div>
-    </div>
-    <div class="text-container">
-        <h4><b><font size="5.5">Esteban Salvemini</font></b></h4>
-        <h4><i><font size="3.5">Spain</font></i></h4>
-        <h2>Esteban Salvemini received his Integrated Product Design Master, Industrial Design at Technische Universiteit Delft. He is specialized and passionate about model making, 3D modeling with CAD program, mechanical design solutions, research and user experience/interaction. He currently serves as the manager of the Advanced Manufacturing Workshop at NYUAD.</h2>
-    </div>
-</div>
-</div>
 <footer class="footer">
   <div class="columns2">
 <a href="http://2018.igem.org/Team:NYU_Abu_Dhabi" target="_blank"><img src="http://2018.igem.org/wiki/images/d/d9/T--NYU_Abu_Dhabi--PathoGene2.png" alt="sponsor" width="200" margin-left="60px" ></a>
@@ -1081,6 +777,12 @@ hr {
 </footer>
 </body>
 
+<!-- END -->
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!--- Menu --->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
 
 <!--script for buttons -->
 <script>
@@ -1099,6 +801,8 @@ hr {
         }
     document.getElementById("defaultOpen").click();
     </script>
+
+
 
 
 <!-- END -->
@@ -1187,7 +891,7 @@ hr {
 					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Safety">Safety</a>
 					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/InterLab">Interlab</a>
 						<a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Model">Modelling</a>
-					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Medal_Requirments">Medal Requirements</a>
+					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Medal_Requirements">Medal Requirements</a>
 				 </div>
 			 </li>
 
@@ -1215,22 +919,16 @@ hr {
 				 </div>
 			 </li>
 
-			 <li class="nav-item dropdown">
-				 <a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					 Collaborations
-				 </a>
-				 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Science_Sketch">Science Sketch</a>
-					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Virtual_Conference">Virtual Conference</a>
-					 <div class="dropdown-divider"></div>
-					 <a class="dropdown-item" href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Collaborations">Other Collaborations</a>
-
-				 </div>
+			 <li class="nav-item" >
+				 <a  class="nav-link"  href="http://2018.igem.org/Team:NYU_Abu_Dhabi/Collaborations">Collaborations<span class="sr-only"></span></a>
 			 </li>
 		 </ul>
 
+
    </div>
   </nav>
+
+
 </body>
 
 
